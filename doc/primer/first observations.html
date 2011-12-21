@@ -1,0 +1,55 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>1.2. First Observations - Basic Function Types</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell Primer"><link rel="up" href="introduction.html" title="Chapter 1. Introduction"><link rel="prev" href="introduction.html" title="Chapter 1. Introduction"><link rel="next" href="Callbacks.html" title="Chapter 2. Callbacks"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">1.2. First Observations - Basic Function Types</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="introduction.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Introduction</th><td width="20%" align="right"> <a accesskey="n" href="Callbacks.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="first%20observations"></a>1.2. First Observations - Basic Function Types</h2></div></div></div><a class="indexterm" name="id2443714"></a><p>The above example uses a single import statement <code class="literal">import
+      Qt</code>. This will work for any qtHaskell program, but with current
+      Haskell compiler technology will be very slow to build and will create huge
+      executables (&gt; 30Mb). It is therefore a practical necessity for most users
+      to explicitly import only the required modules from the qtHaskell package.
+      In this case the first example would be:
+      </p><pre class="programlisting">
+module Main where
+
+import Qtc.Classes.Qccs
+import Qtc.Classes.Gui
+import Qtc.Gui.Base
+import Qtc.Gui.QApplication
+import Qtc.Gui.QPushButton
+
+main :: IO Int
+main = do
+  qApplication ()
+  hello &lt;- qPushButton "Hello qtHaskell World"
+  resize hello (200::Int, 60::Int)
+  qshow hello ()
+  qApplicationExec ()
+
+</pre><p>Haskell statements of the type <code class="filename">qSomeQtClassName</code>
+       followed by a tuple of parameters are calls to constructors of the class type
+       <code class="filename">SomeQtClassName</code>. In this example there are two:
+       <code class="filename">qApplication ()</code> and <code class="filename">qPushButton "Hello..."
+       </code>. Note that constructor instances that take no parameters still
+       need an empty pair of parentheses to terminate the statement. This is not an
+       option and the program will not compile if they are omitted. Constructors
+       which only take one parameter can omit the parentheses since they are 
+       implied in standard Haskell syntax. Note that although qtHaskell programs
+       generally begin with a parameterless <code class="filename">qApplication ()</code>
+       call, the program name and other program parameters are passed automatically
+       to the Qt application.</p><p>Calls to Qt static functions take the form <code class="filename">
+       qSomeQtClassNameSomeStaticFunction</code> followed by a tuple of
+       parameters. There is one such call in this example: <code class="filename">
+       qApplicationExec ()</code>. As with constructors, parentheses are
+       mandatory for parameterless methods.</p><p>Calls to nearly all non-static functions take the form <code class="filename">
+       (q)someNonStaticFunction</code> followed by the name of the object
+       whose method is being called, followed by a tuple of parameters. There are
+       two such calls in this example: <code class="filename"> resize hello (200::Int, 60::Int)
+       </code> and <code class="filename">qshow hello ()</code>. Note that literal
+       numerical values must be explicitly typed in most qtHaskell calls and that
+       parentheses are once again mandatory for parameterless methods. Also note
+       that some calls to non-static methods require a leading "q" character.
+       </p><p>Hence we can formulate a general rule for deriving qtHasekll function
+       syntax from the Qt documentation:</p><div class="itemizedlist"><ul type="disc"><li><p>q<em class="replaceable"><code>SomeQtClass () | p1 | (p1) | (p1, p2 ...)</code></em> constructs an object of Qt class type Q<em class="replaceable"><code>SomeQtClass</code></em>.</p></li><li><p>q<em class="replaceable"><code>SomeQtClassSomeStaticMethod () | p1 | (p1) | (p1, p2 ...)</code></em> calls the <em class="replaceable"><code>SomeStaticMethod</code></em> static method of Qt class type Q<em class="replaceable"><code>SomeQtClass</code></em>.</p></li><li><p><em class="replaceable"><code>&lt;q&gt;someNonStaticMethod SomeQtClassObject () | p1 | (p1) | (p1, p2 ...)</code></em> calls the <em class="replaceable"><code>someNonStaticMethod</code></em> non-static method of the Qt class object Q<em class="replaceable"><code>SomeQtClassObject</code></em>.</p></li></ul></div><p>Note that calls to non-static methods do not take an initial capital
+      letter even if prefixed by "q".</p><p>Also note there are a few exceptions to the above rules. Qt Haskell
+      functions which connect signals or slots, set handlers, or call explicit
+      destructors are slightly different. Constructors of Qt data classes can take
+      an "_nf" suffix if they are not to be automatically garbage collected.
+      In fact both constructors and static methods can take an extra leading "q"
+      character in some cases. These differences will be discussed in later
+      chapters.</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="introduction.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="introduction.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="Callbacks.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 2. Callbacks</td></tr></table></div></body></html>

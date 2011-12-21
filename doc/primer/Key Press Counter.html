@@ -1,0 +1,67 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.4. Key Press Counter Example</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell Primer"><link rel="up" href="Callbacks.html" title="Chapter 2. Callbacks"><link rel="prev" href="Handlers.html" title="2.3. Handlers"><link rel="next" href="ModulesFunctionsTypes.html" title="Chapter 3. Modules, Functions, Types"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Key Press Counter Example</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="Handlers.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Callbacks</th><td width="20%" align="right"> <a accesskey="n" href="ModulesFunctionsTypes.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Key%20Press%20Counter"></a>2.4. Key Press Counter Example</h2></div></div></div><a class="indexterm" name="id2443095"></a><p>A slightly more advanced example of handlers is as follows:</p><pre class="programlisting">
+module Main where
+
+import Qtc.Classes.Qccs
+import Qtc.Classes.Qccs_h
+import Qtc.Classes.Gui
+import Qtc.ClassTypes.Gui
+import Qtc.Gui.Base
+import Qtc.Enums.Base
+import Qtc.Enums.Classes.Core
+import Qtc.Enums.Core.Qt
+import Qtc.Gui.QApplication
+import Qtc.Gui.QMessageBox
+import Qtc.Gui.QLabel
+import Qtc.Gui.QLabel_h
+import Qtc.Gui.QKeyEvent
+import Data.IORef
+import Data.IntMap
+
+type CountMap = IntMap (IORef Int)
+
+createCM :: IO CountMap
+createCM  = do
+  cellList &lt;- mapM (\x -&gt; do
+    nr &lt;- newIORef 0
+    return (x, nr)
+   ) [(qEnum_toInt eKey_A)..(qEnum_toInt eKey_Z)]
+  return $ fromList cellList
+
+main :: IO Int
+main = do
+  qApplication ()
+  tl &lt;- qLabel "press any key from 'A' to 'Z'"
+  setAlignment tl (fAlignCenter::Alignment)
+  resize tl (200::Int, 60::Int)
+  mb &lt;- qMessageBox tl
+  cm &lt;- createCM
+  setHandler tl "keyPressEvent(QKeyEvent*)" $ tlkp cm mb
+  qshow tl ()
+  qApplicationExec ()
+
+tlkp :: CountMap -&gt; QMessageBox () -&gt; QLabel () -&gt; QKeyEvent () -&gt; IO ()
+tlkp cm mb this ke
+  = do
+    k &lt;- key ke ()
+    if (member k cm)
+     then
+      do
+      cck &lt;- readIORef $ cm ! k
+      let cp1 = cck + 1
+      t &lt;- text ke ()
+      setText mb $ "You have pressed the '" ++ t ++ "' key " ++ (tpf cp1) ++ "!"
+      modifyIORef (cm ! k) (\_ -&gt; cp1)
+      qshow mb ()
+     else
+      return ()
+    keyPressEvent_h this ke
+  where
+    tpf c
+     | c == 1 = "once"
+     | c == 2 = "twice"
+     | c &gt; 2 = (show c) ++ " times"
+
+</pre><p>This example uses the Haskell "IntMap" module and Qt's enumerated types
+      for keystroke values, to implement a keyPress counter. This gives us a
+      compact (we don't need to implement any indexing) and platform independent
+      solution.</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="Handlers.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="Callbacks.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ModulesFunctionsTypes.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.3. Handlers </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 3. Modules, Functions, Types</td></tr></table></div></body></html>

@@ -1,0 +1,1266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Qtc.Core.Base</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Qtc-Core-Base.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+></TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Qtc.Core.Base</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Documentation</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qcs"
+><A NAME="t%3AQcs"
+></A
+></A
+><B
+>Qcs</B
+> x  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:connectSlot"
+><A NAME="v%3AconnectSlot"
+></A
+></A
+><B
+>connectSlot</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b -&gt; String -&gt; x -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qcs')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qcs" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQcs"
+>Qcs</A
+> ()</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQcs"
+>Qcs</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> c -&gt; String -&gt; IO ())</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQcs"
+>Qcs</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> c -&gt; <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> d -&gt; IO ())</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQcs"
+>Qcs</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> c -&gt; Bool -&gt; IO ())</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQcs"
+>Qcs</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> c -&gt; Int -&gt; IO ())</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQcs"
+>Qcs</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> c -&gt; IO ())</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQcs"
+>Qcs</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> c -&gt; <A HREF="Qtc-Enums-Opengl-QGLFormat.html#t%3AOpenGLVersionFlag"
+>OpenGLVersionFlag</A
+> -&gt; IO ())</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:connectSignal"
+><A NAME="v%3AconnectSignal"
+></A
+></A
+><B
+>connectSignal</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b -&gt; String -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qes"
+><A NAME="t%3AQes"
+></A
+></A
+><B
+>Qes</B
+> x  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:emitSignal"
+><A NAME="v%3AemitSignal"
+></A
+></A
+><B
+>emitSignal</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; x -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qes')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qes" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQes"
+>Qes</A
+> Bool</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQes"
+>Qes</A
+> Int</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQes"
+>Qes</A
+> ()</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQes"
+>Qes</A
+> (<A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> c)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qdcs"
+><A NAME="t%3AQdcs"
+></A
+></A
+><B
+>Qdcs</B
+> x  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:disconnectSlot"
+><A NAME="v%3AdisconnectSlot"
+></A
+></A
+><B
+>disconnectSlot</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; x -&gt; IO Bool</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qdcs')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qdcs" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQdcs"
+>Qdcs</A
+> String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQdcs"
+>Qdcs</A
+> ()</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQdcs"
+>Qdcs</A
+> ((,) String (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQdcs"
+>Qdcs</A
+> ((,,) String (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b) String)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qtc_connectSlot_int"
+><A NAME="v%3Aqtc_connectSlot_int"
+></A
+></A
+><B
+>qtc_connectSlot_int</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> a) -&gt; CWString -&gt; Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> b) -&gt; CWString -&gt; Ptr (Ptr fun -&gt; Ptr state -&gt; Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> c) -&gt; CInt -&gt; IO ()) -&gt; Ptr () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:wrapSlotHandler_int"
+><A NAME="v%3AwrapSlotHandler_int"
+></A
+></A
+><B
+>wrapSlotHandler_int</B
+> ::  (Ptr fun -&gt; Ptr state -&gt; Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> c) -&gt; CInt -&gt; IO ()) -&gt; IO (FunPtr (Ptr fun -&gt; Ptr state -&gt; Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> c) -&gt; CInt -&gt; IO ()))</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:freeDynamicSlots"
+><A NAME="v%3AfreeDynamicSlots"
+></A
+></A
+><B
+>freeDynamicSlots</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObject"
+><A NAME="v%3AqObject"
+></A
+></A
+><B
+>qObject</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectParent"
+><A NAME="v%3AqObjectParent"
+></A
+></A
+><B
+>qObjectParent</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectParentRef"
+><A NAME="v%3AqObjectParentRef"
+></A
+></A
+><B
+>qObjectParentRef</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:inherits"
+><A NAME="v%3Ainherits"
+></A
+></A
+><B
+>inherits</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; IO Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectProperty"
+><A NAME="v%3AqObjectProperty"
+></A
+></A
+><B
+>qObjectProperty</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQVariant"
+>QVariant</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:metaObject"
+><A NAME="v%3AmetaObject"
+></A
+></A
+><B
+>metaObject</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO (<A HREF="Qtc-Classes-Types.html#t%3AQMetaObject"
+>QMetaObject</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setObjectName"
+><A NAME="v%3AsetObjectName"
+></A
+></A
+><B
+>setObjectName</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:objectName"
+><A NAME="v%3AobjectName"
+></A
+></A
+><B
+>objectName</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO String</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectSetParent"
+><A NAME="v%3AqObjectSetParent"
+></A
+></A
+><B
+>qObjectSetParent</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectSetProperty"
+><A NAME="v%3AqObjectSetProperty"
+></A
+></A
+><B
+>qObjectSetProperty</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQVariant"
+>QVariant</A
+> () -&gt; IO Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:blockSignals"
+><A NAME="v%3AblockSignals"
+></A
+></A
+><B
+>blockSignals</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; Bool -&gt; IO Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:signalsBlocked"
+><A NAME="v%3AsignalsBlocked"
+></A
+></A
+><B
+>signalsBlocked</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:installEventFilter"
+><A NAME="v%3AinstallEventFilter"
+></A
+></A
+><B
+>installEventFilter</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:removeEventFilter"
+><A NAME="v%3AremoveEventFilter"
+></A
+></A
+><B
+>removeEventFilter</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:isWidgetType"
+><A NAME="v%3AisWidgetType"
+></A
+></A
+><B
+>isWidgetType</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:killTimer"
+><A NAME="v%3AkillTimer"
+></A
+></A
+><B
+>killTimer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; Int -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:startTimer"
+><A NAME="v%3AstartTimer"
+></A
+></A
+><B
+>startTimer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; Int -&gt; IO Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qSubClass"
+><A NAME="v%3AqSubClass"
+></A
+></A
+><B
+>qSubClass</B
+> ::  IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qResource"
+><A NAME="v%3AqResource"
+></A
+></A
+><B
+>qResource</B
+> :: IO (<A HREF="Qtc-Classes-Types.html#t%3AQResource"
+>QResource</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QregisterResource"
+><A NAME="t%3AQregisterResource"
+></A
+></A
+><B
+>QregisterResource</B
+> x  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:registerResource"
+><A NAME="v%3AregisterResource"
+></A
+></A
+><B
+>registerResource</B
+> :: x -&gt; IO Bool</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QregisterResource')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QregisterResource" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQregisterResource"
+>QregisterResource</A
+> String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQregisterResource"
+>QregisterResource</A
+> ((,) String Bool)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QunregisterResource"
+><A NAME="t%3AQunregisterResource"
+></A
+></A
+><B
+>QunregisterResource</B
+> x  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:unregisterResource"
+><A NAME="v%3AunregisterResource"
+></A
+></A
+><B
+>unregisterResource</B
+> :: String -&gt; x -&gt; IO Bool</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QunregisterResource')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QunregisterResource" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQunregisterResource"
+>QunregisterResource</A
+> Bool</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQunregisterResource"
+>QunregisterResource</A
+> ()</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qregisterMetatype"
+><A NAME="v%3AqregisterMetatype"
+></A
+></A
+><B
+>qregisterMetatype</B
+> :: String -&gt; IO Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qsrand"
+><A NAME="v%3Aqsrand"
+></A
+></A
+><B
+>qsrand</B
+> :: Int -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qobject_cast"
+><A NAME="v%3Aqobject_cast"
+></A
+></A
+><B
+>qobject_cast</B
+> ::  String -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO (<A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qstyleoption_cast"
+><A NAME="v%3Aqstyleoption_cast"
+></A
+></A
+><B
+>qstyleoption_cast</B
+> ::  String -&gt; <A HREF="Qtc-ClassTypes-Gui.html#t%3AQStyleOption"
+>QStyleOption</A
+> a -&gt; IO (<A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectIsNull"
+><A NAME="v%3AqObjectIsNull"
+></A
+></A
+><B
+>qObjectIsNull</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:findChild"
+><A NAME="v%3AfindChild"
+></A
+></A
+><B
+>findChild</B
+> :: QfindChild x =&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; x -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:findChildren"
+><A NAME="v%3AfindChildren"
+></A
+></A
+><B
+>findChildren</B
+> :: QfindChildren x =&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; x -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ()]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectChildren"
+><A NAME="v%3AqObjectChildren"
+></A
+></A
+><B
+>qObjectChildren</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ()]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:readRawData"
+><A NAME="v%3AreadRawData"
+></A
+></A
+><B
+>readRawData</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQDataStream"
+>QDataStream</A
+> a -&gt; Int -&gt; IO String</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qPolygonL"
+><A NAME="v%3AqPolygonL"
+></A
+></A
+><B
+>qPolygonL</B
+> :: [<A HREF="Qth-ClassTypes-Core-Point.html#t%3APoint"
+>Point</A
+>] -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygon"
+>QPolygon</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qPolygonFL"
+><A NAME="v%3AqPolygonFL"
+></A
+></A
+><B
+>qPolygonFL</B
+> :: [<A HREF="Qth-ClassTypes-Core-Point.html#t%3APointF"
+>PointF</A
+>] -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygonF"
+>QPolygonF</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qqpoints"
+><A NAME="t%3AQqpoints"
+></A
+></A
+><B
+>Qqpoints</B
+> a b | a -&gt; b <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:qpoints"
+><A NAME="v%3Aqpoints"
+></A
+></A
+><B
+>qpoints</B
+> :: a -&gt; () -&gt; b</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qqpoints')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qqpoints" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQqpoints"
+>Qqpoints</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygon"
+>QPolygon</A
+> ()) (IO ([] <A HREF="Qth-ClassTypes-Core-Point.html#t%3APoint"
+>Point</A
+>))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQqpoints"
+>Qqpoints</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygon"
+>QPolygon</A
+> ()) (IO ([] <A HREF="Qth-ClassTypes-Core-Point.html#t%3APoint"
+>Point</A
+>))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQqpoints"
+>Qqpoints</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygonF"
+>QPolygonF</A
+> ()) (IO ([] <A HREF="Qth-ClassTypes-Core-Point.html#t%3APointF"
+>PointF</A
+>))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Core-Base.html#t%3AQqpoints"
+>Qqpoints</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygonF"
+>QPolygonF</A
+> ()) (IO ([] <A HREF="Qth-ClassTypes-Core-Point.html#t%3APointF"
+>PointF</A
+>))</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qPointer"
+><A NAME="v%3AqPointer"
+></A
+></A
+><B
+>qPointer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:returnGC"
+><A NAME="v%3AreturnGC"
+></A
+></A
+><B
+>returnGC</B
+> :: IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.4.2</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

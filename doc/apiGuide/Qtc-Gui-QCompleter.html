@@ -1,0 +1,2344 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Qtc.Gui.QCompleter</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Qtc-Gui-QCompleter.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+></TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Qtc.Gui.QCompleter</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Documentation</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QqCompleter"
+><A NAME="t%3AQqCompleter"
+></A
+></A
+><B
+>QqCompleter</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCompleter"
+><A NAME="v%3AqCompleter"
+></A
+></A
+><B
+>qCompleter</B
+> :: x1 -&gt; IO (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ())</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QqCompleter')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QqCompleter" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQqCompleter"
+>QqCompleter</A
+> ()</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQqCompleter"
+>QqCompleter</A
+> ([] String)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQqCompleter"
+>QqCompleter</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> t1)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQqCompleter"
+>QqCompleter</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> t1)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQqCompleter"
+>QqCompleter</A
+> ((,) ([] String) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> t2))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQqCompleter"
+>QqCompleter</A
+> ((,) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> t1) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> t2))</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QcaseSensitivity"
+><A NAME="t%3AQcaseSensitivity"
+></A
+></A
+><B
+>QcaseSensitivity</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:caseSensitivity"
+><A NAME="v%3AcaseSensitivity"
+></A
+></A
+><B
+>caseSensitivity</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; IO <A HREF="Qtc-Enums-Core-Qt.html#t%3ACaseSensitivity"
+>CaseSensitivity</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QcaseSensitivity')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QcaseSensitivity" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQcaseSensitivity"
+>QcaseSensitivity</A
+> ()</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qcomplete"
+><A NAME="t%3AQcomplete"
+></A
+></A
+><B
+>Qcomplete</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:complete"
+><A NAME="v%3Acomplete"
+></A
+></A
+><B
+>complete</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qcomplete')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qcomplete" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQcomplete"
+>Qcomplete</A
+> ()</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQcomplete"
+>Qcomplete</A
+> <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qcomplete"
+><A NAME="v%3Aqcomplete"
+></A
+></A
+><B
+>qcomplete</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQRect"
+>QRect</A
+> t1 -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:completionColumn"
+><A NAME="v%3AcompletionColumn"
+></A
+></A
+><B
+>completionColumn</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:completionCount"
+><A NAME="v%3AcompletionCount"
+></A
+></A
+><B
+>completionCount</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:completionMode"
+><A NAME="v%3AcompletionMode"
+></A
+></A
+><B
+>completionMode</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO <A HREF="Qtc-Enums-Gui-QCompleter.html#t%3ACompletionMode"
+>CompletionMode</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:completionModel"
+><A NAME="v%3AcompletionModel"
+></A
+></A
+><B
+>completionModel</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:completionPrefix"
+><A NAME="v%3AcompletionPrefix"
+></A
+></A
+><B
+>completionPrefix</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO String</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:completionRole"
+><A NAME="v%3AcompletionRole"
+></A
+></A
+><B
+>completionRole</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:currentCompletion"
+><A NAME="v%3AcurrentCompletion"
+></A
+></A
+><B
+>currentCompletion</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO String</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QcurrentIndex"
+><A NAME="t%3AQcurrentIndex"
+></A
+></A
+><B
+>QcurrentIndex</B
+> x1 xr  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:currentIndex"
+><A NAME="v%3AcurrentIndex"
+></A
+></A
+><B
+>currentIndex</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; xr</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QcurrentIndex')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QcurrentIndex" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQcurrentIndex"
+>QcurrentIndex</A
+> () (IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQModelIndex"
+>QModelIndex</A
+> ()))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQcurrentIndex"
+>QcurrentIndex</A
+> () (IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQModelIndex"
+>QModelIndex</A
+> ()))</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QcurrentRow"
+><A NAME="t%3AQcurrentRow"
+></A
+></A
+><B
+>QcurrentRow</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:currentRow"
+><A NAME="v%3AcurrentRow"
+></A
+></A
+><B
+>currentRow</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; IO Int</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QcurrentRow')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QcurrentRow" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQcurrentRow"
+>QcurrentRow</A
+> ()</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qevent"
+><A NAME="t%3AQevent"
+></A
+></A
+><B
+>Qevent</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:event"
+><A NAME="v%3Aevent"
+></A
+></A
+><B
+>event</B
+> :: x0 -&gt; x1 -&gt; IO Bool</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qevent')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qevent" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQevent"
+>Qevent</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> t1)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQevent"
+>Qevent</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> t1)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QeventFilter"
+><A NAME="t%3AQeventFilter"
+></A
+></A
+><B
+>QeventFilter</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:eventFilter"
+><A NAME="v%3AeventFilter"
+></A
+></A
+><B
+>eventFilter</B
+> :: x0 -&gt; x1 -&gt; IO Bool</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QeventFilter')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QeventFilter" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQeventFilter"
+>QeventFilter</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) ((,) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> t1) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> t2))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQeventFilter"
+>QeventFilter</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) ((,) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> t1) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> t2))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQeventFilter"
+>QeventFilter</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) ((,) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> t1) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> t2))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQeventFilter"
+>QeventFilter</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) ((,) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> t1) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> t2))</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qmodel"
+><A NAME="t%3AQmodel"
+></A
+></A
+><B
+>Qmodel</B
+> x1 xr  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:model"
+><A NAME="v%3Amodel"
+></A
+></A
+><B
+>model</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; xr</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qmodel')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qmodel" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQmodel"
+>Qmodel</A
+> () (IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> ()))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQmodel"
+>Qmodel</A
+> () (IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> ()))</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:modelSorting"
+><A NAME="v%3AmodelSorting"
+></A
+></A
+><B
+>modelSorting</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO <A HREF="Qtc-Enums-Gui-QCompleter.html#t%3AModelSorting"
+>ModelSorting</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QpathFromIndex"
+><A NAME="t%3AQpathFromIndex"
+></A
+></A
+><B
+>QpathFromIndex</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:pathFromIndex"
+><A NAME="v%3ApathFromIndex"
+></A
+></A
+><B
+>pathFromIndex</B
+> :: x0 -&gt; x1 -&gt; IO String</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QpathFromIndex')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QpathFromIndex" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQpathFromIndex"
+>QpathFromIndex</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQModelIndex"
+>QModelIndex</A
+> t1)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQpathFromIndex"
+>QpathFromIndex</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQModelIndex"
+>QModelIndex</A
+> t1)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qpopup"
+><A NAME="t%3AQpopup"
+></A
+></A
+><B
+>Qpopup</B
+> x1 xr  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:popup"
+><A NAME="v%3Apopup"
+></A
+></A
+><B
+>popup</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; xr</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qpopup')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qpopup" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQpopup"
+>Qpopup</A
+> () (IO (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQAbstractItemView"
+>QAbstractItemView</A
+> ()))</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQpopup"
+>Qpopup</A
+> () (IO (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQAbstractItemView"
+>QAbstractItemView</A
+> ()))</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qqpopup"
+><A NAME="t%3AQqpopup"
+></A
+></A
+><B
+>Qqpopup</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:qpopup"
+><A NAME="v%3Aqpopup"
+></A
+></A
+><B
+>qpopup</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QsetCaseSensitivity"
+><A NAME="t%3AQsetCaseSensitivity"
+></A
+></A
+><B
+>QsetCaseSensitivity</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:setCaseSensitivity"
+><A NAME="v%3AsetCaseSensitivity"
+></A
+></A
+><B
+>setCaseSensitivity</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QsetCaseSensitivity')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QsetCaseSensitivity" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsetCaseSensitivity"
+>QsetCaseSensitivity</A
+> <A HREF="Qtc-Enums-Core-Qt.html#t%3ACaseSensitivity"
+>CaseSensitivity</A
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setCompletionColumn"
+><A NAME="v%3AsetCompletionColumn"
+></A
+></A
+><B
+>setCompletionColumn</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; Int -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setCompletionMode"
+><A NAME="v%3AsetCompletionMode"
+></A
+></A
+><B
+>setCompletionMode</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; <A HREF="Qtc-Enums-Gui-QCompleter.html#t%3ACompletionMode"
+>CompletionMode</A
+> -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setCompletionPrefix"
+><A NAME="v%3AsetCompletionPrefix"
+></A
+></A
+><B
+>setCompletionPrefix</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; String -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setCompletionRole"
+><A NAME="v%3AsetCompletionRole"
+></A
+></A
+><B
+>setCompletionRole</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; Int -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QsetCurrentRow"
+><A NAME="t%3AQsetCurrentRow"
+></A
+></A
+><B
+>QsetCurrentRow</B
+> x1 xr  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:setCurrentRow"
+><A NAME="v%3AsetCurrentRow"
+></A
+></A
+><B
+>setCurrentRow</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; xr</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QsetCurrentRow')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QsetCurrentRow" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsetCurrentRow"
+>QsetCurrentRow</A
+> Int (IO Bool)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsetCurrentRow"
+>QsetCurrentRow</A
+> Int (IO Bool)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QsetModel"
+><A NAME="t%3AQsetModel"
+></A
+></A
+><B
+>QsetModel</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:setModel"
+><A NAME="v%3AsetModel"
+></A
+></A
+><B
+>setModel</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QsetModel')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QsetModel" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsetModel"
+>QsetModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> t1)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setModelSorting"
+><A NAME="v%3AsetModelSorting"
+></A
+></A
+><B
+>setModelSorting</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; <A HREF="Qtc-Enums-Gui-QCompleter.html#t%3AModelSorting"
+>ModelSorting</A
+> -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setPopup"
+><A NAME="v%3AsetPopup"
+></A
+></A
+><B
+>setPopup</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Gui.html#t%3AQAbstractItemView"
+>QAbstractItemView</A
+> t1 -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QsetWidget"
+><A NAME="t%3AQsetWidget"
+></A
+></A
+><B
+>QsetWidget</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:setWidget"
+><A NAME="v%3AsetWidget"
+></A
+></A
+><B
+>setWidget</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QsetWidget')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QsetWidget" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsetWidget"
+>QsetWidget</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQWidget"
+>QWidget</A
+> t1)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setWrapAround"
+><A NAME="v%3AsetWrapAround"
+></A
+></A
+><B
+>setWrapAround</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; Bool -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qwidget"
+><A NAME="t%3AQwidget"
+></A
+></A
+><B
+>Qwidget</B
+> x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:widget"
+><A NAME="v%3Awidget"
+></A
+></A
+><B
+>widget</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; x1 -&gt; IO (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQWidget"
+>QWidget</A
+> ())</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qwidget')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qwidget" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQwidget"
+>Qwidget</A
+> ()</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:wrapAround"
+><A NAME="v%3AwrapAround"
+></A
+></A
+><B
+>wrapAround</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; () -&gt; IO Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCompleter_delete"
+><A NAME="v%3AqCompleter_delete"
+></A
+></A
+><B
+>qCompleter_delete</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCompleter_deleteLater"
+><A NAME="v%3AqCompleter_deleteLater"
+></A
+></A
+><B
+>qCompleter_deleteLater</B
+> ::  <A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QchildEvent"
+><A NAME="t%3AQchildEvent"
+></A
+></A
+><B
+>QchildEvent</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:childEvent"
+><A NAME="v%3AchildEvent"
+></A
+></A
+><B
+>childEvent</B
+> :: x0 -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QchildEvent')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QchildEvent" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQchildEvent"
+>QchildEvent</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQChildEvent"
+>QChildEvent</A
+> t1)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQchildEvent"
+>QchildEvent</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQChildEvent"
+>QChildEvent</A
+> t1)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QconnectNotify"
+><A NAME="t%3AQconnectNotify"
+></A
+></A
+><B
+>QconnectNotify</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:connectNotify"
+><A NAME="v%3AconnectNotify"
+></A
+></A
+><B
+>connectNotify</B
+> :: x0 -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QconnectNotify')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QconnectNotify" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQconnectNotify"
+>QconnectNotify</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQconnectNotify"
+>QconnectNotify</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQconnectNotify"
+>QconnectNotify</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQconnectNotify"
+>QconnectNotify</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) String</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QcustomEvent"
+><A NAME="t%3AQcustomEvent"
+></A
+></A
+><B
+>QcustomEvent</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:customEvent"
+><A NAME="v%3AcustomEvent"
+></A
+></A
+><B
+>customEvent</B
+> :: x0 -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QcustomEvent')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QcustomEvent" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQcustomEvent"
+>QcustomEvent</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> t1)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQcustomEvent"
+>QcustomEvent</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> t1)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QdisconnectNotify"
+><A NAME="t%3AQdisconnectNotify"
+></A
+></A
+><B
+>QdisconnectNotify</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:disconnectNotify"
+><A NAME="v%3AdisconnectNotify"
+></A
+></A
+><B
+>disconnectNotify</B
+> :: x0 -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QdisconnectNotify')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QdisconnectNotify" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQdisconnectNotify"
+>QdisconnectNotify</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQdisconnectNotify"
+>QdisconnectNotify</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQdisconnectNotify"
+>QdisconnectNotify</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQdisconnectNotify"
+>QdisconnectNotify</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) String</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qreceivers"
+><A NAME="t%3AQreceivers"
+></A
+></A
+><B
+>Qreceivers</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:receivers"
+><A NAME="v%3Areceivers"
+></A
+></A
+><B
+>receivers</B
+> :: x0 -&gt; x1 -&gt; IO Int</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qreceivers')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qreceivers" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQreceivers"
+>Qreceivers</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQreceivers"
+>Qreceivers</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQreceivers"
+>Qreceivers</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) String</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQreceivers"
+>Qreceivers</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) String</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:Qsender"
+><A NAME="t%3AQsender"
+></A
+></A
+><B
+>Qsender</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:sender"
+><A NAME="v%3Asender"
+></A
+></A
+><B
+>sender</B
+> :: x0 -&gt; x1 -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ())</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Qsender')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Qsender" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsender"
+>Qsender</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) ()</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsender"
+>Qsender</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) ()</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsender"
+>Qsender</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) ()</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQsender"
+>Qsender</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) ()</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QtimerEvent"
+><A NAME="t%3AQtimerEvent"
+></A
+></A
+><B
+>QtimerEvent</B
+> x0 x1  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:timerEvent"
+><A NAME="v%3AtimerEvent"
+></A
+></A
+><B
+>timerEvent</B
+> :: x0 -&gt; x1 -&gt; IO ()</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QtimerEvent')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QtimerEvent" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQtimerEvent"
+>QtimerEvent</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleterSc"
+>QCompleterSc</A
+> a) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimerEvent"
+>QTimerEvent</A
+> t1)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Gui-QCompleter.html#t%3AQtimerEvent"
+>QtimerEvent</A
+> (<A HREF="Qtc-ClassTypes-Gui.html#t%3AQCompleter"
+>QCompleter</A
+> ()) (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimerEvent"
+>QTimerEvent</A
+> t1)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.4.2</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

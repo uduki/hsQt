@@ -1,0 +1,29 @@
+#! /bin/bash
+#############################################################################
+##      
+##      File      : qhcd
+##      Copyright : (c) David Harley 2010
+##      Project   : qtHaskell
+##      Version   : 1.1.4
+##      Modified  : 2010-09-02 17:01:40
+##      
+##      Warning   : this file is machine generated - do not modify.
+##      
+#############################################################################
+
+if [ ! -z $1 ]
+then
+	p1=$1
+	shift
+	if [ $p1 == "-all" ]
+	then
+		for f in *.hs
+		do
+			bn=${f:0:(${#f}-3)}
+			echo ". $bn"
+			$0s $bn $* -v0
+		done	
+	else
+		$0s $p1 $*
+	fi
+fi

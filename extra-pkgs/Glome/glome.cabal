@@ -1,0 +1,31 @@
+Name:		qt-glome
+Version:	1.1.4
+Author:		Jim Snow (parts David Harley)
+Homepage:	http://qthaskell.berlios.de/
+License: AllRightsReserved
+Copyright: Copyright 2008 Jim Snow (parts copyright David Harley 2009)
+Build-Depends: qt, base, haskell98, time, parallel, OpenGL, random, array
+build-type: Simple
+ghc-options: -fglasgow-exts -funbox-strict-fields -threaded
+extensions: BangPatterns 
+Exposed-modules:
+  Qt.Glome
+  , Qt.Glome.Bih
+  , Qt.Glome.Bound
+  , Qt.Glome.Box
+  , Qt.Glome.Clr
+  , Qt.Glome.Cone
+  , Qt.Glome.Csg
+  , Qt.Glome.Glome
+  , Qt.Glome.Plane
+  , Qt.Glome.Scene
+  , Qt.Glome.Solid
+  , Qt.Glome.SolidTexture
+  , Qt.Glome.Spd
+  , Qt.Glome.Sphere
+  , Qt.Glome.TestScene
+  , Qt.Glome.Tex
+  , Qt.Glome.Trace
+  , Qt.Glome.Triangle
+  , Qt.Glome.Vec
+

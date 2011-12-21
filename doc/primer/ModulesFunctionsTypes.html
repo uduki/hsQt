@@ -1,0 +1,64 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Chapter 3. Modules, Functions, Types</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell Primer"><link rel="up" href="index.html" title="qtHaskell Primer"><link rel="prev" href="Key%20Press%20Counter.html" title="2.4. Key Press Counter Example"><link rel="next" href="Functions.html" title="3.2. Functions"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 3. Modules, Functions, Types</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="Key%20Press%20Counter.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="Functions.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="ModulesFunctionsTypes"></a>Chapter 3. Modules, Functions, Types</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="ModulesFunctionsTypes.html#Modules">3.1. Modules</a></span></dt><dd><dl><dt><span class="section"><a href="ModulesFunctionsTypes.html#Generic%20Modules">3.1.1. Generic Modules</a></span></dt><dt><span class="section"><a href="ModulesFunctionsTypes.html#Class%20Specific%20Modules">3.1.2. Class Specific Modules</a></span></dt></dl></dd><dt><span class="section"><a href="Functions.html">3.2. Functions</a></span></dt><dd><dl><dt><span class="section"><a href="Functions.html#q">3.2.1. 'q'</a></span></dt><dt><span class="section"><a href="Functions.html#_nf">3.2.2. '_nf'</a></span></dt><dt><span class="section"><a href="Functions.html#Destructors">3.2.3. Destructors</a></span></dt><dt><span class="section"><a href="Functions.html#Enumerated%20Types">3.2.4. Enumerated Types</a></span></dt></dl></dd><dt><span class="section"><a href="Types.html">3.3. Types</a></span></dt><dd><dl><dt><span class="section"><a href="Types.html#Types%20of%20Types">3.3.1. Types of Types</a></span></dt><dt><span class="section"><a href="Types.html#qCast">3.3.2. qCast</a></span></dt></dl></dd></dl></div><p>Now that we've had a quick look at how basic qtHaskell programs can
+    respond to their input, let's take a closer look at the range of modules,
+    functions and types of the qtHaskell library.</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Modules"></a>3.1. Modules</h2></div></div></div><a class="indexterm" name="id2492532"></a><p>(N.B. by "modules" we mean here <span class="emphasis"><em>Haskell</em></span> modules or
+      program units. The Qt library itself is divided into modules, i.e. Core, Gui,
+      Network etc. These will be referred to below as <span class="emphasis"><em>Qt modules
+      </em></span>.)</p><p>The modules that make up the qtHaskell library can be divided into
+      two main categories.</p><div class="itemizedlist"><ul type="disc"><li><p>Generic modules. These apply to the whole of the qtHaskell library or
+      parts thereof, not to individual Qt classes. For the different types of
+      generic module, there is usually (but not necessarily) one corresponding generic module for each Qt
+      module.
+      </p></li><li><p>Class Specific modules. These contain the definitions of constructors,
+      methods etc for a specific class.</p></li></ul></div><p>All qtHaskell modules are in the namespaces <code class="literal">Qtc</code> or
+      <code class="literal">Qth</code>. The <code class="literal">Qtc</code> namespace contains all
+      bindings that access the Qt C++ library. The <code class="literal">Qth</code> namespace
+      contains an implementation of some classes in Haskell which are analogous to
+      Qt data classes for geometeric objects. Specifically the QRect, QPoint, QLine
+      and QSize types have equivalent Haskell data types in Qth as Rect, Point,
+      Line, Size. This will be discussed in more detail later, for now the
+      important point is that all specific imports of qtHaskell modules begin with
+      either <code class="literal">Qtc</code> or <code class="literal">Qth</code>.</p><p>N.B. There are also modules in the namespaces <code class="literal">Qt.Arthur
+      </code> and <code class="literal">Qt.Glome</code>. These are seen as extra to the
+      main qtHaskell bindings, although the <code class="literal">Qt.Arthur</code> modules
+      are included in the main qtHaskell package.</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="Generic%20Modules"></a>3.1.1. Generic Modules</h3></div></div></div><a class="indexterm" name="id2492654"></a><p>In the <code class="literal">Qtc</code> namespace there are the following types
+      of generic modules:</p><div class="itemizedlist"><ul type="disc"><li><p>Modules in the <code class="literal">Qtc.Classes</code> namespace. These modules
+      contain Haskell class definitions for the non-static functions of different
+      Qt classes which share the same method name. There is a <code class="literal">
+      Qtc.Classes.</code><em class="replaceable"><code>QtModule</code></em> for each Qt module.
+      If you use Qt classes from a given Qt module e.g. Core, Gui, Network etc, you
+      will probably need to import the <code class="literal">Qtc.Classes.</code>
+      <em class="replaceable"><code>QtModule</code></em> for that Qt module. There is also the
+      <code class="literal">Qtc.Classes.Qccs</code> module which includes classes for method
+      names common to more than one Qt module.</p><p>Examples: Qtc.Classes.Core, Qtc.Classes.Gui, Qtc.Classes.Qccs.</p><p>For each of the above mentioned modules there is an equivalent
+      <code class="literal">Qtc.Classes.</code><em class="replaceable"><code>SomeModule</code></em>_h.
+      The "_h" suffixed modules contain class definitions for the handler setting
+      functions and for the  "_h" suffixed function calls to base class methods
+      which are not unique to a particular Qt class. The <code class="literal">Qccs_h</code>
+      module must be imported if handlers are to be set for any class since the
+      <code class="literal">setHandler</code> and associated functions use the same name
+      for all Qt modules.</p><p>Examples: Qtc.Classes.Core_h, Qtc.Classes.Gui_h, Qtc.Classes.Qccs_h.</p></li><li><p>Modules in the <code class="literal">Qtc.ClassTypes</code> namespace. These
+      modules contain definitions of all the Haskell types which correspond to the
+      Qt classtypes for a Qt module. They should be included when referring to
+      the Haskell types explicitly in function signatures, or when they are
+      subclassed to create custom slots.</p><p>Examples: Qtc.ClassTypes.Core, Qtc.ClassTypes.Gui, Qtc.ClassTypes.Opengl.</p></li><li><p>Modules named <code class="literal">Qtc.</code><em class="replaceable"><code>SomeQtModuleName</code></em><code class="literal">.Base</code>. These modules contain some commonly
+      used functions most of which correspond to methods of a class in the
+      Qt module <em class="replaceable"><code>SomeQtModuleName</code></em>.</p><p>Examples: Qtc.Core.Base, Qtc.Gui.Base.</p></li><li><p>The module <code class="literal">Qtc.Enums.Classes.Core</code> contains the class
+      definitions of enumerated type values that have names common to more than
+      one enumerated type. Since there are not many of these in Qt they are all
+      contained in this one module irrespective of which Qt module they belong to.
+      </p></li><li><p>The module <code class="literal">Qtc.Enums.Base</code> which contains Haskell
+      conversion functions for enumerated types.</p></li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="Class%20Specific%20Modules"></a>3.1.2. Class Specific Modules</h3></div></div></div><a class="indexterm" name="id2492843"></a><p>In the <code class="literal">Qtc</code> namespace there are the following types
+      of class specific modules:</p><div class="itemizedlist"><ul type="disc"><li><p>Modules named <code class="literal">Qtc.</code><em class="replaceable"><code>SomeQtModule.SomeQtClass</code></em>. These are the modules that define the Haskell functions for Qt
+      constructors, static methods, non-static methods and destructors of the
+      respective class. For classes that have virtual functions there is also a
+      corresponding <code class="literal">Qtc.</code><em class="replaceable"><code>SomeQtModule.SomeQtClass</code></em>_h module that contains handler setting instances and "_h" suffixed base
+      class functions for the class.</p><p>Examples: Qtc.Core.QFile, Qtc.Gui.QWidget.</p></li><li><p>Modules named <code class="literal">Qtc.Enums.</code><em class="replaceable"><code>SomeQtModule.SomeQtClass</code></em>. These contain the enumerated type definitions if any exist
+      for the corresponding Qt class.</p><p>Examples: Qtc.Enums.Core.QLineF, Qtc.Enums.Gui.QMessageBox.</p></li><li><p>The module <code class="literal">Qtc.Enums.Core.Qt</code> which contains
+      the enumerated type definitions for the C++ <code class="literal">Qt</code>
+      namespace.</p></li></ul></div></div><p>Note that the <code class="literal">Qth</code> namespace has a structure
+      analogous to the <code class="literal">Qtc</code> namespace with a
+      <code class="literal">Classtypes</code> directory and a per class module for each
+      class in a <code class="literal">Core</code> directory. It is usually convenient
+      to use a single <code class="literal">import Qth.Core</code> statement when using
+      the Qth classes, since they are rarely used in isolation.
+      </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="Key%20Press%20Counter.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="Functions.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.4. Key Press Counter Example </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.2. Functions</td></tr></table></div></body></html>

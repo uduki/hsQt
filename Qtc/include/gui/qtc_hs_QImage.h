@@ -1,0 +1,135 @@
+/////////////////////////////////////////////////////////////////////////////
+//      
+//      File      : qtc_hs_QImage.h
+//      Copyright : (c) David Harley 2010
+//      Project   : qtHaskell
+//      Version   : 1.1.4
+//      Modified  : 2010-09-02 17:02:40
+//      
+//      Warning   : this file is machine generated - do not modify.
+//      
+/////////////////////////////////////////////////////////////////////////////
+
+void* qtc_QImage();
+void* qtc_QImage1(void*);
+void* qtc_QImage2(void*);
+void* qtc_QImage3(void*);
+void* qtc_QImage4(void*,void*);
+void* qtc_QImage5(void*,long);
+void* qtc_QImage6(int,int,long);
+void* qtc_QImage7(void*,void*);
+void* qtc_QImage8(int,int,long);
+int qtc_QImage_allGray(void*);
+void* qtc_QImage_alphaChannel(void*);
+int qtc_QImage_bytesPerLine(void*);
+long long int qtc_QImage_cacheKey(void*);
+unsigned int qtc_QImage_color(void*,int);
+void* qtc_QImage_convertToFormat(void*,long);
+void* qtc_QImage_convertToFormat1(void*,long,long);
+void* qtc_QImage_copy(void*);
+void* qtc_QImage_copy1(void*,void*);
+void* qtc_QImage_copy1_qth(void*);
+void* qtc_QImage_copy2(void*,int,int,int,int);
+void* qtc_QImage_createAlphaMask(void*);
+void* qtc_QImage_createAlphaMask1(void*,long);
+void* qtc_QImage_createHeuristicMask(void*);
+void* qtc_QImage_createHeuristicMask1(void*,int);
+void* qtc_QImage_createMaskFromColor(void*,unsigned int);
+void* qtc_QImage_createMaskFromColor1(void*,unsigned int,long);
+int qtc_QImage_depth(void*);
+void qtc_QImage_detach(void*);
+int qtc_QImage_devType(void*);
+int qtc_QImage_dotsPerMeterX(void*);
+int qtc_QImage_dotsPerMeterY(void*);
+void qtc_QImage_fill(void*,unsigned int);
+long qtc_QImage_format(void*);
+void* qtc_QImage_fromData(wchar_t*);
+void* qtc_QImage_fromData1(wchar_t*,void*);
+int qtc_QImage_hasAlphaChannel(void*);
+int qtc_QImage_height(void*);
+void qtc_QImage_invertPixels(void*);
+void qtc_QImage_invertPixels1(void*,long);
+int qtc_QImage_isDetached(void*);
+int qtc_QImage_isGrayscale(void*);
+int qtc_QImage_isNull(void*);
+int qtc_QImage_load(void*,void*);
+int qtc_QImage_load1(void*,void*,void*);
+int qtc_QImage_load2(void*,void*,void*);
+int qtc_QImage_loadFromData(void*,wchar_t*);
+int qtc_QImage_loadFromData1(void*,wchar_t*,void*);
+int qtc_QImage_metric(void*,long);
+void* qtc_QImage_mirrored(void*);
+void* qtc_QImage_mirrored1(void*,int);
+void* qtc_QImage_mirrored2(void*,int,int);
+int qtc_QImage_numBytes(void*);
+int qtc_QImage_numColors(void*);
+void* qtc_QImage_offset(void*);
+void* qtc_QImage_offset_qth(void*,int*,int*);
+void* qtc_QImage_paintEngine(void*);
+unsigned int qtc_QImage_pixel(void*,void*);
+unsigned int qtc_QImage_pixel_qth(void*);
+unsigned int qtc_QImage_pixel1(void*,int,int);
+int qtc_QImage_pixelIndex(void*,void*);
+int qtc_QImage_pixelIndex_qth(void*);
+int qtc_QImage_pixelIndex1(void*,int,int);
+void* qtc_QImage_rect(void*);
+void* qtc_QImage_rect_qth(void*,int*,int*,int*,int*);
+void* qtc_QImage_rgbSwapped(void*);
+int qtc_QImage_save(void*,void*);
+int qtc_QImage_save1(void*,void*);
+int qtc_QImage_save2(void*,void*,void*);
+int qtc_QImage_save3(void*,void*,void*);
+int qtc_QImage_save4(void*,void*,void*,int);
+int qtc_QImage_save5(void*,void*,void*,int);
+void* qtc_QImage_scaled(void*,void*);
+void* qtc_QImage_scaled_qth(void*);
+void* qtc_QImage_scaled1(void*,void*,long);
+void* qtc_QImage_scaled1_qth(void*,long);
+void* qtc_QImage_scaled2(void*,int,int);
+void* qtc_QImage_scaled3(void*,void*,long,long);
+void* qtc_QImage_scaled3_qth(void*,long,long);
+void* qtc_QImage_scaled4(void*,int,int,long);
+void* qtc_QImage_scaled5(void*,int,int,long,long);
+void* qtc_QImage_scaledToHeight(void*,int);
+void* qtc_QImage_scaledToHeight1(void*,int,long);
+void* qtc_QImage_scaledToWidth(void*,int);
+void* qtc_QImage_scaledToWidth1(void*,int,long);
+int qtc_QImage_serialNumber(void*);
+void qtc_QImage_setAlphaChannel(void*,void*);
+void qtc_QImage_setColor(void*,int,unsigned int);
+void qtc_QImage_setDotsPerMeterX(void*,int);
+void qtc_QImage_setDotsPerMeterY(void*,int);
+void qtc_QImage_setNumColors(void*,int);
+void qtc_QImage_setOffset(void*,void*);
+void qtc_QImage_setOffset_qth(void*);
+void qtc_QImage_setPixel(void*,void*,unsigned int);
+void qtc_QImage_setPixel_qth(void*,unsigned int);
+void qtc_QImage_setPixel1(void*,int,int,unsigned int);
+void qtc_QImage_setText(void*,void*,void*);
+void qtc_QImage_setText1(void*,void*,void*,void*);
+void* qtc_QImage_size(void*);
+void* qtc_QImage_size_qth(void*,int*,int*);
+void* qtc_QImage_text(void*);
+void* qtc_QImage_text1(void*,void*);
+void* qtc_QImage_text2(void*,void*);
+void* qtc_QImage_text3(void*,void*);
+void* qtc_QImage_text4(void*,void*,void*);
+int qtc_QImage_textKeys(void*,void*);
+int qtc_QImage_textLanguages(void*,void*);
+int qtc_QImage_textList(void*,void*);
+void* qtc_QImage_transformed(void*,void*);
+void* qtc_QImage_transformed1(void*,void*);
+void* qtc_QImage_transformed2(void*,void*,long);
+void* qtc_QImage_transformed3(void*,void*,long);
+void* qtc_QImage_trueMatrix(void*,int,int);
+void* qtc_QImage_trueMatrix1(void*,int,int);
+int qtc_QImage_valid(void*,void*);
+int qtc_QImage_valid_qth(void*);
+int qtc_QImage_valid1(void*,int,int);
+int qtc_QImage_width(void*);
+void qtc_QImage_finalizer(void*);
+void* qtc_QImage_getFinalizer();
+void qtc_QImage_finalizer1(void*);
+void* qtc_QImage_getFinalizer1();
+void qtc_QImage_delete(void*);
+void qtc_QImage_delete1(void*);

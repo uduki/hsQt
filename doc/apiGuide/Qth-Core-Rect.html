@@ -1,0 +1,986 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Qth.Core.Rect</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Qth-Core-Rect.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+></TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Qth.Core.Rect</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Documentation</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectNull"
+><A NAME="v%3ArectNull"
+></A
+></A
+><B
+>rectNull</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectFNull"
+><A NAME="v%3ArectFNull"
+></A
+></A
+><B
+>rectFNull</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARectF"
+>RectF</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rect"
+><A NAME="v%3Arect"
+></A
+></A
+><B
+>rect</B
+> :: Int -&gt; Int -&gt; Int -&gt; Int -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectF"
+><A NAME="v%3ArectF"
+></A
+></A
+><B
+>rectF</B
+> :: Double -&gt; Double -&gt; Double -&gt; Double -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARectF"
+>RectF</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectP"
+><A NAME="v%3ArectP"
+></A
+></A
+><B
+>rectP</B
+> :: QhrectP ia a =&gt; ia -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectq"
+><A NAME="v%3Arectq"
+></A
+></A
+><B
+>rectq</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+> -&gt; IO (QRect ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectFq"
+><A NAME="v%3ArectFq"
+></A
+></A
+><B
+>rectFq</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARectF"
+>RectF</A
+> -&gt; IO (QRectF ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectQ"
+><A NAME="v%3ArectQ"
+></A
+></A
+><B
+>rectQ</B
+> :: QRect () -&gt; IO <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectQF"
+><A NAME="v%3ArectQF"
+></A
+></A
+><B
+>rectQF</B
+> :: QRectF () -&gt; IO <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARectF"
+>RectF</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:left"
+><A NAME="v%3Aleft"
+></A
+></A
+><B
+>left</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:top"
+><A NAME="v%3Atop"
+></A
+></A
+><B
+>top</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:right"
+><A NAME="v%3Aright"
+></A
+></A
+><B
+>right</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rightq"
+><A NAME="v%3Arightq"
+></A
+></A
+><B
+>rightq</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+> -&gt; Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:bottom"
+><A NAME="v%3Abottom"
+></A
+></A
+><B
+>bottom</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:bottomq"
+><A NAME="v%3Abottomq"
+></A
+></A
+><B
+>bottomq</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+> -&gt; Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:topLeft"
+><A NAME="v%3AtopLeft"
+></A
+></A
+><B
+>topLeft</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:topRight"
+><A NAME="v%3AtopRight"
+></A
+></A
+><B
+>topRight</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:topRightq"
+><A NAME="v%3AtopRightq"
+></A
+></A
+><B
+>topRightq</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+> -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3APoint"
+>Point</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:bottomLeft"
+><A NAME="v%3AbottomLeft"
+></A
+></A
+><B
+>bottomLeft</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:bottomLeftq"
+><A NAME="v%3AbottomLeftq"
+></A
+></A
+><B
+>bottomLeftq</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+> -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3APoint"
+>Point</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:bottomRight"
+><A NAME="v%3AbottomRight"
+></A
+></A
+><B
+>bottomRight</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:bottomRightq"
+><A NAME="v%3AbottomRightq"
+></A
+></A
+><B
+>bottomRightq</B
+> :: <A HREF="Qth-ClassTypes-Core-Rect.html#t%3ARect"
+>Rect</A
+> -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3APoint"
+>Point</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:center"
+><A NAME="v%3Acenter"
+></A
+></A
+><B
+>center</B
+> :: Qhcenter a =&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:rectSize"
+><A NAME="v%3ArectSize"
+></A
+></A
+><B
+>rectSize</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Size.html#t%3AISize"
+>ISize</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:getCoords"
+><A NAME="v%3AgetCoords"
+></A
+></A
+><B
+>getCoords</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; (a, a, a, a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setLeft"
+><A NAME="v%3AsetLeft"
+></A
+></A
+><B
+>setLeft</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setTop"
+><A NAME="v%3AsetTop"
+></A
+></A
+><B
+>setTop</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setRight"
+><A NAME="v%3AsetRight"
+></A
+></A
+><B
+>setRight</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setBottom"
+><A NAME="v%3AsetBottom"
+></A
+></A
+><B
+>setBottom</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setTopLeft"
+><A NAME="v%3AsetTopLeft"
+></A
+></A
+><B
+>setTopLeft</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setTopRight"
+><A NAME="v%3AsetTopRight"
+></A
+></A
+><B
+>setTopRight</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setBottomLeft"
+><A NAME="v%3AsetBottomLeft"
+></A
+></A
+><B
+>setBottomLeft</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setBottomRight"
+><A NAME="v%3AsetBottomRight"
+></A
+></A
+><B
+>setBottomRight</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setSize"
+><A NAME="v%3AsetSize"
+></A
+></A
+><B
+>setSize</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Size.html#t%3AISize"
+>ISize</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveLeft"
+><A NAME="v%3AmoveLeft"
+></A
+></A
+><B
+>moveLeft</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveTop"
+><A NAME="v%3AmoveTop"
+></A
+></A
+><B
+>moveTop</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveRight"
+><A NAME="v%3AmoveRight"
+></A
+></A
+><B
+>moveRight</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveBottom"
+><A NAME="v%3AmoveBottom"
+></A
+></A
+><B
+>moveBottom</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveTopLeft"
+><A NAME="v%3AmoveTopLeft"
+></A
+></A
+><B
+>moveTopLeft</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveTopRight"
+><A NAME="v%3AmoveTopRight"
+></A
+></A
+><B
+>moveTopRight</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveBottomLeft"
+><A NAME="v%3AmoveBottomLeft"
+></A
+></A
+><B
+>moveBottomLeft</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveBottomRight"
+><A NAME="v%3AmoveBottomRight"
+></A
+></A
+><B
+>moveBottomRight</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveTo"
+><A NAME="v%3AmoveTo"
+></A
+></A
+><B
+>moveTo</B
+> :: (Ord a, Num a) =&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveToP"
+><A NAME="v%3AmoveToP"
+></A
+></A
+><B
+>moveToP</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:moveCenter"
+><A NAME="v%3AmoveCenter"
+></A
+></A
+><B
+>moveCenter</B
+> :: (Ord a, Num a, Qhcenter a) =&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Point.html#t%3AIPoint"
+>IPoint</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:normalize"
+><A NAME="v%3Anormalize"
+></A
+></A
+><B
+>normalize</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:adjust"
+><A NAME="v%3Aadjust"
+></A
+></A
+><B
+>adjust</B
+> ::  <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; a -&gt; a -&gt; a -&gt; a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:unite"
+><A NAME="v%3Aunite"
+></A
+></A
+><B
+>unite</B
+> :: (Ord a, Num a) =&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:intersect"
+><A NAME="v%3Aintersect"
+></A
+></A
+><B
+>intersect</B
+> :: (Ord a, Num a) =&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:contains"
+><A NAME="v%3Acontains"
+></A
+></A
+><B
+>contains</B
+> :: Qhcontains a b =&gt; a -&gt; b -&gt; Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:intersects"
+><A NAME="v%3Aintersects"
+></A
+></A
+><B
+>intersects</B
+> :: (Ord a, Num a) =&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; <A HREF="Qth-ClassTypes-Core-Rect.html#t%3AIRect"
+>IRect</A
+> a -&gt; Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.4.2</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

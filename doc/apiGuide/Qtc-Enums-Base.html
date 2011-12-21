@@ -1,0 +1,477 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Qtc.Enums.Base</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Qtc-Enums-Base.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+></TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Qtc.Enums.Base</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Documentation</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:QEnum"
+><A NAME="t%3AQEnum"
+></A
+></A
+><B
+>QEnum</B
+> a </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:QEnum"
+><A NAME="v%3AQEnum"
+></A
+></A
+><B
+>QEnum</B
+> a</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QEnum')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QEnum" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Enums-Base.html#t%3AQEnumC"
+>QEnumC</A
+> a =&gt; Eq (<A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Enums-Base.html#t%3AQEnumC"
+>QEnumC</A
+> a =&gt; Ord (<A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Enums-Base.html#t%3AQEnumC"
+>QEnumC</A
+> a =&gt; Show (<A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> a)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QEnumC"
+><A NAME="t%3AQEnumC"
+></A
+></A
+><B
+>QEnumC</B
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:qEnum_toInt"
+><A NAME="v%3AqEnum_toInt"
+></A
+></A
+><B
+>qEnum_toInt</B
+> :: <A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> a -&gt; Int</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qEnum_fromInt"
+><A NAME="v%3AqEnum_fromInt"
+></A
+></A
+><B
+>qEnum_fromInt</B
+> :: Int -&gt; <A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQEnumResult"
+><A NAME="v%3AwithQEnumResult"
+></A
+></A
+><B
+>withQEnumResult</B
+> :: IO CLong -&gt; IO (<A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQEnumListResult"
+><A NAME="v%3AwithQEnumListResult"
+></A
+></A
+><B
+>withQEnumListResult</B
+> :: IO [Int] -&gt; IO [<A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> a]</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QEnumC')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QEnumC" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Enums-Base.html#t%3AQEnumC"
+>QEnumC</A
+> (COpenGLVersionFlag Int)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:QFlags"
+><A NAME="t%3AQFlags"
+></A
+></A
+><B
+>QFlags</B
+> a </TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:QFlags"
+><A NAME="v%3AQFlags"
+></A
+></A
+><B
+>QFlags</B
+> a</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:QFlags')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:QFlags" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Enums-Base.html#t%3AQFlagsC"
+>QFlagsC</A
+> a =&gt; Eq (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="decl"
+>(<A HREF="Qtc-Enums-Base.html#t%3AQFlagsC"
+>QFlagsC</A
+> a, Eq (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a), Show (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a)) =&gt; Num (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Qtc-Enums-Base.html#t%3AQFlagsC"
+>QFlagsC</A
+> a =&gt; Show (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="decl"
+>(<A HREF="Qtc-Enums-Base.html#t%3AQFlagsC"
+>QFlagsC</A
+> a, Eq (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a), Show (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a), Num (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a)) =&gt; Bits (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>  <A NAME="t:QFlagsC"
+><A NAME="t%3AQFlagsC"
+></A
+></A
+><B
+>QFlagsC</B
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A NAME="v:qFlags_toInt"
+><A NAME="v%3AqFlags_toInt"
+></A
+></A
+><B
+>qFlags_toInt</B
+> :: <A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a -&gt; Int</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qFlags_fromInt"
+><A NAME="v%3AqFlags_fromInt"
+></A
+></A
+><B
+>qFlags_fromInt</B
+> :: Int -&gt; <A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQFlagsResult"
+><A NAME="v%3AwithQFlagsResult"
+></A
+></A
+><B
+>withQFlagsResult</B
+> :: IO CLong -&gt; IO (<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQFlagsListResult"
+><A NAME="v%3AwithQFlagsListResult"
+></A
+></A
+><B
+>withQFlagsListResult</B
+> :: IO [Int] -&gt; IO [<A HREF="Qtc-Enums-Base.html#t%3AQFlags"
+>QFlags</A
+> a]</TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.4.2</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

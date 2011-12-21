@@ -1,0 +1,774 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Qtc.Classes.Script</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Qtc-Classes-Script.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+></TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Qtc.Classes.Script</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Documentation</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qScriptEngine"
+><A NAME="v%3AqScriptEngine"
+></A
+></A
+><B
+>qScriptEngine</B
+> :: QqScriptEngine x1 =&gt; x1 -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:evaluate"
+><A NAME="v%3Aevaluate"
+></A
+></A
+><B
+>evaluate</B
+> ::  <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; String -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:newObject"
+><A NAME="v%3AnewObject"
+></A
+></A
+><B
+>newObject</B
+> ::  <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:globalObject"
+><A NAME="v%3AglobalObject"
+></A
+></A
+><B
+>globalObject</B
+> ::  <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:newQObject"
+><A NAME="v%3AnewQObject"
+></A
+></A
+><B
+>newQObject</B
+> ::  <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:newQMetaObject"
+><A NAME="v%3AnewQMetaObject"
+></A
+></A
+><B
+>newQMetaObject</B
+> ::  <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; <A HREF="Qtc-Classes-Types.html#t%3AQMetaObject"
+>QMetaObject</A
+> b -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:toScriptValue"
+><A NAME="v%3AtoScriptValue"
+></A
+></A
+><B
+>toScriptValue</B
+> ::  String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> b -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:fromScriptValue"
+><A NAME="v%3AfromScriptValue"
+></A
+></A
+><B
+>fromScriptValue</B
+> ::  String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; IO (<A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:toScriptQObjectValue"
+><A NAME="v%3AtoScriptQObjectValue"
+></A
+></A
+><B
+>toScriptQObjectValue</B
+> ::  String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:fromScriptQObjectValue"
+><A NAME="v%3AfromScriptQObjectValue"
+></A
+></A
+><B
+>fromScriptQObjectValue</B
+> ::  String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:construct"
+><A NAME="v%3Aconstruct"
+></A
+></A
+><B
+>construct</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; [<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ()] -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:call"
+><A NAME="v%3Acall"
+></A
+></A
+><B
+>call</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; [<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ()] -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:setScriptProperty"
+><A NAME="v%3AsetScriptProperty"
+></A
+></A
+><B
+>setScriptProperty</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:scriptProperty"
+><A NAME="v%3AscriptProperty"
+></A
+></A
+><B
+>scriptProperty</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; String -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qScriptValue_delete"
+><A NAME="v%3AqScriptValue_delete"
+></A
+></A
+><B
+>qScriptValue_delete</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:toScriptInt"
+><A NAME="v%3AtoScriptInt"
+></A
+></A
+><B
+>toScriptInt</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; IO Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:toBool"
+><A NAME="v%3AtoBool"
+></A
+></A
+><B
+>toBool</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; IO Bool</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:toScriptString"
+><A NAME="v%3AtoScriptString"
+></A
+></A
+><B
+>toScriptString</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; IO String</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:fromScriptInt"
+><A NAME="v%3AfromScriptInt"
+></A
+></A
+><B
+>fromScriptInt</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; Int -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:fromBool"
+><A NAME="v%3AfromBool"
+></A
+></A
+><B
+>fromBool</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; Bool -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:fromScriptString"
+><A NAME="v%3AfromScriptString"
+></A
+></A
+><B
+>fromScriptString</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; String -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:argument"
+><A NAME="v%3Aargument"
+></A
+></A
+><B
+>argument</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; Int -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:argumentCount"
+><A NAME="v%3AargumentCount"
+></A
+></A
+><B
+>argumentCount</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; IO Int</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:thisObject"
+><A NAME="v%3AthisObject"
+></A
+></A
+><B
+>thisObject</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qScriptContext_delete"
+><A NAME="v%3AqScriptContext_delete"
+></A
+></A
+><B
+>qScriptContext_delete</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qNsfContainer"
+><A NAME="v%3AqNsfContainer"
+></A
+></A
+><B
+>qNsfContainer</B
+> :: QqNsfContainer x1 =&gt; x1 -&gt; IO (<A HREF="Qtc-ClassTypes-Script.html#t%3AQNsfContainer"
+>QNsfContainer</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:registerDsSignal"
+><A NAME="v%3AregisterDsSignal"
+></A
+></A
+><B
+>registerDsSignal</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> b -&gt; String -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:dsSignal_nll"
+><A NAME="v%3AdsSignal_nll"
+></A
+></A
+><B
+>dsSignal_nll</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:dsSignal_int"
+><A NAME="v%3AdsSignal_int"
+></A
+></A
+><B
+>dsSignal_int</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:dsSignal_bool"
+><A NAME="v%3AdsSignal_bool"
+></A
+></A
+><B
+>dsSignal_bool</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:dsSignal_ptr"
+><A NAME="v%3AdsSignal_ptr"
+></A
+></A
+><B
+>dsSignal_ptr</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:connectDynamic"
+><A NAME="v%3AconnectDynamic"
+></A
+></A
+><B
+>connectDynamic</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptContext"
+>QScriptContext</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:connectDynamicSlot"
+><A NAME="v%3AconnectDynamicSlot"
+></A
+></A
+><B
+>connectDynamicSlot</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; String -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:scriptSlot_nll"
+><A NAME="v%3AscriptSlot_nll"
+></A
+></A
+><B
+>scriptSlot_nll</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> () -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:scriptSlot_int"
+><A NAME="v%3AscriptSlot_int"
+></A
+></A
+><B
+>scriptSlot_int</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> () -&gt; Int -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:scriptSlot_bool"
+><A NAME="v%3AscriptSlot_bool"
+></A
+></A
+><B
+>scriptSlot_bool</B
+> :: <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> () -&gt; Bool -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:scriptSlot_ptr"
+><A NAME="v%3AscriptSlot_ptr"
+></A
+></A
+><B
+>scriptSlot_ptr</B
+> ::  <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptEngine"
+>QScriptEngine</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; <A HREF="Qtc-ClassTypes-Script.html#t%3AQScriptValue"
+>QScriptValue</A
+> () -&gt; String -&gt; <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> () -&gt; <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.4.2</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

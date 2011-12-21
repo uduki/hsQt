@@ -1,0 +1,136 @@
+/////////////////////////////////////////////////////////////////////////////
+//      
+//      File      : qtc_hs_QCalendarWidget.h
+//      Copyright : (c) David Harley 2010
+//      Project   : qtHaskell
+//      Version   : 1.1.4
+//      Modified  : 2010-09-02 17:02:40
+//      
+//      Warning   : this file is machine generated - do not modify.
+//      
+/////////////////////////////////////////////////////////////////////////////
+
+void* qtc_QCalendarWidget();
+void* qtc_QCalendarWidget1(void*);
+int qtc_QCalendarWidget_dateEditAcceptDelay(void*);
+void* qtc_QCalendarWidget_dateTextFormat(void*,void*);
+int qtc_QCalendarWidget_event(void*,void*);
+long qtc_QCalendarWidget_firstDayOfWeek(void*);
+void* qtc_QCalendarWidget_headerTextFormat(void*);
+long qtc_QCalendarWidget_horizontalHeaderFormat(void*);
+int qtc_QCalendarWidget_isDateEditEnabled(void*);
+int qtc_QCalendarWidget_isGridVisible(void*);
+int qtc_QCalendarWidget_isHeaderVisible(void*);
+int qtc_QCalendarWidget_isNavigationBarVisible(void*);
+void qtc_QCalendarWidget_keyPressEvent(void*,void*);
+void* qtc_QCalendarWidget_maximumDate(void*);
+void* qtc_QCalendarWidget_minimumDate(void*);
+void* qtc_QCalendarWidget_minimumSizeHint(void*);
+void* qtc_QCalendarWidget_minimumSizeHint_qth(void*,int*,int*);
+int qtc_QCalendarWidget_monthShown(void*);
+void qtc_QCalendarWidget_mousePressEvent(void*,void*);
+void qtc_QCalendarWidget_paintCell(void*,void*,void*,void*);
+void qtc_QCalendarWidget_paintCell_qth(void*,void*, int, int, int, int,void*);
+void qtc_QCalendarWidget_resizeEvent(void*,void*);
+void* qtc_QCalendarWidget_selectedDate(void*);
+long qtc_QCalendarWidget_selectionMode(void*);
+void qtc_QCalendarWidget_setCurrentPage(void*,int,int);
+void qtc_QCalendarWidget_setDateEditAcceptDelay(void*,int);
+void qtc_QCalendarWidget_setDateEditEnabled(void*,int);
+void qtc_QCalendarWidget_setDateRange(void*,void*,void*);
+void qtc_QCalendarWidget_setDateTextFormat(void*,void*,void*);
+void qtc_QCalendarWidget_setFirstDayOfWeek(void*,long);
+void qtc_QCalendarWidget_setGridVisible(void*,int);
+void qtc_QCalendarWidget_setHeaderTextFormat(void*,void*);
+void qtc_QCalendarWidget_setHeaderVisible(void*,int);
+void qtc_QCalendarWidget_setHorizontalHeaderFormat(void*,long);
+void qtc_QCalendarWidget_setMaximumDate(void*,void*);
+void qtc_QCalendarWidget_setMinimumDate(void*,void*);
+void qtc_QCalendarWidget_setNavigationBarVisible(void*,int);
+void qtc_QCalendarWidget_setSelectedDate(void*,void*);
+void qtc_QCalendarWidget_setSelectionMode(void*,long);
+void qtc_QCalendarWidget_setVerticalHeaderFormat(void*,long);
+void qtc_QCalendarWidget_setWeekdayTextFormat(void*,long,void*);
+void qtc_QCalendarWidget_showNextMonth(void*);
+void qtc_QCalendarWidget_showNextYear(void*);
+void qtc_QCalendarWidget_showPreviousMonth(void*);
+void qtc_QCalendarWidget_showPreviousYear(void*);
+void qtc_QCalendarWidget_showSelectedDate(void*);
+void qtc_QCalendarWidget_showToday(void*);
+void* qtc_QCalendarWidget_sizeHint(void*);
+void* qtc_QCalendarWidget_sizeHint_qth(void*,int*,int*);
+long qtc_QCalendarWidget_verticalHeaderFormat(void*);
+void* qtc_QCalendarWidget_weekdayTextFormat(void*,long);
+int qtc_QCalendarWidget_yearShown(void*);
+void qtc_QCalendarWidget_finalizer(void*);
+void* qtc_QCalendarWidget_getFinalizer();
+void qtc_QCalendarWidget_delete(void*);
+void qtc_QCalendarWidget_deleteLater(void*);
+void qtc_QCalendarWidget_actionEvent(void*,void*);
+void qtc_QCalendarWidget_addAction(void*,void*);
+void qtc_QCalendarWidget_changeEvent(void*,void*);
+void qtc_QCalendarWidget_closeEvent(void*,void*);
+void qtc_QCalendarWidget_contextMenuEvent(void*,void*);
+void qtc_QCalendarWidget_create(void*);
+void qtc_QCalendarWidget_create1(void*,void*);
+void qtc_QCalendarWidget_create2(void*,void*,int);
+void qtc_QCalendarWidget_create3(void*,void*,int,int);
+void qtc_QCalendarWidget_destroy(void*);
+void qtc_QCalendarWidget_destroy1(void*,int);
+void qtc_QCalendarWidget_destroy2(void*,int,int);
+int qtc_QCalendarWidget_devType(void*);
+void qtc_QCalendarWidget_dragEnterEvent(void*,void*);
+void qtc_QCalendarWidget_dragLeaveEvent(void*,void*);
+void qtc_QCalendarWidget_dragMoveEvent(void*,void*);
+void qtc_QCalendarWidget_dropEvent(void*,void*);
+void qtc_QCalendarWidget_enabledChange(void*,int);
+void qtc_QCalendarWidget_enterEvent(void*,void*);
+void qtc_QCalendarWidget_focusInEvent(void*,void*);
+int qtc_QCalendarWidget_focusNextChild(void*);
+int qtc_QCalendarWidget_focusNextPrevChild(void*,int);
+void qtc_QCalendarWidget_focusOutEvent(void*,void*);
+int qtc_QCalendarWidget_focusPreviousChild(void*);
+void qtc_QCalendarWidget_fontChange(void*,void*);
+int qtc_QCalendarWidget_heightForWidth(void*,int);
+void qtc_QCalendarWidget_hideEvent(void*,void*);
+void qtc_QCalendarWidget_inputMethodEvent(void*,void*);
+void* qtc_QCalendarWidget_inputMethodQuery(void*,long);
+void qtc_QCalendarWidget_keyReleaseEvent(void*,void*);
+void qtc_QCalendarWidget_languageChange(void*);
+void qtc_QCalendarWidget_leaveEvent(void*,void*);
+int qtc_QCalendarWidget_metric(void*,long);
+void qtc_QCalendarWidget_mouseDoubleClickEvent(void*,void*);
+void qtc_QCalendarWidget_mouseMoveEvent(void*,void*);
+void qtc_QCalendarWidget_mouseReleaseEvent(void*,void*);
+void qtc_QCalendarWidget_move(void*,void*);
+void qtc_QCalendarWidget_move_qth(void*);
+void qtc_QCalendarWidget_move1(void*,int,int);
+void qtc_QCalendarWidget_moveEvent(void*,void*);
+void* qtc_QCalendarWidget_paintEngine(void*);
+void qtc_QCalendarWidget_paintEvent(void*,void*);
+void qtc_QCalendarWidget_paletteChange(void*,void*);
+void qtc_QCalendarWidget_repaint(void*);
+void qtc_QCalendarWidget_repaint1(void*,void*);
+void qtc_QCalendarWidget_repaint2(void*,int,int,int,int);
+void qtc_QCalendarWidget_resetInputContext(void*);
+void qtc_QCalendarWidget_resize(void*,void*);
+void qtc_QCalendarWidget_resize_qth(void*);
+void qtc_QCalendarWidget_resize1(void*,int,int);
+void qtc_QCalendarWidget_setGeometry(void*,void*);
+void qtc_QCalendarWidget_setGeometry_qth(void*);
+void qtc_QCalendarWidget_setGeometry1(void*,int,int,int,int);
+void qtc_QCalendarWidget_setMouseTracking(void*,int);
+void qtc_QCalendarWidget_setVisible(void*,int);
+void qtc_QCalendarWidget_showEvent(void*,void*);
+void qtc_QCalendarWidget_tabletEvent(void*,void*);
+void qtc_QCalendarWidget_updateMicroFocus(void*);
+void qtc_QCalendarWidget_wheelEvent(void*,void*);
+void qtc_QCalendarWidget_windowActivationChange(void*,int);
+void qtc_QCalendarWidget_childEvent(void*,void*);
+void qtc_QCalendarWidget_connectNotify(void*,void*);
+void qtc_QCalendarWidget_customEvent(void*,void*);
+void qtc_QCalendarWidget_disconnectNotify(void*,void*);
+int qtc_QCalendarWidget_eventFilter(void*,void*,void*);
+int qtc_QCalendarWidget_receivers(void*,void*);
+void* qtc_QCalendarWidget_sender(void*);
+void qtc_QCalendarWidget_timerEvent(void*,void*);

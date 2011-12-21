@@ -1,0 +1,50 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.2. General Instructions</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell User Guide"><link rel="up" href="installing.html" title="Chapter 2. Installing qtHaskell"><link rel="prev" href="installing.html" title="Chapter 2. Installing qtHaskell"><link rel="next" href="manual.html" title="2.3. Manual Installation"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.2. General Instructions</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="installing.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Installing qtHaskell</th><td width="20%" align="right"> <a accesskey="n" href="manual.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="general"></a>2.2. General Instructions</h2></div></div></div><a class="indexterm" name="id2443196"></a><a class="indexterm" name="id2443204"></a><p>The qtHaskell version 1.1.4 distribution file
+      <code class="filename">qtHaskell-1.1.4.</code><em class="replaceable"><code>x</code></em><code class="filename">.tar.gz</code> should be expanded in some
+      suitable directory hereafter referred to as
+      <em class="replaceable"><code>myqthlocation</code></em>. "cd" to the directory
+      <em class="replaceable"><code>myqthlocation</code></em><code class="filename">/qtHaskell-1.1.4</code>.
+      QtHaskell can then be built on most Linux systems using the bash script</p><div class="cmdsynopsis"><p><code class="command">./build</code> </p></div><p>or on Windows systems by running ("as Administrator" on Vista) the batch file</p><div class="cmdsynopsis"><p><code class="command">build</code> </p></div><p>Both these commands call the qtHaskell cross-platform Perl build
+      script in its default mode with no options. The Perl script can also
+      be run in this mode with the command</p><div class="cmdsynopsis"><p><code class="command">perl build.pl</code> </p></div><p>or on Linux systems</p><div class="cmdsynopsis"><p><code class="command">./build.pl</code> </p></div><p>This script will build both the C++ component and the Haskell component
+      of qtHaskell and also compile all the example applications contained in the
+      directories
+      <em class="replaceable"><code>myqthlocation</code></em><code class="filename">/qtHaskell-1.1.4/examples</code> and
+      <em class="replaceable"><code>myqthlocation</code></em><code class="filename">/qtHaskell-1.1.4/demos</code>.
+      </p><p>The build script is highly controlable, allowing every major phase and
+      subphase of the build to be enabled or disabled. It should however build
+      qtHaskell without any options on Linux and Windows systems (MacOS may
+      require one option for correct linking). A full list of the build script
+      options syntax and semantics is in the section:</p><div class="literallayout"><p><br>
+      <a href="buildscript.html" title="Chapter 4. Using the Perl Build Script">Chapter 4, <i>Using the Perl Build Script</i></a><br>
+      </p></div><p>In particular, on Linux systems, if it is required to build qtHaskell
+      without calls to the <code class="literal">sudo</code> command from the build script,
+      the required options to achieve this are detailed in the section:</p><div class="literallayout"><p><br>
+      <a href="buildscriptexamples.html#nosudoexamples" title="4.5.3. Build qtHaskell Without sudo">Section 4.5.3, &#8220;Build qtHaskell Without <code class="literal">sudo</code>&#8221;</a><br>
+      </p></div><p>Also, on Linux systems, users of GHC version 6.12.x or higher can build
+      qtHaskell with dynamic linking enabled. This is not the default mode, the
+      <code class="literal">--enable-shared</code> option must be specified and all
+      dependency pacakges must be built (or rebuilt) with dynamic linking enalbed
+      (i.e. with the <code class="literal">--enable-shared</code> parameter specified on
+      the cabal build command). See the section:</p><div class="literallayout"><p><br>
+      <a href="optionreference.html#sharedreference" title="4.4.41. shared">Section 4.4.41, &#8220;shared&#8221;</a><br>
+      </p></div><p>In cases where the build script is not applicable or fails to work
+      for some reason, please refer to the appropriate manual instruction sequences
+      given in the following two sections:</p><div class="literallayout"><p><br>
+      <a href="manual.html#linux-manual" title="2.3.1. Linux Manual Installation">Section 2.3.1, &#8220;Linux Manual Installation&#8221;</a><br>
+      <a href="manual.html#windows-manual" title="2.3.2. Windows Manual Installation">Section 2.3.2, &#8220;Windows Manual Installation&#8221;</a><br>
+      </p></div><p>The Linux instructions should be very close to what is required on most
+      Unix type systems. This includes MacOS, but MacOS users should note the
+      following points:</p><p>1. The Qt <code class="literal">qmake</code> tool used to generate the Makefiles
+      used to build the Qtc wrapper libraries does not generate Makefiles by
+      default on MacOS. The option <code class="literal">-spec macx-g++</code> is required.
+      This is used by the build script and must be used in any manual builds.</p><p>2. The build script parameter
+      <code class="literal">--extra-ld-option=--architecture=x86_64</code> may be required.
+      See the section</p><div class="literallayout"><p><br>
+      <a href="optionreference.html#extraldoptreference" title="4.4.43. extra-ld-opt">Section 4.4.43, &#8220;extra-ld-opt&#8221;</a><br>
+      </p></div><p>for short forms of this option.</p><p>N.B. on Windows systems, the default build script does not link the
+      library file <code class="literal">HSqt-1.1.4.o</code>, since this takes a very long
+      time (3 hours on a 2.8GHz Pentium 4). This file is needed by GHCi, which is
+      probably required by most experienced Haskellers. To enable building of this
+      file include the option <code class="literal">--enable-ld</code> when calling the build
+      script, but be advised that the Haskell build phase may take several hours in
+      this case.</p><p></p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="installing.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="installing.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="manual.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 2. Installing qtHaskell </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.3. Manual Installation</td></tr></table></div></body></html>

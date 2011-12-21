@@ -1,0 +1,54 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Chapter 2. Installing qtHaskell</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell User Guide"><link rel="up" href="index.html" title="qtHaskell User Guide"><link rel="prev" href="license.html" title="1.2. License"><link rel="next" href="general.html" title="2.2. General Instructions"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Installing qtHaskell</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="license.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="general.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="installing"></a>Chapter 2. Installing qtHaskell</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="installing.html#installation-introduction">2.1. Introduction and System Requirements</a></span></dt><dd><dl><dt><span class="section"><a href="installing.html#perlrequirements">2.1.1. Perl</a></span></dt><dt><span class="section"><a href="installing.html#haskelldependencies">2.1.2. Haskell Dependencies</a></span></dt><dd><dl><dt><span class="section"><a href="installing.html#opengldependencies">2.1.2.1. OpenGL Dependencies</a></span></dt><dt><span class="section"><a href="installing.html#paralleldependencies">2.1.2.2. Parallel Dependencies</a></span></dt></dl></dd><dt><span class="section"><a href="installing.html#qt46windows">2.1.3. Building with Qt verion 4.6.x or higher on Windows systems</a></span></dt></dl></dd><dt><span class="section"><a href="general.html">2.2. General Instructions</a></span></dt><dt><span class="section"><a href="manual.html">2.3. Manual Installation</a></span></dt><dd><dl><dt><span class="section"><a href="manual.html#linux-manual">2.3.1. Linux Manual Installation</a></span></dt><dt><span class="section"><a href="manual.html#windows-manual">2.3.2. Windows Manual Installation</a></span></dt></dl></dd></dl></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="installation-introduction"></a>2.1. Introduction and System Requirements</h2></div></div></div><a class="indexterm" name="id2442744"></a><p>qtHaskell consists of two components, a C++ layer built using the Qt
+      build tool <code class="filename">qmake</code> and a Haskell component built
+      using the Haskell build tool <code class="filename">Cabal</code>. qtHaskell requires
+      Qt (4.3.1 or later) and GHC (version 6.8.2 or higher) to be available on any
+      system in which it is installed. Version 1.1.4 of qtHaskell has been tested
+      with versions 4.3.1 and later of Qt and with versions 6.8.2 and later of GHC
+      on Linux and Windows systems. The previous version of qtHaskell was reported
+      as working without any problems on MacOS, but users are advised that at
+      release, version 1.1.4 has been tested only as described above. Feedback from
+      users of other environments is welcome.</p><p>N.B. The qtHaskell package name has changed from "qtc" to "qt"
+      in this release. The "qtc" package for qtHaskell-1.1.2 must therefore be
+      unregistered using ghc-pkg before starting the build procedure for
+      qtHaskell-1.1.4.</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="perlrequirements"></a>2.1.1. Perl</h3></div></div></div><a class="indexterm" name="id2442794"></a><p>The recommended method for building qtHaskell-1.1.4 is to use the build       script included with this release. This is a cross-platform Perl script which
+      requires version 5.10 (or later) of the Perl language. This a later version
+      of Perl than is provided with current GHC distributions.</p><p>A suitable version of Perl for all major systems is available for free.
+      See <a href="http://www.perl.org/get.html" target="_top">www.perl.org/get.html</a>.
+      Strawberry Perl is the recommended version for Windows builds of qtHaskell.
+      </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="haskelldependencies"></a>2.1.2. Haskell Dependencies</h3></div></div></div><a class="indexterm" name="id2442831"></a><a class="indexterm" name="id2442837"></a><p>QtHaskell-1.1.4 requires the HOpenGL Haskell bindings for OpenGL.
+      </p><p>N.B. If building with dynamic linking enabled with the
+      <code class="literal">--enabled-shared</code> paramater on Linux systems (this
+      is not the default mode), it is essential that the dependent libraries have
+      also been configured with <code class="literal">--enable-shared</code> and built and
+      installed for the version of GHC in use with qtHaskell.</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="opengldependencies"></a>2.1.2.1. OpenGL Dependencies</h4></div></div></div><a class="indexterm" name="id2443000"></a><a class="indexterm" name="id2443007"></a><p>On Linux/X11 systems Qt normally links to a 3rd party OpenGL
+      implementation (e.g. Mesa3D) and on Windows it normally uses its own OpenGL
+       implementation. In any case, Qt does
+      <span class="emphasis"><em>not</em></span> officially support version
+      3.<em class="replaceable"><code>x</code></em> of the OpenGL specification. On the other
+      hand versions 2.3 and higher of HOpenGL, the standard Haskell OpenGL
+      bindings are based on the 3.<em class="replaceable"><code>x</code></em> OpenGL
+      specification. If qtHaskell is built with version 2.3 or higher of HOpenGL
+      this will result in very poor performance of some OpenGL based applications
+      on Linux systems and probable run-time errors on Windows and other systems.
+      It is recommended therefore that while building the qtHaskell library and
+      subsequent qtHaskell OpenGL applications, version
+      2.2.<em class="replaceable"><code>x</code></em> or earlier of HOpenGL be installed or
+      visible as the current Haskell OpenGL package. In this case qtHaskell
+      OpenGL applications should be trouble free and highly efficient. Since
+      Qt is reported as having some degree of compatibility with version 3 of
+      OpenGL, an upper limit on HOpenGL versions is not enforced in the
+      qtHaskell build process. It is nonetheless <span class="emphasis"><em>highly recommended
+      that only version 2.2.x or less of HOpenGL be used with qtHaskell version 1.1.4</em></span>.</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="paralleldependencies"></a>2.1.2.2. Parallel Dependencies</h4></div></div></div><a class="indexterm" name="id2443070"></a><a class="indexterm" name="id2443076"></a><p>The extra package qt-glome requires the Parallel library.</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="qt46windows"></a>2.1.3. Building with Qt verion 4.6.x or higher on Windows systems</h3></div></div></div><p>Qt version 4.6.x or higher on Windows requires version 4.4 of the Gnu
+      C++ compiler  and associated build tools. These are provided with Qt version
+      4.6.x or higher for Windows. They are not compatible with the MinGW tools
+      provided with the GHC distributions for Windows.</p><p>With version 6.12.x or higher of GHC this problem can be overcome as
+      follows. Simply copy the MinGW directory of your Qt distribution over the
+      MinGW directory of your GHC distribution, and proceed with your qtHaskell
+      installation as normal.</p><p>This is not possible with earlier versions of GHC (i.e. 6.10.x or
+      earlier). It is therefore essential in order to build qtHaskell-1.1.4 with Qt
+      version 4.6.x or higher on Windows, that you use GHC 6.12.x or higher and
+      follow the above instructions.</p><p>N.B. you must make sure your <code class="literal">path</code> environment
+      variable is set to the correct versions of MinGW, Haskell and Qt. You can
+      test this prior to starting the build script by typing</p><div class="cmdsynopsis"><p><code class="command">g++ --version</code> </p></div><div class="cmdsynopsis"><p><code class="command">qmake --version</code> </p></div><div class="cmdsynopsis"><p><code class="command">ghc --version</code> </p></div><p>You should check in particular that the version of
+      <code class="literal">g++</code> is 4.4 otherwise the Qtc wrapper libraries will not
+      link correctly.</p></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="license.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="general.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">1.2. License </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.2. General Instructions</td></tr></table></div></body></html>

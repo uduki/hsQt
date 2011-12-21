@@ -1,0 +1,82 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.3. Manual Installation</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell User Guide"><link rel="up" href="installing.html" title="Chapter 2. Installing qtHaskell"><link rel="prev" href="general.html" title="2.2. General Instructions"><link rel="next" href="using.html" title="Chapter 3. Using qtHaskell"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.3. Manual Installation</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="general.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Installing qtHaskell</th><td width="20%" align="right"> <a accesskey="n" href="using.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="manual"></a>2.3. Manual Installation</h2></div></div></div><a class="indexterm" name="id2443899"></a><p>N.B. The cabal <code class="literal">makefile</code> command is not available
+      with GHC version 6.12.x or higher. The steps described as
+      <code class="literal">runhaskell Setup.hs makefile</code> followed by
+      <code class="literal">gmake</code> in the following sections must
+      therefore be replaced with the command
+      <code class="literal">runhaskell Setup.hs build</code>.
+      The build process for qtHaskell will require approximately 3GB of RAM in this
+      mode, which may require users to cancel and restart the process several
+      times. It is therefore highly recommended that the automated build script be
+      used wherever possible and particularly with GHC version 6.12.x or higher.
+      </p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="linux-manual"></a>2.3.1. Linux Manual Installation</h3></div></div></div><a class="indexterm" name="id2443952"></a><p>First apply the instructions in <a href="general.html" title="2.2. General Instructions">Section 2.2, &#8220;General Instructions&#8221;</a>
+      <span class="emphasis"><em>without</em></span> actually executing the
+      <code class="filename">./build</code> script, then at the command line type as
+      follows:</p><div class="cmdsynopsis"><p><code class="command">cd qws</code> <br><code class="command">qmake -recursive</code> </p></div><p>Qt will generate the Makefiles for the Qtc wrapper libraries.</p><div class="cmdsynopsis"><p><code class="command">gmake<sup>[<a name="gmakemake" href="#ftn.gmakemake">1</a>]</sup></code> </p></div><p>This will build the libraries - this may take some time.
+      (Type <code class="filename">gmake all</code> to build the both the release
+      and debug versions of the Qtc libraries, if required).</p><div class="cmdsynopsis"><p><code class="command">su</code> </p></div><p>Enter the superuser password</p><div class="cmdsynopsis"><p><code class="command">gmake<sup>[<a href="#ftn.gmakemake">1</a>]</sup> install</code> <br><code class="command">ldconfig</code> <br><code class="command">exit</code> <br><code class="command">cd ..</code> </p></div><p>The Qtc libraries are now installed</p><p>The Haskell package (qt) is built with Cabal as follows:</p><div class="cmdsynopsis"><p><code class="command">runhaskell Setup.hs configure --ghc <em class="replaceable"><code>[--enable-shared]</code></em><sup>[<a name="enableshared" href="#ftn.enableshared">2</a>]</sup></code> <br><code class="command">runhaskell Setup.hs makefile<sup>[<a name="makefileversion" href="#ftn.makefileversion">3</a>]</sup></code> <br><code class="command">gmake<sup>[<a href="#ftn.gmakemake">1</a>]</sup></code> </p></div><p>This will compile all the Haskell code which may take some time.</p><div class="cmdsynopsis"><p><code class="command">su</code> </p></div><p>Enter the superuser password</p><div class="cmdsynopsis"><p><code class="command">runhaskell Setup.hs install</code> <br><code class="command">exit</code> </p></div><p>To compile the qtHaskell programs in the <code class="filename">examples</code> and
+      <code class="filename">demos</code> directories type:</p><div class="cmdsynopsis"><p><code class="command">cd examples</code> <br><code class="command">../bin/qbe examples <em class="replaceable"><code>[-dynamic]</code></em><sup>[<a name="qbedynamic" href="#ftn.qbedynamic">4</a>]</sup></code> <br><code class="command">cd ../demos</code> <br><code class="command">../bin/qbe demos <em class="replaceable"><code>[-dynamic]</code></em><sup>[<a href="#ftn.qbedynamic">4</a>]</sup></code> <br><code class="command">cd ..</code> </p></div><p>The qtHaskell version of Glome is built as a package (qt-glome)
+      with Cabal as follows:</p><div class="cmdsynopsis"><p><code class="command">cd extra-pkgs/Glome</code> <br><code class="command">runhaskell Setup.hs configure --ghc</code> <br><code class="command">runhaskell Setup.hs build</code> </p></div><p>This will compile all the Haskell code for Glome which may
+      take some time.</p><div class="cmdsynopsis"><p><code class="command">su</code> </p></div><p>Enter the superuser password</p><div class="cmdsynopsis"><p><code class="command">runhaskell Setup.hs install</code> <br><code class="command">exit</code> <br><code class="command">cd ../..</code> </p></div><p>To compile the <code class="literal">imageviewer</code> demo program for Glome
+      type:</p><div class="cmdsynopsis"><p><code class="command">cd demos/Glome</code> <br><code class="command">../../bin/qbe2 demos/Glome -package qt-glome <em class="replaceable"><code>[-dynamic]</code></em><sup>[<a href="#ftn.qbedynamic">4</a>]</sup></code> <br><code class="command">cd ../..</code> </p></div><p>(See the section <a href="using.html#building" title="3.1. Building qtHaskell Applications">Section 3.1, &#8220;Building qtHaskell Applications&#8221;</a> for instructions on how to
+      build individual qtHaskell programs).</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="windows-manual"></a>2.3.2. Windows Manual Installation</h3></div></div></div><a class="indexterm" name="id2492918"></a><p>N.B. The Windows manual installation procedure for qtHaskell version
+      1.1.4 requires an MSYS bourne shell interpreter as well as the MinGW toolset.
+      If necessary this should be installed, then open an MSYS window and cd to the
+      current build location. During the installation process some commands will
+      be typed at the MSYS prompt and some will be typed at the Dos box
+      prompt.</p><p>Open a Dos box  and apply the instructions in <a href="general.html" title="2.2. General Instructions">Section 2.2, &#8220;General Instructions&#8221;</a>
+      <span class="emphasis"><em>without</em></span> actually executing the <code class="filename">build</code>
+      batch file.
+      </p><p>Add the installation <code class="filename">bin</code> directories to the local
+      <code class="literal">path</code> environment variable.</p><div class="cmdsynopsis"><p><code class="command">set path=%cd%\qws\bin;%cd%\bin;%path%</code> </p></div><p>Edit the file <code class="filename">qt.cabal</code> and add the line</p><div class="cmdsynopsis"><p><code class="command">extra-lib-dirs: <em class="replaceable"><code>mypath</code></em>\qws\bin</code> </p></div><p>where <em class="replaceable"><code>mypath</code></em> is the full pathname of the installation directory e.g.
+      <code class="filename">c:\qthaskell\qthaskell-1.1.4</code>.</p><div class="cmdsynopsis"><p><code class="command">cd qws</code> <br><code class="command">qmake -recursive</code> <br><code class="command">mingw32-make</code> </p></div><p>This will build the libraries - which may take some time.
+      (Type <code class="filename">mingw32-make all</code> to build both the release
+      and debug versions of the Qtc libraries, if required).</p><p>The Haskell package (qt) is built with Cabal as follows:</p><div class="cmdsynopsis"><p><code class="command">runhaskell Setup.hs configure --ghc</code> <br><code class="command">runhaskell Setup.hs makefile</code> </p></div><p>Then at the MSYS window type
+      </p><div class="cmdsynopsis"><p><code class="command">mingw32-make</code> </p></div><p>
+
+      This will compile all the Haskell code which may take some time. It is also
+      likely that <code class="literal">mingw32-make</code> will crash when it actually tries
+      to link the archive. Ignore that and carry on  back at the Dos box as
+      follows.</p><div class="cmdsynopsis"><p><code class="command">runhaskell Setup.hs build</code> <br><code class="command">runhaskell Setup.hs install</code> </p></div><p>This will link the library and install it as a Haskell package.</p><p><span class="emphasis"><em>N.B. The library linking will take a very, very long time if
+      left to run to its normal completion. The following procedure, although
+      somewhat unorthodox may reduce the link time from several hours to a few
+      minutes</em></span>.</p><p>After you have typed the
+      <code class="literal">runhaskell Setup.hs build</code> command, monitor the state of
+      the <code class="literal">dist/build</code> directory in the current installation
+      directory (e.g. type <code class="literal">ls -l dist/build</code> in the MSYS window.
+      Once the <code class="literal">ar</code> program has completed building the
+      <code class="literal">libHSqt-1.1.4.a</code> library (its final size is normally about
+      95MB), it will start to build the
+      <code class="literal">HSqt-1.1.4.o</code> file, which may take several hours as
+      opposed to a few minutes for the library. You can check that the
+      <code class="literal">HSqt-1.1.4.o</code> file is being built by looking to see
+      whether the <code class="literal">ld</code> program is running in the system process
+      monitor. If so simply terminate the 
+      <code class="literal">runhaskell Setup.hs build</code> command and continue with the
+      <code class="literal">runhaskell Setup.hs install</code> command.</p><p>N.B. the install command requires that a file named
+      <code class="literal">HSqt-1.1.4.o</code> actually exists on the disk in the
+      <code class="literal">dist/build</code> directory, even if its size is 0 bytes. If you
+      only have a <code class="literal">HSqt-1.1.4.o.tmp</code> file when you terminate the
+      build command, move it to <code class="literal">HSqt-1.1.4.o</code> before running the
+      install command.</p><p>To compile the qtHaskell programs in the <code class="filename">examples</code>
+      and <code class="filename">demos</code> directories type:</p><div class="cmdsynopsis"><p><code class="command">cd examples</code> <br><code class="command">qbe examples</code> <br><code class="command">cd ..\demos</code> <br><code class="command">qbe demos</code> <br><code class="command">cd ..</code> </p></div><p>The qtHaskell version of Glome is built as a package (qt-glome)
+      with Cabal as follows:</p><div class="cmdsynopsis"><p><code class="command">cd extra-pkgs/Glome</code> <br><code class="command">runhaskell Setup.hs configure --ghc</code> <br><code class="command">runhaskell Setup.hs build</code> <br><code class="command">runhaskell Setup.hs install</code> <br><code class="command">cd ../..</code> </p></div><p>This will compile and install all the Haskell code for Glome which may
+      take some time.</p><p>To compile the <code class="literal">imageviewer</code> demo program for Glome
+      type:</p><div class="cmdsynopsis"><p><code class="command">cd demos/Glome</code> <br><code class="command">qbe2 demos/Glome -package qt-glome</code> <br><code class="command">cd ../..</code> </p></div><p>(See the section <a href="using.html#building" title="3.1. Building qtHaskell Applications">Section 3.1, &#8220;Building qtHaskell Applications&#8221;</a> for instructions on how to
+      build individual qtHaskell programs).</p><p>Finally don't forget to add the installation <code class="filename">bin</code>
+      directory to the <code class="filename">path</code> environment variable using the
+      Windows control panel.</p></div><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.gmakemake" href="#gmakemake">1</a>] </sup><span><strong class="command">gmake</strong></span>
+        is used as the recommended make tool in the Linux build instructions.
+        If it is not installed or otherwise available, the plain
+        <span><strong class="command">make</strong></span> program should work just as well on most
+        Linux/Unix systems.</p></div><div class="footnote"><p><sup>[<a name="ftn.enableshared" href="#enableshared">2</a>] </sup>add the final paramater
+        <span><strong class="command">--enable-shared</strong></span> to the <span><strong class="command">configure</strong></span>
+        command for Linux builds of qtHaskell using GHC version 6.12.x or higher
+        to build dynamically linked versions of qtHaskell.</p></div><div class="footnote"><p><sup>[<a name="ftn.makefileversion" href="#makefileversion">3</a>] </sup>cabal
+        <span><strong class="command">makefile</strong></span> is only available with GHC versions &lt;
+        6.12.x. This step and the following <span><strong class="command">gmake</strong></span> command
+        should be replaced with the command
+        <code class="literal">runhaskell Setup.hs build</code> otherwise.</p></div><div class="footnote"><p><sup>[<a name="ftn.qbedynamic" href="#qbedynamic">4</a>] </sup>add the final
+        paramater <span><strong class="command">-dynamic</strong></span> to the <span><strong class="command">qbe</strong></span> and
+        <span><strong class="command">qbe2</strong></span> commands for Linux builds of qtHaskell using GHC
+        version 6.12.x or higher to build dynamically linked versions of the
+        examples/demos.</p></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="general.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="installing.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="using.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.2. General Instructions </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 3. Using qtHaskell</td></tr></table></div></body></html>

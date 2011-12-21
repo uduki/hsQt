@@ -1,0 +1,60 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.2. Signals and Slots</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell Primer"><link rel="up" href="Callbacks.html" title="Chapter 2. Callbacks"><link rel="prev" href="Callbacks.html" title="Chapter 2. Callbacks"><link rel="next" href="Handlers.html" title="2.3. Handlers"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.2. Signals and Slots</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="Callbacks.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Callbacks</th><td width="20%" align="right"> <a accesskey="n" href="Handlers.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Signals%20and%20Slots"></a>2.2. Signals and Slots</h2></div></div></div><a class="indexterm" name="id2442647"></a><a class="indexterm" name="id2442654"></a><a class="indexterm" name="id2442666"></a><p>A simple example using Qt Signals and Slots is as follows:</p><pre class="programlisting">
+module Main where
+
+import Qtc.Classes.Qccs
+import Qtc.Classes.Gui
+import Qtc.ClassTypes.Gui
+import Qtc.Core.Base
+import Qtc.Gui.Base
+import Qtc.Gui.QApplication
+import Qtc.Gui.QWidget
+import Qtc.Gui.QPushButton
+import Qtc.Gui.QAbstractButton
+import Qtc.Gui.QMessageBox
+
+type MyQPushButton = QPushButtonSc (CMyQPushButton)
+data CMyQPushButton = CMyQPushButton
+
+myQPushButton :: String -&gt; IO (MyQPushButton)
+myQPushButton b = qSubClass $ qPushButton b
+
+main :: IO Int
+main = do
+  qApplication ()
+  hello &lt;- myQPushButton "Hello qtHaskell World"
+  resize hello (200::Int, 60::Int)
+  mb &lt;- qMessageBox hello 
+  connectSlot hello "clicked()" hello "click()" $ on_hello_clicked mb
+  qshow hello ()
+  qApplicationExec ()
+
+on_hello_clicked :: QMessageBox () -&gt; MyQPushButton -&gt; IO ()
+on_hello_clicked mb this
+  = do
+  tt &lt;- text this ()
+  setText mb $ "You have clicked " ++ tt
+  qshow mb ()
+
+</pre><p>Slots are connected to Signals using the <code class="literal">connectSlot</code>
+      statement. This has the general format:</p><p><code class="literal">connectSlot</code> <em class="replaceable"><code>signal_object "signal_signature" slot_object "slot_signature" slot_function</code></em></p><p>Both the <em class="replaceable"><code>signal_object</code></em> and <em class="replaceable"><code>slot_object</code></em> must be previously declared Qt objects.</p><p>The <em class="replaceable"><code>"signal_signature"</code></em> and <em class="replaceable"><code>
+      "slot_signature"</code></em> strings describe the name and parameter types
+      of the signal and slot to be connected. The parameter types must be the same
+      for both strings.</p><p>The <em class="replaceable"><code>slot_function</code></em> is a partial application
+      of a Haskell function of type:</p><p><em class="replaceable"><code>global_Haskell_parameters -&gt; slot_object_type -&gt; slot_parameters</code></em></p><p>Both the signal and slot can be "built in" signal/slots of their
+      respective Qt classes, or custom signal/slots, in which case there is no
+      need to declare them prior to use in a <code class="literal">connectSlot</code>
+      statement. If the slot is a "built in" slot of the Qt <em class="replaceable"><code>
+      slot_object</code></em> class, no <em class="replaceable"><code>slot_function</code></em>
+      is required but the <code class="literal">connectSlot</code> statement must still be
+      terminated by an empty pair of parentheses.</p><p>Signals can be connected to other signals using the <code class="literal">
+      connectSignal </code> statement. This has the general format:</p><p><code class="literal">connectSignal</code> <em class="replaceable"><code>first_signal_object "first_signal_signature" second_signal_object "second_signal_signature"</code></em></p><p>In all the above cases the format of signal/slot signature strings is
+      same as for the SIGNAL and SLOT macros used in C++ Qt programs.</p><p>If custom signals or slots are required for a class, the class must be
+      subclassed. This is a two stage process. Firstly, create a new shadow type
+      based on the Qt class to be subclassed, then create a constructor (or
+      constructor class) that uses <code class="literal">qSubClass</code> to call the
+      constructor of the base class.</p><p>In the above example we see how to subclass the Qt class "QPushButton"
+      to create a custom slot "click()". This has the general formula:</p><p><code class="literal">type</code> <em class="replaceable"><code>MySubClassType</code></em> = Q<em class="replaceable"><code>BaseClassType</code></em>Sc (C<em class="replaceable"><code>MySubClassType</code></em>)</p><p><code class="literal">data</code> C<em class="replaceable"><code>MySubClassType</code></em> = C<em class="replaceable"><code>MySubClassType</code></em></p><p><em class="replaceable"><code>mySubClassType</code></em> :: <em class="replaceable"><code>p1Type -&gt; p2Type ...</code></em> -&gt; IO (<em class="replaceable"><code>MySubClassType</code></em>)</p><p><em class="replaceable"><code>mySubClassType</code></em> <em class="replaceable"><code>p1 p2 ...</code></em> = qSubClass $ q<em class="replaceable"><code>BaseClasstype p1 p2 ...</code></em></p><p>N.B. If a "built-in" signal is connected to a custom slot on a
+      different object, the signal object does not have to be subclassed. This is
+      very useful for menus and menubars where we have many objects of type QAction
+      which can connect their "built-in" signal "triggered()" to custom slots on
+      the main application widget object, without having to be subclassed.</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="Callbacks.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="Callbacks.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="Handlers.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 2. Callbacks </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.3. Handlers</td></tr></table></div></body></html>

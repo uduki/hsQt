@@ -1,0 +1,85 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="baseSize" >
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>VCDEM 1.0</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="dem_01.rcc" >:/images/vcico_01.png</iconset>
+  </property>
+  <widget class="QTextEdit" name="centralwidget" >
+   <property name="readOnly" >
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>226</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFilter" >
+    <property name="title" >
+     <string>Filter</string>
+    </property>
+    <widget class="QMenu" name="menuVertical" >
+     <property name="title" >
+      <string>Vertical</string>
+     </property>
+    </widget>
+    <addaction name="menuVertical" />
+   </widget>
+   <widget class="QMenu" name="menu_File" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menu_Load_Dem" >
+     <property name="title" >
+      <string>&amp;Load Dem</string>
+     </property>
+     <addaction name="action_Shape_from_Shading" />
+    </widget>
+    <addaction name="menu_Load_Dem" />
+    <addaction name="action_Load_Image" />
+   </widget>
+   <addaction name="menu_File" />
+   <addaction name="menuFilter" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>4</number>
+   </attribute>
+   <addaction name="action_Shape_from_Shading" />
+   <addaction name="action_Load_Image" />
+  </widget>
+  <action name="action_Shape_from_Shading" >
+   <property name="icon" >
+    <iconset resource="dem_01.rcc" >:/images/open.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Load SFS DEM</string>
+   </property>
+  </action>
+  <action name="action_Load_Image" >
+   <property name="icon" >
+    <iconset resource="dem_01.rcc" >:/images/open.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Load Image</string>
+   </property>
+  </action>
+ </widget>
+</ui>

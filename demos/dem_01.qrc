@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>dem_01.ui</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+        <file>images/save.png</file>
+        <file>images/vcico_01.png</file>
+        <file>dem_01_mdigc_mw.ui</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,60 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>3.2. Functions</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell Primer"><link rel="up" href="ModulesFunctionsTypes.html" title="Chapter 3. Modules, Functions, Types"><link rel="prev" href="ModulesFunctionsTypes.html" title="Chapter 3. Modules, Functions, Types"><link rel="next" href="Types.html" title="3.3. Types"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Functions</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ModulesFunctionsTypes.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Modules, Functions, Types</th><td width="20%" align="right"> <a accesskey="n" href="Types.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Functions"></a>3.2. Functions</h2></div></div></div><a class="indexterm" name="id2492980"></a><p>In section 1.2 we saw a basic formula for the main qtHaskell functions.
+      Chapter 2 described the functions for enabling callback functions in
+      qtHaskell. A few other important points about qtHaskell functions are
+      as follows:</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="q"></a>3.2.1. 'q'</h3></div></div></div><a class="indexterm" name="id2493006"></a><p>QtHaskell functions that correspond to non-static members of a Qt
+        class are not prefixed with the name of that class. This means that
+        some of them (e.g. show, read) are the same as Haskell Prelude functions.
+        To avoid the need for always qualifying either the qtHaskell function or
+        the Prelude function, the qtHaskell function is prefixed with "q".</p><p>QtHaskell functions that correspond to any Qt constructors or
+        methods that take parameters of the type: 
+        <code class="literal">QRect, QLine, QPoint, QSize</code>
+        are implemented to take parameters of the corresponding
+        <code class="literal">Qth</code> classname type, i.e.:
+        <code class="literal">Rect, Line, Point, Size</code>. A corresponding function that
+        takes parameters of the original type is retained and prefixed with "q".
+        A constructor or static method in this case will have a variant form
+        <code class="literal">qq</code><em class="replaceable"><code>SomeConstructorOrStaticMethod</code></em>.
+        Non-static methods that take parameters of this type
+        <span class="emphasis"><em>and</em></span> whose names correspond to Haskell Prelude
+        functions will also take a double "qq" prefix.</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="_nf"></a>3.2.2. '_nf'</h3></div></div></div><a class="indexterm" name="id2493084"></a><p>QtHaskell uses native Haskell garbage collection to delete
+        objects corresponding to the Qt data classes automatically. Objects of some
+        of these class types such as <code class="literal">QImage, QPixmap and QBitmap</code>
+        are not copied internally by Qt when passed as parameters. These means they
+        usually cannot be deleted when they go out of scope in a Haskell function.
+        </p><p>There are two options available to qtHaskell programmers in the
+        above case (or in any case where a Qt data class type object is not to be
+        deleted automatically). They can store a reference to the Qt data
+        object in an IORef type in the Haskell environment, or if that is not
+        convenient, they can construct the object with a "_nf" suffixed constructor.
+        </p><p>All qtHaskell constructors for Qt data class types have an equivalent
+        "_nf" form, which, (as the suffix suggests), does not return a finalizer
+        function for the Haskell foreign pointer. In this case however the object
+        must be explicitly deleted with a call to the appropriate
+        <code class="literal">q</code><em class="replaceable"><code>SomeQtClass</code></em><code class="literal">_delete</code>
+        function.</p><p>There are also some functions such as
+        <code class="literal">qPixmapFromImage</code> and <code class="literal">scale</code>, which
+        return new instances of Qt data types even though they are not
+        constructors. These functions also have a "_nf" form.</p><p>N.B. It is very rarely if ever safe to let objects of the
+        <code class="literal">QPainter</code> class be automatically deleted, hence it is
+        recommended that the <code class="literal">qPainter_nf</code> constructor be used at
+        all times for objects of this type.</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="Destructors"></a>3.2.3. Destructors</h3></div></div></div><a class="indexterm" name="id2493186"></a><p>QtHaskell destructors of the form
+      <code class="literal">q</code><em class="replaceable"><code>SomeQtClassName</code></em><code class="literal">_delete</code>
+       are available for all Qt class types. As discussed in the previous section,
+       these should only be used with Qt data class types if the object is created
+       by a "_nf" suffixed constructor or method function.</p><p>QtHaskell destructors of the form
+       <code class="literal">q</code><em class="replaceable"><code>SomeQtClassName</code></em><code class="literal">_deleteLater</code>
+       are available for all Qt class types based on QObject. These destructors are
+       usually required for such class types.</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="Enumerated%20Types"></a>3.2.4. Enumerated Types</h3></div></div></div><a class="indexterm" name="id2493247"></a><p>QtHaskell functions for Qt enumerated type values and corresoponding
+      flags type values have the formulae
+      <code class="literal">e</code><em class="replaceable"><code>SomeEnumeratedTypeValue</code></em> and
+      <code class="literal">f</code><em class="replaceable"><code>SomeFlagsTypeValue</code></em>
+      respectively. There is no difference between the actual numerical value
+      associated with "e" and "f" functions with the same name but each can only
+      be used as parameters of the respective type, and only "f" prefixed flags
+      functions can be combined with the '+" operator.</p><p>Enumerated and flags types functions are not prefixed with the
+      corresponding type name, hence the same functions can occur for more than
+      one type. In this case any use of the function in question must be
+      explicitly type qualified when passed as a parameter to any method function
+      which has multiple parameter instances. E.g.</p><pre class="programlisting">
+  setAlignment tl (fAlignCenter::Alignment)
+</pre></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ModulesFunctionsTypes.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ModulesFunctionsTypes.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="Types.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. Modules, Functions, Types </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.3. Types</td></tr></table></div></body></html>

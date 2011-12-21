@@ -1,0 +1,8260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Qtc.ClassTypes.Core</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Qtc-ClassTypes-Core.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+></TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Qtc.ClassTypes.Core</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Documentation</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QObject"
+><A NAME="t%3AQObject"
+></A
+></A
+><B
+>QObject</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQObject"
+>CQObject</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQObject"
+><A NAME="t%3ATQObject"
+></A
+></A
+><B
+>TQObject</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQObject"
+>CQObject</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQObject"
+><A NAME="t%3ACQObject"
+></A
+></A
+><B
+>CQObject</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QObject"
+><A NAME="v%3AqCast_QObject"
+></A
+></A
+><B
+>qCast_QObject</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QObjectSc"
+><A NAME="t%3AQObjectSc"
+></A
+></A
+><B
+>QObjectSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQObjectSc"
+>CQObjectSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQObjectSc"
+><A NAME="t%3ATQObjectSc"
+></A
+></A
+><B
+>TQObjectSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQObjectSc"
+>CQObjectSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQObjectSc"
+><A NAME="t%3ACQObjectSc"
+></A
+></A
+><B
+>CQObjectSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QObject</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQObjectResult"
+><A NAME="v%3AwithQObjectResult"
+></A
+></A
+><B
+>withQObjectResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectFromPtr"
+><A NAME="v%3AqObjectFromPtr"
+></A
+></A
+><B
+>qObjectFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQObjectResult"
+><A NAME="v%3AwithQListQObjectResult"
+></A
+></A
+><B
+>withQListQObjectResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qObjectListFromPtrList"
+><A NAME="v%3AqObjectListFromPtrList"
+></A
+></A
+><B
+>qObjectListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QEvent"
+><A NAME="t%3AQEvent"
+></A
+></A
+><B
+>QEvent</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQEvent"
+>CQEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQEvent"
+><A NAME="t%3ATQEvent"
+></A
+></A
+><B
+>TQEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQEvent"
+>CQEvent</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQEvent"
+><A NAME="t%3ACQEvent"
+></A
+></A
+><B
+>CQEvent</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QEvent"
+><A NAME="v%3AqCast_QEvent"
+></A
+></A
+><B
+>qCast_QEvent</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QEventSc"
+><A NAME="t%3AQEventSc"
+></A
+></A
+><B
+>QEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQEventSc"
+>CQEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQEventSc"
+><A NAME="t%3ATQEventSc"
+></A
+></A
+><B
+>TQEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQEvent"
+>TQEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQEventSc"
+>CQEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQEventSc"
+><A NAME="t%3ACQEventSc"
+></A
+></A
+><B
+>CQEventSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QEvent</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQEventResult"
+><A NAME="v%3AwithQEventResult"
+></A
+></A
+><B
+>withQEventResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQEvent"
+>TQEvent</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qEventAddFinalizer"
+><A NAME="v%3AqEventAddFinalizer"
+></A
+></A
+><B
+>qEventAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QAbstractItemModel"
+><A NAME="t%3AQAbstractItemModel"
+></A
+></A
+><B
+>QAbstractItemModel</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractItemModel"
+>CQAbstractItemModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQAbstractItemModel"
+><A NAME="t%3ATQAbstractItemModel"
+></A
+></A
+><B
+>TQAbstractItemModel</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractItemModel"
+>CQAbstractItemModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQAbstractItemModel"
+><A NAME="t%3ACQAbstractItemModel"
+></A
+></A
+><B
+>CQAbstractItemModel</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QAbstractItemModel"
+><A NAME="v%3AqCast_QAbstractItemModel"
+></A
+></A
+><B
+>qCast_QAbstractItemModel</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QAbstractItemModelSc"
+><A NAME="t%3AQAbstractItemModelSc"
+></A
+></A
+><B
+>QAbstractItemModelSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractItemModelSc"
+>CQAbstractItemModelSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQAbstractItemModelSc"
+><A NAME="t%3ATQAbstractItemModelSc"
+></A
+></A
+><B
+>TQAbstractItemModelSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractItemModel"
+>TQAbstractItemModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractItemModelSc"
+>CQAbstractItemModelSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQAbstractItemModelSc"
+><A NAME="t%3ACQAbstractItemModelSc"
+></A
+></A
+><B
+>CQAbstractItemModelSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QAbstractItemModel</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQAbstractItemModelResult"
+><A NAME="v%3AwithQAbstractItemModelResult"
+></A
+></A
+><B
+>withQAbstractItemModelResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractItemModel"
+>TQAbstractItemModel</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qAbstractItemModelFromPtr"
+><A NAME="v%3AqAbstractItemModelFromPtr"
+></A
+></A
+><B
+>qAbstractItemModelFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractItemModel"
+>TQAbstractItemModel</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQAbstractItemModelResult"
+><A NAME="v%3AwithQListQAbstractItemModelResult"
+></A
+></A
+><B
+>withQListQAbstractItemModelResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractItemModel"
+>TQAbstractItemModel</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qAbstractItemModelListFromPtrList"
+><A NAME="v%3AqAbstractItemModelListFromPtrList"
+></A
+></A
+><B
+>qAbstractItemModelListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractItemModel"
+>TQAbstractItemModel</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QIODevice"
+><A NAME="t%3AQIODevice"
+></A
+></A
+><B
+>QIODevice</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQIODevice"
+>CQIODevice</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQIODevice"
+><A NAME="t%3ATQIODevice"
+></A
+></A
+><B
+>TQIODevice</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQIODevice"
+>CQIODevice</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQIODevice"
+><A NAME="t%3ACQIODevice"
+></A
+></A
+><B
+>CQIODevice</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QIODevice"
+><A NAME="v%3AqCast_QIODevice"
+></A
+></A
+><B
+>qCast_QIODevice</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQIODevice"
+>QIODevice</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QIODeviceSc"
+><A NAME="t%3AQIODeviceSc"
+></A
+></A
+><B
+>QIODeviceSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQIODevice"
+>QIODevice</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQIODeviceSc"
+>CQIODeviceSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQIODeviceSc"
+><A NAME="t%3ATQIODeviceSc"
+></A
+></A
+><B
+>TQIODeviceSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQIODevice"
+>TQIODevice</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQIODeviceSc"
+>CQIODeviceSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQIODeviceSc"
+><A NAME="t%3ACQIODeviceSc"
+></A
+></A
+><B
+>CQIODeviceSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QIODevice</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQIODeviceResult"
+><A NAME="v%3AwithQIODeviceResult"
+></A
+></A
+><B
+>withQIODeviceResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQIODevice"
+>TQIODevice</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQIODevice"
+>QIODevice</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qIODeviceFromPtr"
+><A NAME="v%3AqIODeviceFromPtr"
+></A
+></A
+><B
+>qIODeviceFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQIODevice"
+>TQIODevice</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQIODevice"
+>QIODevice</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQIODeviceResult"
+><A NAME="v%3AwithQListQIODeviceResult"
+></A
+></A
+><B
+>withQListQIODeviceResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQIODevice"
+>TQIODevice</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQIODevice"
+>QIODevice</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qIODeviceListFromPtrList"
+><A NAME="v%3AqIODeviceListFromPtrList"
+></A
+></A
+><B
+>qIODeviceListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQIODevice"
+>TQIODevice</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQIODevice"
+>QIODevice</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTextCodec"
+><A NAME="t%3AQTextCodec"
+></A
+></A
+><B
+>QTextCodec</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTextCodec"
+>CQTextCodec</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTextCodec"
+><A NAME="t%3ATQTextCodec"
+></A
+></A
+><B
+>TQTextCodec</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQTextCodec"
+>CQTextCodec</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTextCodec"
+><A NAME="t%3ACQTextCodec"
+></A
+></A
+><B
+>CQTextCodec</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QTextCodec"
+><A NAME="v%3AqCast_QTextCodec"
+></A
+></A
+><B
+>qCast_QTextCodec</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTextCodec"
+>QTextCodec</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTextCodecSc"
+><A NAME="t%3AQTextCodecSc"
+></A
+></A
+><B
+>QTextCodecSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQTextCodec"
+>QTextCodec</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTextCodecSc"
+>CQTextCodecSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTextCodecSc"
+><A NAME="t%3ATQTextCodecSc"
+></A
+></A
+><B
+>TQTextCodecSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQTextCodec"
+>TQTextCodec</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTextCodecSc"
+>CQTextCodecSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTextCodecSc"
+><A NAME="t%3ACQTextCodecSc"
+></A
+></A
+><B
+>CQTextCodecSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QTextCodec</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQTextCodecResult"
+><A NAME="v%3AwithQTextCodecResult"
+></A
+></A
+><B
+>withQTextCodecResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTextCodec"
+>TQTextCodec</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTextCodec"
+>QTextCodec</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QLineF"
+><A NAME="t%3AQLineF"
+></A
+></A
+><B
+>QLineF</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLineF"
+>CQLineF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQLineF"
+><A NAME="t%3ATQLineF"
+></A
+></A
+><B
+>TQLineF</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQLineF"
+>CQLineF</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQLineF"
+><A NAME="t%3ACQLineF"
+></A
+></A
+><B
+>CQLineF</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QLineF"
+><A NAME="v%3AqCast_QLineF"
+></A
+></A
+><B
+>qCast_QLineF</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQLineF"
+>QLineF</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QLineFSc"
+><A NAME="t%3AQLineFSc"
+></A
+></A
+><B
+>QLineFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQLineF"
+>QLineF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLineFSc"
+>CQLineFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQLineFSc"
+><A NAME="t%3ATQLineFSc"
+></A
+></A
+><B
+>TQLineFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQLineF"
+>TQLineF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLineFSc"
+>CQLineFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQLineFSc"
+><A NAME="t%3ACQLineFSc"
+></A
+></A
+><B
+>CQLineFSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QLineF</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQLineFResult"
+><A NAME="v%3AwithQLineFResult"
+></A
+></A
+><B
+>withQLineFResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQLineF"
+>TQLineF</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQLineF"
+>QLineF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qLineFAddFinalizer"
+><A NAME="v%3AqLineFAddFinalizer"
+></A
+></A
+><B
+>qLineFAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQLineF"
+>QLineF</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:Qt"
+><A NAME="t%3AQt"
+></A
+></A
+><B
+>Qt</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQt"
+>CQt</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQt"
+><A NAME="t%3ATQt"
+></A
+></A
+><B
+>TQt</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQt"
+>CQt</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQt"
+><A NAME="t%3ACQt"
+></A
+></A
+><B
+>CQt</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_Qt"
+><A NAME="v%3AqCast_Qt"
+></A
+></A
+><B
+>qCast_Qt</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQt"
+>Qt</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QtSc"
+><A NAME="t%3AQtSc"
+></A
+></A
+><B
+>QtSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQt"
+>Qt</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQtSc"
+>CQtSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQtSc"
+><A NAME="t%3ATQtSc"
+></A
+></A
+><B
+>TQtSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQt"
+>TQt</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQtSc"
+>CQtSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQtSc"
+><A NAME="t%3ACQtSc"
+></A
+></A
+><B
+>CQtSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_Qt</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQtResult"
+><A NAME="v%3AwithQtResult"
+></A
+></A
+><B
+>withQtResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQt"
+>TQt</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQt"
+>Qt</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QFileInfo"
+><A NAME="t%3AQFileInfo"
+></A
+></A
+><B
+>QFileInfo</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileInfo"
+>CQFileInfo</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQFileInfo"
+><A NAME="t%3ATQFileInfo"
+></A
+></A
+><B
+>TQFileInfo</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileInfo"
+>CQFileInfo</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQFileInfo"
+><A NAME="t%3ACQFileInfo"
+></A
+></A
+><B
+>CQFileInfo</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QFileInfo"
+><A NAME="v%3AqCast_QFileInfo"
+></A
+></A
+><B
+>qCast_QFileInfo</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQFileInfo"
+>QFileInfo</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QFileInfoSc"
+><A NAME="t%3AQFileInfoSc"
+></A
+></A
+><B
+>QFileInfoSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQFileInfo"
+>QFileInfo</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileInfoSc"
+>CQFileInfoSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQFileInfoSc"
+><A NAME="t%3ATQFileInfoSc"
+></A
+></A
+><B
+>TQFileInfoSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQFileInfo"
+>TQFileInfo</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileInfoSc"
+>CQFileInfoSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQFileInfoSc"
+><A NAME="t%3ACQFileInfoSc"
+></A
+></A
+><B
+>CQFileInfoSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QFileInfo</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQFileInfoResult"
+><A NAME="v%3AwithQFileInfoResult"
+></A
+></A
+><B
+>withQFileInfoResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQFileInfo"
+>TQFileInfo</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQFileInfo"
+>QFileInfo</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qFileInfoAddFinalizer"
+><A NAME="v%3AqFileInfoAddFinalizer"
+></A
+></A
+><B
+>qFileInfoAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQFileInfo"
+>QFileInfo</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDate"
+><A NAME="t%3AQDate"
+></A
+></A
+><B
+>QDate</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDate"
+>CQDate</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDate"
+><A NAME="t%3ATQDate"
+></A
+></A
+><B
+>TQDate</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQDate"
+>CQDate</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDate"
+><A NAME="t%3ACQDate"
+></A
+></A
+><B
+>CQDate</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QDate"
+><A NAME="v%3AqCast_QDate"
+></A
+></A
+><B
+>qCast_QDate</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDate"
+>QDate</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDateSc"
+><A NAME="t%3AQDateSc"
+></A
+></A
+><B
+>QDateSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQDate"
+>QDate</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDateSc"
+>CQDateSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDateSc"
+><A NAME="t%3ATQDateSc"
+></A
+></A
+><B
+>TQDateSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQDate"
+>TQDate</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDateSc"
+>CQDateSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDateSc"
+><A NAME="t%3ACQDateSc"
+></A
+></A
+><B
+>CQDateSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QDate</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQDateResult"
+><A NAME="v%3AwithQDateResult"
+></A
+></A
+><B
+>withQDateResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQDate"
+>TQDate</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDate"
+>QDate</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qDateAddFinalizer"
+><A NAME="v%3AqDateAddFinalizer"
+></A
+></A
+><B
+>qDateAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQDate"
+>QDate</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTime"
+><A NAME="t%3AQTime"
+></A
+></A
+><B
+>QTime</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTime"
+>CQTime</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTime"
+><A NAME="t%3ATQTime"
+></A
+></A
+><B
+>TQTime</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQTime"
+>CQTime</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTime"
+><A NAME="t%3ACQTime"
+></A
+></A
+><B
+>CQTime</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QTime"
+><A NAME="v%3AqCast_QTime"
+></A
+></A
+><B
+>qCast_QTime</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTime"
+>QTime</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTimeSc"
+><A NAME="t%3AQTimeSc"
+></A
+></A
+><B
+>QTimeSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQTime"
+>QTime</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimeSc"
+>CQTimeSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTimeSc"
+><A NAME="t%3ATQTimeSc"
+></A
+></A
+><B
+>TQTimeSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQTime"
+>TQTime</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimeSc"
+>CQTimeSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTimeSc"
+><A NAME="t%3ACQTimeSc"
+></A
+></A
+><B
+>CQTimeSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QTime</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQTimeResult"
+><A NAME="v%3AwithQTimeResult"
+></A
+></A
+><B
+>withQTimeResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTime"
+>TQTime</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTime"
+>QTime</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTimeAddFinalizer"
+><A NAME="v%3AqTimeAddFinalizer"
+></A
+></A
+><B
+>qTimeAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQTime"
+>QTime</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QPointF"
+><A NAME="t%3AQPointF"
+></A
+></A
+><B
+>QPointF</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPointF"
+>CQPointF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQPointF"
+><A NAME="t%3ATQPointF"
+></A
+></A
+><B
+>TQPointF</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQPointF"
+>CQPointF</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQPointF"
+><A NAME="t%3ACQPointF"
+></A
+></A
+><B
+>CQPointF</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QPointF"
+><A NAME="v%3AqCast_QPointF"
+></A
+></A
+><B
+>qCast_QPointF</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPointF"
+>QPointF</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QPointFSc"
+><A NAME="t%3AQPointFSc"
+></A
+></A
+><B
+>QPointFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQPointF"
+>QPointF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPointFSc"
+>CQPointFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQPointFSc"
+><A NAME="t%3ATQPointFSc"
+></A
+></A
+><B
+>TQPointFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQPointF"
+>TQPointF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPointFSc"
+>CQPointFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQPointFSc"
+><A NAME="t%3ACQPointFSc"
+></A
+></A
+><B
+>CQPointFSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QPointF</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQPointFResult"
+><A NAME="v%3AwithQPointFResult"
+></A
+></A
+><B
+>withQPointFResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQPointF"
+>TQPointF</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPointF"
+>QPointF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qPointFAddFinalizer"
+><A NAME="v%3AqPointFAddFinalizer"
+></A
+></A
+><B
+>qPointFAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQPointF"
+>QPointF</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QSize"
+><A NAME="t%3AQSize"
+></A
+></A
+><B
+>QSize</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQSize"
+>CQSize</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQSize"
+><A NAME="t%3ATQSize"
+></A
+></A
+><B
+>TQSize</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQSize"
+>CQSize</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQSize"
+><A NAME="t%3ACQSize"
+></A
+></A
+><B
+>CQSize</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QSize"
+><A NAME="v%3AqCast_QSize"
+></A
+></A
+><B
+>qCast_QSize</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQSize"
+>QSize</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QSizeSc"
+><A NAME="t%3AQSizeSc"
+></A
+></A
+><B
+>QSizeSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQSize"
+>QSize</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQSizeSc"
+>CQSizeSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQSizeSc"
+><A NAME="t%3ATQSizeSc"
+></A
+></A
+><B
+>TQSizeSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQSize"
+>TQSize</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQSizeSc"
+>CQSizeSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQSizeSc"
+><A NAME="t%3ACQSizeSc"
+></A
+></A
+><B
+>CQSizeSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QSize</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQSizeResult"
+><A NAME="v%3AwithQSizeResult"
+></A
+></A
+><B
+>withQSizeResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQSize"
+>TQSize</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQSize"
+>QSize</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qSizeAddFinalizer"
+><A NAME="v%3AqSizeAddFinalizer"
+></A
+></A
+><B
+>qSizeAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQSize"
+>QSize</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QRectF"
+><A NAME="t%3AQRectF"
+></A
+></A
+><B
+>QRectF</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRectF"
+>CQRectF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQRectF"
+><A NAME="t%3ATQRectF"
+></A
+></A
+><B
+>TQRectF</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQRectF"
+>CQRectF</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQRectF"
+><A NAME="t%3ACQRectF"
+></A
+></A
+><B
+>CQRectF</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QRectF"
+><A NAME="v%3AqCast_QRectF"
+></A
+></A
+><B
+>qCast_QRectF</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQRectF"
+>QRectF</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QRectFSc"
+><A NAME="t%3AQRectFSc"
+></A
+></A
+><B
+>QRectFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQRectF"
+>QRectF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRectFSc"
+>CQRectFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQRectFSc"
+><A NAME="t%3ATQRectFSc"
+></A
+></A
+><B
+>TQRectFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQRectF"
+>TQRectF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRectFSc"
+>CQRectFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQRectFSc"
+><A NAME="t%3ACQRectFSc"
+></A
+></A
+><B
+>CQRectFSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QRectF</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQRectFResult"
+><A NAME="v%3AwithQRectFResult"
+></A
+></A
+><B
+>withQRectFResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQRectF"
+>TQRectF</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQRectF"
+>QRectF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qRectFAddFinalizer"
+><A NAME="v%3AqRectFAddFinalizer"
+></A
+></A
+><B
+>qRectFAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQRectF"
+>QRectF</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDateTime"
+><A NAME="t%3AQDateTime"
+></A
+></A
+><B
+>QDateTime</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDateTime"
+>CQDateTime</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDateTime"
+><A NAME="t%3ATQDateTime"
+></A
+></A
+><B
+>TQDateTime</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQDateTime"
+>CQDateTime</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDateTime"
+><A NAME="t%3ACQDateTime"
+></A
+></A
+><B
+>CQDateTime</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QDateTime"
+><A NAME="v%3AqCast_QDateTime"
+></A
+></A
+><B
+>qCast_QDateTime</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDateTime"
+>QDateTime</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDateTimeSc"
+><A NAME="t%3AQDateTimeSc"
+></A
+></A
+><B
+>QDateTimeSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQDateTime"
+>QDateTime</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDateTimeSc"
+>CQDateTimeSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDateTimeSc"
+><A NAME="t%3ATQDateTimeSc"
+></A
+></A
+><B
+>TQDateTimeSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQDateTime"
+>TQDateTime</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDateTimeSc"
+>CQDateTimeSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDateTimeSc"
+><A NAME="t%3ACQDateTimeSc"
+></A
+></A
+><B
+>CQDateTimeSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QDateTime</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQDateTimeResult"
+><A NAME="v%3AwithQDateTimeResult"
+></A
+></A
+><B
+>withQDateTimeResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQDateTime"
+>TQDateTime</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDateTime"
+>QDateTime</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qDateTimeAddFinalizer"
+><A NAME="v%3AqDateTimeAddFinalizer"
+></A
+></A
+><B
+>qDateTimeAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQDateTime"
+>QDateTime</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QUrl"
+><A NAME="t%3AQUrl"
+></A
+></A
+><B
+>QUrl</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQUrl"
+>CQUrl</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQUrl"
+><A NAME="t%3ATQUrl"
+></A
+></A
+><B
+>TQUrl</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQUrl"
+>CQUrl</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQUrl"
+><A NAME="t%3ACQUrl"
+></A
+></A
+><B
+>CQUrl</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QUrl"
+><A NAME="v%3AqCast_QUrl"
+></A
+></A
+><B
+>qCast_QUrl</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQUrl"
+>QUrl</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QUrlSc"
+><A NAME="t%3AQUrlSc"
+></A
+></A
+><B
+>QUrlSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQUrl"
+>QUrl</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQUrlSc"
+>CQUrlSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQUrlSc"
+><A NAME="t%3ATQUrlSc"
+></A
+></A
+><B
+>TQUrlSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQUrl"
+>TQUrl</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQUrlSc"
+>CQUrlSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQUrlSc"
+><A NAME="t%3ACQUrlSc"
+></A
+></A
+><B
+>CQUrlSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QUrl</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQUrlResult"
+><A NAME="v%3AwithQUrlResult"
+></A
+></A
+><B
+>withQUrlResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQUrl"
+>TQUrl</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQUrl"
+>QUrl</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qUrlAddFinalizer"
+><A NAME="v%3AqUrlAddFinalizer"
+></A
+></A
+><B
+>qUrlAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQUrl"
+>QUrl</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QSizeF"
+><A NAME="t%3AQSizeF"
+></A
+></A
+><B
+>QSizeF</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQSizeF"
+>CQSizeF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQSizeF"
+><A NAME="t%3ATQSizeF"
+></A
+></A
+><B
+>TQSizeF</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQSizeF"
+>CQSizeF</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQSizeF"
+><A NAME="t%3ACQSizeF"
+></A
+></A
+><B
+>CQSizeF</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QSizeF"
+><A NAME="v%3AqCast_QSizeF"
+></A
+></A
+><B
+>qCast_QSizeF</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQSizeF"
+>QSizeF</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QSizeFSc"
+><A NAME="t%3AQSizeFSc"
+></A
+></A
+><B
+>QSizeFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQSizeF"
+>QSizeF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQSizeFSc"
+>CQSizeFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQSizeFSc"
+><A NAME="t%3ATQSizeFSc"
+></A
+></A
+><B
+>TQSizeFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQSizeF"
+>TQSizeF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQSizeFSc"
+>CQSizeFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQSizeFSc"
+><A NAME="t%3ACQSizeFSc"
+></A
+></A
+><B
+>CQSizeFSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QSizeF</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQSizeFResult"
+><A NAME="v%3AwithQSizeFResult"
+></A
+></A
+><B
+>withQSizeFResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQSizeF"
+>TQSizeF</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQSizeF"
+>QSizeF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qSizeFAddFinalizer"
+><A NAME="v%3AqSizeFAddFinalizer"
+></A
+></A
+><B
+>qSizeFAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQSizeF"
+>QSizeF</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QBasicTimer"
+><A NAME="t%3AQBasicTimer"
+></A
+></A
+><B
+>QBasicTimer</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQBasicTimer"
+>CQBasicTimer</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQBasicTimer"
+><A NAME="t%3ATQBasicTimer"
+></A
+></A
+><B
+>TQBasicTimer</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQBasicTimer"
+>CQBasicTimer</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQBasicTimer"
+><A NAME="t%3ACQBasicTimer"
+></A
+></A
+><B
+>CQBasicTimer</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QBasicTimer"
+><A NAME="v%3AqCast_QBasicTimer"
+></A
+></A
+><B
+>qCast_QBasicTimer</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQBasicTimer"
+>QBasicTimer</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QBasicTimerSc"
+><A NAME="t%3AQBasicTimerSc"
+></A
+></A
+><B
+>QBasicTimerSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQBasicTimer"
+>QBasicTimer</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQBasicTimerSc"
+>CQBasicTimerSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQBasicTimerSc"
+><A NAME="t%3ATQBasicTimerSc"
+></A
+></A
+><B
+>TQBasicTimerSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQBasicTimer"
+>TQBasicTimer</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQBasicTimerSc"
+>CQBasicTimerSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQBasicTimerSc"
+><A NAME="t%3ACQBasicTimerSc"
+></A
+></A
+><B
+>CQBasicTimerSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QBasicTimer</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQBasicTimerResult"
+><A NAME="v%3AwithQBasicTimerResult"
+></A
+></A
+><B
+>withQBasicTimerResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQBasicTimer"
+>TQBasicTimer</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQBasicTimer"
+>QBasicTimer</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qBasicTimerAddFinalizer"
+><A NAME="v%3AqBasicTimerAddFinalizer"
+></A
+></A
+><B
+>qBasicTimerAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQBasicTimer"
+>QBasicTimer</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDataStream"
+><A NAME="t%3AQDataStream"
+></A
+></A
+><B
+>QDataStream</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDataStream"
+>CQDataStream</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDataStream"
+><A NAME="t%3ATQDataStream"
+></A
+></A
+><B
+>TQDataStream</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQDataStream"
+>CQDataStream</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDataStream"
+><A NAME="t%3ACQDataStream"
+></A
+></A
+><B
+>CQDataStream</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QDataStream"
+><A NAME="v%3AqCast_QDataStream"
+></A
+></A
+><B
+>qCast_QDataStream</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDataStream"
+>QDataStream</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDataStreamSc"
+><A NAME="t%3AQDataStreamSc"
+></A
+></A
+><B
+>QDataStreamSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQDataStream"
+>QDataStream</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDataStreamSc"
+>CQDataStreamSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDataStreamSc"
+><A NAME="t%3ATQDataStreamSc"
+></A
+></A
+><B
+>TQDataStreamSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQDataStream"
+>TQDataStream</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDataStreamSc"
+>CQDataStreamSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDataStreamSc"
+><A NAME="t%3ACQDataStreamSc"
+></A
+></A
+><B
+>CQDataStreamSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QDataStream</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQDataStreamResult"
+><A NAME="v%3AwithQDataStreamResult"
+></A
+></A
+><B
+>withQDataStreamResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQDataStream"
+>TQDataStream</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDataStream"
+>QDataStream</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qDataStreamAddFinalizer"
+><A NAME="v%3AqDataStreamAddFinalizer"
+></A
+></A
+><B
+>qDataStreamAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQDataStream"
+>QDataStream</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QModelIndex"
+><A NAME="t%3AQModelIndex"
+></A
+></A
+><B
+>QModelIndex</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQModelIndex"
+>CQModelIndex</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQModelIndex"
+><A NAME="t%3ATQModelIndex"
+></A
+></A
+><B
+>TQModelIndex</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQModelIndex"
+>CQModelIndex</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQModelIndex"
+><A NAME="t%3ACQModelIndex"
+></A
+></A
+><B
+>CQModelIndex</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QModelIndex"
+><A NAME="v%3AqCast_QModelIndex"
+></A
+></A
+><B
+>qCast_QModelIndex</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQModelIndex"
+>QModelIndex</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QModelIndexSc"
+><A NAME="t%3AQModelIndexSc"
+></A
+></A
+><B
+>QModelIndexSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQModelIndex"
+>QModelIndex</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQModelIndexSc"
+>CQModelIndexSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQModelIndexSc"
+><A NAME="t%3ATQModelIndexSc"
+></A
+></A
+><B
+>TQModelIndexSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQModelIndex"
+>TQModelIndex</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQModelIndexSc"
+>CQModelIndexSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQModelIndexSc"
+><A NAME="t%3ACQModelIndexSc"
+></A
+></A
+><B
+>CQModelIndexSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QModelIndex</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQModelIndexResult"
+><A NAME="v%3AwithQModelIndexResult"
+></A
+></A
+><B
+>withQModelIndexResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQModelIndex"
+>TQModelIndex</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQModelIndex"
+>QModelIndex</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qModelIndexAddFinalizer"
+><A NAME="v%3AqModelIndexAddFinalizer"
+></A
+></A
+><B
+>qModelIndexAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQModelIndex"
+>QModelIndex</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QPoint"
+><A NAME="t%3AQPoint"
+></A
+></A
+><B
+>QPoint</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPoint"
+>CQPoint</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQPoint"
+><A NAME="t%3ATQPoint"
+></A
+></A
+><B
+>TQPoint</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQPoint"
+>CQPoint</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQPoint"
+><A NAME="t%3ACQPoint"
+></A
+></A
+><B
+>CQPoint</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QPoint"
+><A NAME="v%3AqCast_QPoint"
+></A
+></A
+><B
+>qCast_QPoint</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPoint"
+>QPoint</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QPointSc"
+><A NAME="t%3AQPointSc"
+></A
+></A
+><B
+>QPointSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQPoint"
+>QPoint</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPointSc"
+>CQPointSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQPointSc"
+><A NAME="t%3ATQPointSc"
+></A
+></A
+><B
+>TQPointSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQPoint"
+>TQPoint</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPointSc"
+>CQPointSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQPointSc"
+><A NAME="t%3ACQPointSc"
+></A
+></A
+><B
+>CQPointSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QPoint</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQPointResult"
+><A NAME="v%3AwithQPointResult"
+></A
+></A
+><B
+>withQPointResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQPoint"
+>TQPoint</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPoint"
+>QPoint</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qPointAddFinalizer"
+><A NAME="v%3AqPointAddFinalizer"
+></A
+></A
+><B
+>qPointAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQPoint"
+>QPoint</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QMatrix"
+><A NAME="t%3AQMatrix"
+></A
+></A
+><B
+>QMatrix</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQMatrix"
+>CQMatrix</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQMatrix"
+><A NAME="t%3ATQMatrix"
+></A
+></A
+><B
+>TQMatrix</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQMatrix"
+>CQMatrix</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQMatrix"
+><A NAME="t%3ACQMatrix"
+></A
+></A
+><B
+>CQMatrix</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QMatrix"
+><A NAME="v%3AqCast_QMatrix"
+></A
+></A
+><B
+>qCast_QMatrix</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQMatrix"
+>QMatrix</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QMatrixSc"
+><A NAME="t%3AQMatrixSc"
+></A
+></A
+><B
+>QMatrixSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQMatrix"
+>QMatrix</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQMatrixSc"
+>CQMatrixSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQMatrixSc"
+><A NAME="t%3ATQMatrixSc"
+></A
+></A
+><B
+>TQMatrixSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQMatrix"
+>TQMatrix</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQMatrixSc"
+>CQMatrixSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQMatrixSc"
+><A NAME="t%3ACQMatrixSc"
+></A
+></A
+><B
+>CQMatrixSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QMatrix</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQMatrixResult"
+><A NAME="v%3AwithQMatrixResult"
+></A
+></A
+><B
+>withQMatrixResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQMatrix"
+>TQMatrix</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQMatrix"
+>QMatrix</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qMatrixAddFinalizer"
+><A NAME="v%3AqMatrixAddFinalizer"
+></A
+></A
+><B
+>qMatrixAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQMatrix"
+>QMatrix</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTextStream"
+><A NAME="t%3AQTextStream"
+></A
+></A
+><B
+>QTextStream</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTextStream"
+>CQTextStream</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTextStream"
+><A NAME="t%3ATQTextStream"
+></A
+></A
+><B
+>TQTextStream</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQTextStream"
+>CQTextStream</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTextStream"
+><A NAME="t%3ACQTextStream"
+></A
+></A
+><B
+>CQTextStream</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QTextStream"
+><A NAME="v%3AqCast_QTextStream"
+></A
+></A
+><B
+>qCast_QTextStream</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTextStream"
+>QTextStream</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTextStreamSc"
+><A NAME="t%3AQTextStreamSc"
+></A
+></A
+><B
+>QTextStreamSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQTextStream"
+>QTextStream</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTextStreamSc"
+>CQTextStreamSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTextStreamSc"
+><A NAME="t%3ATQTextStreamSc"
+></A
+></A
+><B
+>TQTextStreamSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQTextStream"
+>TQTextStream</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTextStreamSc"
+>CQTextStreamSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTextStreamSc"
+><A NAME="t%3ACQTextStreamSc"
+></A
+></A
+><B
+>CQTextStreamSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QTextStream</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQTextStreamResult"
+><A NAME="v%3AwithQTextStreamResult"
+></A
+></A
+><B
+>withQTextStreamResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTextStream"
+>TQTextStream</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTextStream"
+>QTextStream</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTextStreamAddFinalizer"
+><A NAME="v%3AqTextStreamAddFinalizer"
+></A
+></A
+><B
+>qTextStreamAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQTextStream"
+>QTextStream</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QUuid"
+><A NAME="t%3AQUuid"
+></A
+></A
+><B
+>QUuid</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQUuid"
+>CQUuid</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQUuid"
+><A NAME="t%3ATQUuid"
+></A
+></A
+><B
+>TQUuid</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQUuid"
+>CQUuid</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQUuid"
+><A NAME="t%3ACQUuid"
+></A
+></A
+><B
+>CQUuid</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QUuid"
+><A NAME="v%3AqCast_QUuid"
+></A
+></A
+><B
+>qCast_QUuid</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQUuid"
+>QUuid</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QUuidSc"
+><A NAME="t%3AQUuidSc"
+></A
+></A
+><B
+>QUuidSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQUuid"
+>QUuid</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQUuidSc"
+>CQUuidSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQUuidSc"
+><A NAME="t%3ATQUuidSc"
+></A
+></A
+><B
+>TQUuidSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQUuid"
+>TQUuid</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQUuidSc"
+>CQUuidSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQUuidSc"
+><A NAME="t%3ACQUuidSc"
+></A
+></A
+><B
+>CQUuidSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QUuid</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQUuidResult"
+><A NAME="v%3AwithQUuidResult"
+></A
+></A
+><B
+>withQUuidResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQUuid"
+>TQUuid</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQUuid"
+>QUuid</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qUuidAddFinalizer"
+><A NAME="v%3AqUuidAddFinalizer"
+></A
+></A
+><B
+>qUuidAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQUuid"
+>QUuid</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QLocale"
+><A NAME="t%3AQLocale"
+></A
+></A
+><B
+>QLocale</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLocale"
+>CQLocale</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQLocale"
+><A NAME="t%3ATQLocale"
+></A
+></A
+><B
+>TQLocale</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQLocale"
+>CQLocale</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQLocale"
+><A NAME="t%3ACQLocale"
+></A
+></A
+><B
+>CQLocale</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QLocale"
+><A NAME="v%3AqCast_QLocale"
+></A
+></A
+><B
+>qCast_QLocale</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQLocale"
+>QLocale</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QLocaleSc"
+><A NAME="t%3AQLocaleSc"
+></A
+></A
+><B
+>QLocaleSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQLocale"
+>QLocale</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLocaleSc"
+>CQLocaleSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQLocaleSc"
+><A NAME="t%3ATQLocaleSc"
+></A
+></A
+><B
+>TQLocaleSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQLocale"
+>TQLocale</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLocaleSc"
+>CQLocaleSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQLocaleSc"
+><A NAME="t%3ACQLocaleSc"
+></A
+></A
+><B
+>CQLocaleSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QLocale</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQLocaleResult"
+><A NAME="v%3AwithQLocaleResult"
+></A
+></A
+><B
+>withQLocaleResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQLocale"
+>TQLocale</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQLocale"
+>QLocale</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qLocaleAddFinalizer"
+><A NAME="v%3AqLocaleAddFinalizer"
+></A
+></A
+><B
+>qLocaleAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQLocale"
+>QLocale</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDir"
+><A NAME="t%3AQDir"
+></A
+></A
+><B
+>QDir</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDir"
+>CQDir</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDir"
+><A NAME="t%3ATQDir"
+></A
+></A
+><B
+>TQDir</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQDir"
+>CQDir</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDir"
+><A NAME="t%3ACQDir"
+></A
+></A
+><B
+>CQDir</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QDir"
+><A NAME="v%3AqCast_QDir"
+></A
+></A
+><B
+>qCast_QDir</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDir"
+>QDir</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDirSc"
+><A NAME="t%3AQDirSc"
+></A
+></A
+><B
+>QDirSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQDir"
+>QDir</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDirSc"
+>CQDirSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDirSc"
+><A NAME="t%3ATQDirSc"
+></A
+></A
+><B
+>TQDirSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQDir"
+>TQDir</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDirSc"
+>CQDirSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDirSc"
+><A NAME="t%3ACQDirSc"
+></A
+></A
+><B
+>CQDirSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QDir</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQDirResult"
+><A NAME="v%3AwithQDirResult"
+></A
+></A
+><B
+>withQDirResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQDir"
+>TQDir</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDir"
+>QDir</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qDirAddFinalizer"
+><A NAME="v%3AqDirAddFinalizer"
+></A
+></A
+><B
+>qDirAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQDir"
+>QDir</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QChar"
+><A NAME="t%3AQChar"
+></A
+></A
+><B
+>QChar</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQChar"
+>CQChar</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQChar"
+><A NAME="t%3ATQChar"
+></A
+></A
+><B
+>TQChar</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQChar"
+>CQChar</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQChar"
+><A NAME="t%3ACQChar"
+></A
+></A
+><B
+>CQChar</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QChar"
+><A NAME="v%3AqCast_QChar"
+></A
+></A
+><B
+>qCast_QChar</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQChar"
+>QChar</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QCharSc"
+><A NAME="t%3AQCharSc"
+></A
+></A
+><B
+>QCharSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQChar"
+>QChar</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQCharSc"
+>CQCharSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQCharSc"
+><A NAME="t%3ATQCharSc"
+></A
+></A
+><B
+>TQCharSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQChar"
+>TQChar</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQCharSc"
+>CQCharSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQCharSc"
+><A NAME="t%3ACQCharSc"
+></A
+></A
+><B
+>CQCharSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QChar</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQCharResult"
+><A NAME="v%3AwithQCharResult"
+></A
+></A
+><B
+>withQCharResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQChar"
+>TQChar</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQChar"
+>QChar</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QAbstractFileEngine"
+><A NAME="t%3AQAbstractFileEngine"
+></A
+></A
+><B
+>QAbstractFileEngine</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractFileEngine"
+>CQAbstractFileEngine</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQAbstractFileEngine"
+><A NAME="t%3ATQAbstractFileEngine"
+></A
+></A
+><B
+>TQAbstractFileEngine</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractFileEngine"
+>CQAbstractFileEngine</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQAbstractFileEngine"
+><A NAME="t%3ACQAbstractFileEngine"
+></A
+></A
+><B
+>CQAbstractFileEngine</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QAbstractFileEngine"
+><A NAME="v%3AqCast_QAbstractFileEngine"
+></A
+></A
+><B
+>qCast_QAbstractFileEngine</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractFileEngine"
+>QAbstractFileEngine</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QAbstractFileEngineSc"
+><A NAME="t%3AQAbstractFileEngineSc"
+></A
+></A
+><B
+>QAbstractFileEngineSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractFileEngine"
+>QAbstractFileEngine</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractFileEngineSc"
+>CQAbstractFileEngineSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQAbstractFileEngineSc"
+><A NAME="t%3ATQAbstractFileEngineSc"
+></A
+></A
+><B
+>TQAbstractFileEngineSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractFileEngine"
+>TQAbstractFileEngine</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractFileEngineSc"
+>CQAbstractFileEngineSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQAbstractFileEngineSc"
+><A NAME="t%3ACQAbstractFileEngineSc"
+></A
+></A
+><B
+>CQAbstractFileEngineSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QAbstractFileEngine</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQAbstractFileEngineResult"
+><A NAME="v%3AwithQAbstractFileEngineResult"
+></A
+></A
+><B
+>withQAbstractFileEngineResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractFileEngine"
+>TQAbstractFileEngine</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractFileEngine"
+>QAbstractFileEngine</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QPolygonF"
+><A NAME="t%3AQPolygonF"
+></A
+></A
+><B
+>QPolygonF</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPolygonF"
+>CQPolygonF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQPolygonF"
+><A NAME="t%3ATQPolygonF"
+></A
+></A
+><B
+>TQPolygonF</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQPolygonF"
+>CQPolygonF</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQPolygonF"
+><A NAME="t%3ACQPolygonF"
+></A
+></A
+><B
+>CQPolygonF</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QPolygonF"
+><A NAME="v%3AqCast_QPolygonF"
+></A
+></A
+><B
+>qCast_QPolygonF</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygonF"
+>QPolygonF</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QPolygonFSc"
+><A NAME="t%3AQPolygonFSc"
+></A
+></A
+><B
+>QPolygonFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygonF"
+>QPolygonF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPolygonFSc"
+>CQPolygonFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQPolygonFSc"
+><A NAME="t%3ATQPolygonFSc"
+></A
+></A
+><B
+>TQPolygonFSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQPolygonF"
+>TQPolygonF</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPolygonFSc"
+>CQPolygonFSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQPolygonFSc"
+><A NAME="t%3ACQPolygonFSc"
+></A
+></A
+><B
+>CQPolygonFSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QPolygonF</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQPolygonFResult"
+><A NAME="v%3AwithQPolygonFResult"
+></A
+></A
+><B
+>withQPolygonFResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQPolygonF"
+>TQPolygonF</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygonF"
+>QPolygonF</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qPolygonFAddFinalizer"
+><A NAME="v%3AqPolygonFAddFinalizer"
+></A
+></A
+><B
+>qPolygonFAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygonF"
+>QPolygonF</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QVariant"
+><A NAME="t%3AQVariant"
+></A
+></A
+><B
+>QVariant</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQVariant"
+>CQVariant</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQVariant"
+><A NAME="t%3ATQVariant"
+></A
+></A
+><B
+>TQVariant</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQVariant"
+>CQVariant</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQVariant"
+><A NAME="t%3ACQVariant"
+></A
+></A
+><B
+>CQVariant</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QVariant"
+><A NAME="v%3AqCast_QVariant"
+></A
+></A
+><B
+>qCast_QVariant</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQVariant"
+>QVariant</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QVariantSc"
+><A NAME="t%3AQVariantSc"
+></A
+></A
+><B
+>QVariantSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQVariant"
+>QVariant</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQVariantSc"
+>CQVariantSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQVariantSc"
+><A NAME="t%3ATQVariantSc"
+></A
+></A
+><B
+>TQVariantSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQVariant"
+>TQVariant</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQVariantSc"
+>CQVariantSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQVariantSc"
+><A NAME="t%3ACQVariantSc"
+></A
+></A
+><B
+>CQVariantSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QVariant</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQVariantResult"
+><A NAME="v%3AwithQVariantResult"
+></A
+></A
+><B
+>withQVariantResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQVariant"
+>TQVariant</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQVariant"
+>QVariant</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QRect"
+><A NAME="t%3AQRect"
+></A
+></A
+><B
+>QRect</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRect"
+>CQRect</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQRect"
+><A NAME="t%3ATQRect"
+></A
+></A
+><B
+>TQRect</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQRect"
+>CQRect</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQRect"
+><A NAME="t%3ACQRect"
+></A
+></A
+><B
+>CQRect</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QRect"
+><A NAME="v%3AqCast_QRect"
+></A
+></A
+><B
+>qCast_QRect</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQRect"
+>QRect</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QRectSc"
+><A NAME="t%3AQRectSc"
+></A
+></A
+><B
+>QRectSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQRect"
+>QRect</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRectSc"
+>CQRectSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQRectSc"
+><A NAME="t%3ATQRectSc"
+></A
+></A
+><B
+>TQRectSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQRect"
+>TQRect</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRectSc"
+>CQRectSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQRectSc"
+><A NAME="t%3ACQRectSc"
+></A
+></A
+><B
+>CQRectSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QRect</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQRectResult"
+><A NAME="v%3AwithQRectResult"
+></A
+></A
+><B
+>withQRectResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQRect"
+>TQRect</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQRect"
+>QRect</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qRectAddFinalizer"
+><A NAME="v%3AqRectAddFinalizer"
+></A
+></A
+><B
+>qRectAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQRect"
+>QRect</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QRegExp"
+><A NAME="t%3AQRegExp"
+></A
+></A
+><B
+>QRegExp</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRegExp"
+>CQRegExp</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQRegExp"
+><A NAME="t%3ATQRegExp"
+></A
+></A
+><B
+>TQRegExp</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQRegExp"
+>CQRegExp</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQRegExp"
+><A NAME="t%3ACQRegExp"
+></A
+></A
+><B
+>CQRegExp</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QRegExp"
+><A NAME="v%3AqCast_QRegExp"
+></A
+></A
+><B
+>qCast_QRegExp</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQRegExp"
+>QRegExp</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QRegExpSc"
+><A NAME="t%3AQRegExpSc"
+></A
+></A
+><B
+>QRegExpSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQRegExp"
+>QRegExp</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRegExpSc"
+>CQRegExpSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQRegExpSc"
+><A NAME="t%3ATQRegExpSc"
+></A
+></A
+><B
+>TQRegExpSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQRegExp"
+>TQRegExp</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQRegExpSc"
+>CQRegExpSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQRegExpSc"
+><A NAME="t%3ACQRegExpSc"
+></A
+></A
+><B
+>CQRegExpSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QRegExp</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQRegExpResult"
+><A NAME="v%3AwithQRegExpResult"
+></A
+></A
+><B
+>withQRegExpResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQRegExp"
+>TQRegExp</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQRegExp"
+>QRegExp</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qRegExpAddFinalizer"
+><A NAME="v%3AqRegExpAddFinalizer"
+></A
+></A
+><B
+>qRegExpAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQRegExp"
+>QRegExp</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QLine"
+><A NAME="t%3AQLine"
+></A
+></A
+><B
+>QLine</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLine"
+>CQLine</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQLine"
+><A NAME="t%3ATQLine"
+></A
+></A
+><B
+>TQLine</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQLine"
+>CQLine</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQLine"
+><A NAME="t%3ACQLine"
+></A
+></A
+><B
+>CQLine</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QLine"
+><A NAME="v%3AqCast_QLine"
+></A
+></A
+><B
+>qCast_QLine</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQLine"
+>QLine</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QLineSc"
+><A NAME="t%3AQLineSc"
+></A
+></A
+><B
+>QLineSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQLine"
+>QLine</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLineSc"
+>CQLineSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQLineSc"
+><A NAME="t%3ATQLineSc"
+></A
+></A
+><B
+>TQLineSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQLine"
+>TQLine</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQLineSc"
+>CQLineSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQLineSc"
+><A NAME="t%3ACQLineSc"
+></A
+></A
+><B
+>CQLineSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QLine</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQLineResult"
+><A NAME="v%3AwithQLineResult"
+></A
+></A
+><B
+>withQLineResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQLine"
+>TQLine</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQLine"
+>QLine</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qLineAddFinalizer"
+><A NAME="v%3AqLineAddFinalizer"
+></A
+></A
+><B
+>qLineAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQLine"
+>QLine</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QPolygon"
+><A NAME="t%3AQPolygon"
+></A
+></A
+><B
+>QPolygon</B
+> a = <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPolygon"
+>CQPolygon</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQPolygon"
+><A NAME="t%3ATQPolygon"
+></A
+></A
+><B
+>TQPolygon</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ACQPolygon"
+>CQPolygon</A
+> a</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQPolygon"
+><A NAME="t%3ACQPolygon"
+></A
+></A
+><B
+>CQPolygon</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QPolygon"
+><A NAME="v%3AqCast_QPolygon"
+></A
+></A
+><B
+>qCast_QPolygon</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygon"
+>QPolygon</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QPolygonSc"
+><A NAME="t%3AQPolygonSc"
+></A
+></A
+><B
+>QPolygonSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygon"
+>QPolygon</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPolygonSc"
+>CQPolygonSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQPolygonSc"
+><A NAME="t%3ATQPolygonSc"
+></A
+></A
+><B
+>TQPolygonSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQPolygon"
+>TQPolygon</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQPolygonSc"
+>CQPolygonSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQPolygonSc"
+><A NAME="t%3ACQPolygonSc"
+></A
+></A
+><B
+>CQPolygonSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QPolygon</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQPolygonResult"
+><A NAME="v%3AwithQPolygonResult"
+></A
+></A
+><B
+>withQPolygonResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQPolygon"
+>TQPolygon</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygon"
+>QPolygon</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qPolygonAddFinalizer"
+><A NAME="v%3AqPolygonAddFinalizer"
+></A
+></A
+><B
+>qPolygonAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQPolygon"
+>QPolygon</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QAbstractTableModel"
+><A NAME="t%3AQAbstractTableModel"
+></A
+></A
+><B
+>QAbstractTableModel</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractTableModel"
+>CQAbstractTableModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQAbstractTableModel"
+><A NAME="t%3ATQAbstractTableModel"
+></A
+></A
+><B
+>TQAbstractTableModel</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractItemModel"
+>TQAbstractItemModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractTableModel"
+>CQAbstractTableModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQAbstractTableModel"
+><A NAME="t%3ACQAbstractTableModel"
+></A
+></A
+><B
+>CQAbstractTableModel</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QAbstractTableModel"
+><A NAME="v%3AqCast_QAbstractTableModel"
+></A
+></A
+><B
+>qCast_QAbstractTableModel</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractTableModel"
+>QAbstractTableModel</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QAbstractTableModelSc"
+><A NAME="t%3AQAbstractTableModelSc"
+></A
+></A
+><B
+>QAbstractTableModelSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractTableModel"
+>QAbstractTableModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractTableModelSc"
+>CQAbstractTableModelSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQAbstractTableModelSc"
+><A NAME="t%3ATQAbstractTableModelSc"
+></A
+></A
+><B
+>TQAbstractTableModelSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractTableModel"
+>TQAbstractTableModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractTableModelSc"
+>CQAbstractTableModelSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQAbstractTableModelSc"
+><A NAME="t%3ACQAbstractTableModelSc"
+></A
+></A
+><B
+>CQAbstractTableModelSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QAbstractTableModel</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQAbstractTableModelResult"
+><A NAME="v%3AwithQAbstractTableModelResult"
+></A
+></A
+><B
+>withQAbstractTableModelResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractTableModel"
+>TQAbstractTableModel</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractTableModel"
+>QAbstractTableModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qAbstractTableModelFromPtr"
+><A NAME="v%3AqAbstractTableModelFromPtr"
+></A
+></A
+><B
+>qAbstractTableModelFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractTableModel"
+>TQAbstractTableModel</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractTableModel"
+>QAbstractTableModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQAbstractTableModelResult"
+><A NAME="v%3AwithQListQAbstractTableModelResult"
+></A
+></A
+><B
+>withQListQAbstractTableModelResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractTableModel"
+>TQAbstractTableModel</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractTableModel"
+>QAbstractTableModel</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qAbstractTableModelListFromPtrList"
+><A NAME="v%3AqAbstractTableModelListFromPtrList"
+></A
+></A
+><B
+>qAbstractTableModelListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractTableModel"
+>TQAbstractTableModel</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractTableModel"
+>QAbstractTableModel</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QAbstractListModel"
+><A NAME="t%3AQAbstractListModel"
+></A
+></A
+><B
+>QAbstractListModel</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractItemModel"
+>QAbstractItemModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractListModel"
+>CQAbstractListModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQAbstractListModel"
+><A NAME="t%3ATQAbstractListModel"
+></A
+></A
+><B
+>TQAbstractListModel</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractItemModel"
+>TQAbstractItemModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractListModel"
+>CQAbstractListModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQAbstractListModel"
+><A NAME="t%3ACQAbstractListModel"
+></A
+></A
+><B
+>CQAbstractListModel</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QAbstractListModel"
+><A NAME="v%3AqCast_QAbstractListModel"
+></A
+></A
+><B
+>qCast_QAbstractListModel</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractListModel"
+>QAbstractListModel</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QAbstractListModelSc"
+><A NAME="t%3AQAbstractListModelSc"
+></A
+></A
+><B
+>QAbstractListModelSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractListModel"
+>QAbstractListModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractListModelSc"
+>CQAbstractListModelSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQAbstractListModelSc"
+><A NAME="t%3ATQAbstractListModelSc"
+></A
+></A
+><B
+>TQAbstractListModelSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractListModel"
+>TQAbstractListModel</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQAbstractListModelSc"
+>CQAbstractListModelSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQAbstractListModelSc"
+><A NAME="t%3ACQAbstractListModelSc"
+></A
+></A
+><B
+>CQAbstractListModelSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QAbstractListModel</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQAbstractListModelResult"
+><A NAME="v%3AwithQAbstractListModelResult"
+></A
+></A
+><B
+>withQAbstractListModelResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractListModel"
+>TQAbstractListModel</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractListModel"
+>QAbstractListModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qAbstractListModelFromPtr"
+><A NAME="v%3AqAbstractListModelFromPtr"
+></A
+></A
+><B
+>qAbstractListModelFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractListModel"
+>TQAbstractListModel</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractListModel"
+>QAbstractListModel</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQAbstractListModelResult"
+><A NAME="v%3AwithQListQAbstractListModelResult"
+></A
+></A
+><B
+>withQListQAbstractListModelResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractListModel"
+>TQAbstractListModel</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractListModel"
+>QAbstractListModel</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qAbstractListModelListFromPtrList"
+><A NAME="v%3AqAbstractListModelListFromPtrList"
+></A
+></A
+><B
+>qAbstractListModelListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQAbstractListModel"
+>TQAbstractListModel</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQAbstractListModel"
+>QAbstractListModel</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTimerEvent"
+><A NAME="t%3AQTimerEvent"
+></A
+></A
+><B
+>QTimerEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimerEvent"
+>CQTimerEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTimerEvent"
+><A NAME="t%3ATQTimerEvent"
+></A
+></A
+><B
+>TQTimerEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQEvent"
+>TQEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimerEvent"
+>CQTimerEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTimerEvent"
+><A NAME="t%3ACQTimerEvent"
+></A
+></A
+><B
+>CQTimerEvent</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QTimerEvent"
+><A NAME="v%3AqCast_QTimerEvent"
+></A
+></A
+><B
+>qCast_QTimerEvent</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimerEvent"
+>QTimerEvent</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTimerEventSc"
+><A NAME="t%3AQTimerEventSc"
+></A
+></A
+><B
+>QTimerEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQTimerEvent"
+>QTimerEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimerEventSc"
+>CQTimerEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTimerEventSc"
+><A NAME="t%3ATQTimerEventSc"
+></A
+></A
+><B
+>TQTimerEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimerEvent"
+>TQTimerEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimerEventSc"
+>CQTimerEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTimerEventSc"
+><A NAME="t%3ACQTimerEventSc"
+></A
+></A
+><B
+>CQTimerEventSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QTimerEvent</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQTimerEventResult"
+><A NAME="v%3AwithQTimerEventResult"
+></A
+></A
+><B
+>withQTimerEventResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimerEvent"
+>TQTimerEvent</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimerEvent"
+>QTimerEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTimerEventAddFinalizer"
+><A NAME="v%3AqTimerEventAddFinalizer"
+></A
+></A
+><B
+>qTimerEventAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQTimerEvent"
+>QTimerEvent</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDynamicPropertyChangeEvent"
+><A NAME="t%3AQDynamicPropertyChangeEvent"
+></A
+></A
+><B
+>QDynamicPropertyChangeEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDynamicPropertyChangeEvent"
+>CQDynamicPropertyChangeEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDynamicPropertyChangeEvent"
+><A NAME="t%3ATQDynamicPropertyChangeEvent"
+></A
+></A
+><B
+>TQDynamicPropertyChangeEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQEvent"
+>TQEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDynamicPropertyChangeEvent"
+>CQDynamicPropertyChangeEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDynamicPropertyChangeEvent"
+><A NAME="t%3ACQDynamicPropertyChangeEvent"
+></A
+></A
+><B
+>CQDynamicPropertyChangeEvent</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QDynamicPropertyChangeEvent"
+><A NAME="v%3AqCast_QDynamicPropertyChangeEvent"
+></A
+></A
+><B
+>qCast_QDynamicPropertyChangeEvent</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDynamicPropertyChangeEvent"
+>QDynamicPropertyChangeEvent</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QDynamicPropertyChangeEventSc"
+><A NAME="t%3AQDynamicPropertyChangeEventSc"
+></A
+></A
+><B
+>QDynamicPropertyChangeEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQDynamicPropertyChangeEvent"
+>QDynamicPropertyChangeEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDynamicPropertyChangeEventSc"
+>CQDynamicPropertyChangeEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQDynamicPropertyChangeEventSc"
+><A NAME="t%3ATQDynamicPropertyChangeEventSc"
+></A
+></A
+><B
+>TQDynamicPropertyChangeEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQDynamicPropertyChangeEvent"
+>TQDynamicPropertyChangeEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQDynamicPropertyChangeEventSc"
+>CQDynamicPropertyChangeEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQDynamicPropertyChangeEventSc"
+><A NAME="t%3ACQDynamicPropertyChangeEventSc"
+></A
+></A
+><B
+>CQDynamicPropertyChangeEventSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QDynamicPropertyChangeEvent</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQDynamicPropertyChangeEventResult"
+><A NAME="v%3AwithQDynamicPropertyChangeEventResult"
+></A
+></A
+><B
+>withQDynamicPropertyChangeEventResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQDynamicPropertyChangeEvent"
+>TQDynamicPropertyChangeEvent</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQDynamicPropertyChangeEvent"
+>QDynamicPropertyChangeEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qDynamicPropertyChangeEventAddFinalizer"
+><A NAME="v%3AqDynamicPropertyChangeEventAddFinalizer"
+></A
+></A
+><B
+>qDynamicPropertyChangeEventAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQDynamicPropertyChangeEvent"
+>QDynamicPropertyChangeEvent</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QChildEvent"
+><A NAME="t%3AQChildEvent"
+></A
+></A
+><B
+>QChildEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQChildEvent"
+>CQChildEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQChildEvent"
+><A NAME="t%3ATQChildEvent"
+></A
+></A
+><B
+>TQChildEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQEvent"
+>TQEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQChildEvent"
+>CQChildEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQChildEvent"
+><A NAME="t%3ACQChildEvent"
+></A
+></A
+><B
+>CQChildEvent</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QChildEvent"
+><A NAME="v%3AqCast_QChildEvent"
+></A
+></A
+><B
+>qCast_QChildEvent</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQChildEvent"
+>QChildEvent</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QChildEventSc"
+><A NAME="t%3AQChildEventSc"
+></A
+></A
+><B
+>QChildEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQChildEvent"
+>QChildEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQChildEventSc"
+>CQChildEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQChildEventSc"
+><A NAME="t%3ATQChildEventSc"
+></A
+></A
+><B
+>TQChildEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQChildEvent"
+>TQChildEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQChildEventSc"
+>CQChildEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQChildEventSc"
+><A NAME="t%3ACQChildEventSc"
+></A
+></A
+><B
+>CQChildEventSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QChildEvent</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQChildEventResult"
+><A NAME="v%3AwithQChildEventResult"
+></A
+></A
+><B
+>withQChildEventResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQChildEvent"
+>TQChildEvent</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQChildEvent"
+>QChildEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qChildEventAddFinalizer"
+><A NAME="v%3AqChildEventAddFinalizer"
+></A
+></A
+><B
+>qChildEventAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQChildEvent"
+>QChildEvent</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QFileOpenEvent"
+><A NAME="t%3AQFileOpenEvent"
+></A
+></A
+><B
+>QFileOpenEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQEvent"
+>QEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileOpenEvent"
+>CQFileOpenEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQFileOpenEvent"
+><A NAME="t%3ATQFileOpenEvent"
+></A
+></A
+><B
+>TQFileOpenEvent</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQEvent"
+>TQEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileOpenEvent"
+>CQFileOpenEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQFileOpenEvent"
+><A NAME="t%3ACQFileOpenEvent"
+></A
+></A
+><B
+>CQFileOpenEvent</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QFileOpenEvent"
+><A NAME="v%3AqCast_QFileOpenEvent"
+></A
+></A
+><B
+>qCast_QFileOpenEvent</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQFileOpenEvent"
+>QFileOpenEvent</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QFileOpenEventSc"
+><A NAME="t%3AQFileOpenEventSc"
+></A
+></A
+><B
+>QFileOpenEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQFileOpenEvent"
+>QFileOpenEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileOpenEventSc"
+>CQFileOpenEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQFileOpenEventSc"
+><A NAME="t%3ATQFileOpenEventSc"
+></A
+></A
+><B
+>TQFileOpenEventSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQFileOpenEvent"
+>TQFileOpenEvent</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileOpenEventSc"
+>CQFileOpenEventSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQFileOpenEventSc"
+><A NAME="t%3ACQFileOpenEventSc"
+></A
+></A
+><B
+>CQFileOpenEventSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QFileOpenEvent</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQFileOpenEventResult"
+><A NAME="v%3AwithQFileOpenEventResult"
+></A
+></A
+><B
+>withQFileOpenEventResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQFileOpenEvent"
+>TQFileOpenEvent</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQFileOpenEvent"
+>QFileOpenEvent</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qFileOpenEventAddFinalizer"
+><A NAME="v%3AqFileOpenEventAddFinalizer"
+></A
+></A
+><B
+>qFileOpenEventAddFinalizer</B
+> ::  <A HREF="Qtc-ClassTypes-Core.html#t%3AQFileOpenEvent"
+>QFileOpenEvent</A
+> a -&gt; IO ()</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QFile"
+><A NAME="t%3AQFile"
+></A
+></A
+><B
+>QFile</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQIODevice"
+>QIODevice</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFile"
+>CQFile</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQFile"
+><A NAME="t%3ATQFile"
+></A
+></A
+><B
+>TQFile</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQIODevice"
+>TQIODevice</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFile"
+>CQFile</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQFile"
+><A NAME="t%3ACQFile"
+></A
+></A
+><B
+>CQFile</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QFile"
+><A NAME="v%3AqCast_QFile"
+></A
+></A
+><B
+>qCast_QFile</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQFile"
+>QFile</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QFileSc"
+><A NAME="t%3AQFileSc"
+></A
+></A
+><B
+>QFileSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQFile"
+>QFile</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileSc"
+>CQFileSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQFileSc"
+><A NAME="t%3ATQFileSc"
+></A
+></A
+><B
+>TQFileSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQFile"
+>TQFile</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQFileSc"
+>CQFileSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQFileSc"
+><A NAME="t%3ACQFileSc"
+></A
+></A
+><B
+>CQFileSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QFile</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQFileResult"
+><A NAME="v%3AwithQFileResult"
+></A
+></A
+><B
+>withQFileResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQFile"
+>TQFile</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQFile"
+>QFile</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qFileFromPtr"
+><A NAME="v%3AqFileFromPtr"
+></A
+></A
+><B
+>qFileFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQFile"
+>TQFile</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQFile"
+>QFile</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQFileResult"
+><A NAME="v%3AwithQListQFileResult"
+></A
+></A
+><B
+>withQListQFileResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQFile"
+>TQFile</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQFile"
+>QFile</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qFileListFromPtrList"
+><A NAME="v%3AqFileListFromPtrList"
+></A
+></A
+><B
+>qFileListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQFile"
+>TQFile</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQFile"
+>QFile</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QEventLoop"
+><A NAME="t%3AQEventLoop"
+></A
+></A
+><B
+>QEventLoop</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQEventLoop"
+>CQEventLoop</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQEventLoop"
+><A NAME="t%3ATQEventLoop"
+></A
+></A
+><B
+>TQEventLoop</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQEventLoop"
+>CQEventLoop</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQEventLoop"
+><A NAME="t%3ACQEventLoop"
+></A
+></A
+><B
+>CQEventLoop</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QEventLoop"
+><A NAME="v%3AqCast_QEventLoop"
+></A
+></A
+><B
+>qCast_QEventLoop</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEventLoop"
+>QEventLoop</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QEventLoopSc"
+><A NAME="t%3AQEventLoopSc"
+></A
+></A
+><B
+>QEventLoopSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQEventLoop"
+>QEventLoop</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQEventLoopSc"
+>CQEventLoopSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQEventLoopSc"
+><A NAME="t%3ATQEventLoopSc"
+></A
+></A
+><B
+>TQEventLoopSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQEventLoop"
+>TQEventLoop</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQEventLoopSc"
+>CQEventLoopSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQEventLoopSc"
+><A NAME="t%3ACQEventLoopSc"
+></A
+></A
+><B
+>CQEventLoopSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QEventLoop</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQEventLoopResult"
+><A NAME="v%3AwithQEventLoopResult"
+></A
+></A
+><B
+>withQEventLoopResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQEventLoop"
+>TQEventLoop</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEventLoop"
+>QEventLoop</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qEventLoopFromPtr"
+><A NAME="v%3AqEventLoopFromPtr"
+></A
+></A
+><B
+>qEventLoopFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQEventLoop"
+>TQEventLoop</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQEventLoop"
+>QEventLoop</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQEventLoopResult"
+><A NAME="v%3AwithQListQEventLoopResult"
+></A
+></A
+><B
+>withQListQEventLoopResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQEventLoop"
+>TQEventLoop</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQEventLoop"
+>QEventLoop</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qEventLoopListFromPtrList"
+><A NAME="v%3AqEventLoopListFromPtrList"
+></A
+></A
+><B
+>qEventLoopListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQEventLoop"
+>TQEventLoop</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQEventLoop"
+>QEventLoop</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QMimeData"
+><A NAME="t%3AQMimeData"
+></A
+></A
+><B
+>QMimeData</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQMimeData"
+>CQMimeData</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQMimeData"
+><A NAME="t%3ATQMimeData"
+></A
+></A
+><B
+>TQMimeData</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQMimeData"
+>CQMimeData</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQMimeData"
+><A NAME="t%3ACQMimeData"
+></A
+></A
+><B
+>CQMimeData</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QMimeData"
+><A NAME="v%3AqCast_QMimeData"
+></A
+></A
+><B
+>qCast_QMimeData</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQMimeData"
+>QMimeData</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QMimeDataSc"
+><A NAME="t%3AQMimeDataSc"
+></A
+></A
+><B
+>QMimeDataSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQMimeData"
+>QMimeData</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQMimeDataSc"
+>CQMimeDataSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQMimeDataSc"
+><A NAME="t%3ATQMimeDataSc"
+></A
+></A
+><B
+>TQMimeDataSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQMimeData"
+>TQMimeData</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQMimeDataSc"
+>CQMimeDataSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQMimeDataSc"
+><A NAME="t%3ACQMimeDataSc"
+></A
+></A
+><B
+>CQMimeDataSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QMimeData</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQMimeDataResult"
+><A NAME="v%3AwithQMimeDataResult"
+></A
+></A
+><B
+>withQMimeDataResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQMimeData"
+>TQMimeData</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQMimeData"
+>QMimeData</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qMimeDataFromPtr"
+><A NAME="v%3AqMimeDataFromPtr"
+></A
+></A
+><B
+>qMimeDataFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQMimeData"
+>TQMimeData</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQMimeData"
+>QMimeData</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQMimeDataResult"
+><A NAME="v%3AwithQListQMimeDataResult"
+></A
+></A
+><B
+>withQListQMimeDataResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQMimeData"
+>TQMimeData</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQMimeData"
+>QMimeData</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qMimeDataListFromPtrList"
+><A NAME="v%3AqMimeDataListFromPtrList"
+></A
+></A
+><B
+>qMimeDataListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQMimeData"
+>TQMimeData</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQMimeData"
+>QMimeData</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTranslator"
+><A NAME="t%3AQTranslator"
+></A
+></A
+><B
+>QTranslator</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTranslator"
+>CQTranslator</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTranslator"
+><A NAME="t%3ATQTranslator"
+></A
+></A
+><B
+>TQTranslator</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTranslator"
+>CQTranslator</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTranslator"
+><A NAME="t%3ACQTranslator"
+></A
+></A
+><B
+>CQTranslator</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QTranslator"
+><A NAME="v%3AqCast_QTranslator"
+></A
+></A
+><B
+>qCast_QTranslator</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTranslator"
+>QTranslator</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTranslatorSc"
+><A NAME="t%3AQTranslatorSc"
+></A
+></A
+><B
+>QTranslatorSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQTranslator"
+>QTranslator</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTranslatorSc"
+>CQTranslatorSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTranslatorSc"
+><A NAME="t%3ATQTranslatorSc"
+></A
+></A
+><B
+>TQTranslatorSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQTranslator"
+>TQTranslator</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTranslatorSc"
+>CQTranslatorSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTranslatorSc"
+><A NAME="t%3ACQTranslatorSc"
+></A
+></A
+><B
+>CQTranslatorSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QTranslator</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQTranslatorResult"
+><A NAME="v%3AwithQTranslatorResult"
+></A
+></A
+><B
+>withQTranslatorResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTranslator"
+>TQTranslator</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTranslator"
+>QTranslator</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTranslatorFromPtr"
+><A NAME="v%3AqTranslatorFromPtr"
+></A
+></A
+><B
+>qTranslatorFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTranslator"
+>TQTranslator</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTranslator"
+>QTranslator</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQTranslatorResult"
+><A NAME="v%3AwithQListQTranslatorResult"
+></A
+></A
+><B
+>withQListQTranslatorResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTranslator"
+>TQTranslator</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQTranslator"
+>QTranslator</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTranslatorListFromPtrList"
+><A NAME="v%3AqTranslatorListFromPtrList"
+></A
+></A
+><B
+>qTranslatorListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTranslator"
+>TQTranslator</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQTranslator"
+>QTranslator</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QCoreApplication"
+><A NAME="t%3AQCoreApplication"
+></A
+></A
+><B
+>QCoreApplication</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQCoreApplication"
+>CQCoreApplication</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQCoreApplication"
+><A NAME="t%3ATQCoreApplication"
+></A
+></A
+><B
+>TQCoreApplication</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQCoreApplication"
+>CQCoreApplication</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQCoreApplication"
+><A NAME="t%3ACQCoreApplication"
+></A
+></A
+><B
+>CQCoreApplication</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QCoreApplication"
+><A NAME="v%3AqCast_QCoreApplication"
+></A
+></A
+><B
+>qCast_QCoreApplication</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQCoreApplication"
+>QCoreApplication</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QCoreApplicationSc"
+><A NAME="t%3AQCoreApplicationSc"
+></A
+></A
+><B
+>QCoreApplicationSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQCoreApplication"
+>QCoreApplication</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQCoreApplicationSc"
+>CQCoreApplicationSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQCoreApplicationSc"
+><A NAME="t%3ATQCoreApplicationSc"
+></A
+></A
+><B
+>TQCoreApplicationSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQCoreApplication"
+>TQCoreApplication</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQCoreApplicationSc"
+>CQCoreApplicationSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQCoreApplicationSc"
+><A NAME="t%3ACQCoreApplicationSc"
+></A
+></A
+><B
+>CQCoreApplicationSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQCoreApplicationResult"
+><A NAME="v%3AwithQCoreApplicationResult"
+></A
+></A
+><B
+>withQCoreApplicationResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQCoreApplication"
+>TQCoreApplication</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQCoreApplication"
+>QCoreApplication</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCoreApplicationFromPtr"
+><A NAME="v%3AqCoreApplicationFromPtr"
+></A
+></A
+><B
+>qCoreApplicationFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQCoreApplication"
+>TQCoreApplication</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQCoreApplication"
+>QCoreApplication</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTimer"
+><A NAME="t%3AQTimer"
+></A
+></A
+><B
+>QTimer</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimer"
+>CQTimer</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTimer"
+><A NAME="t%3ATQTimer"
+></A
+></A
+><B
+>TQTimer</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimer"
+>CQTimer</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTimer"
+><A NAME="t%3ACQTimer"
+></A
+></A
+><B
+>CQTimer</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QTimer"
+><A NAME="v%3AqCast_QTimer"
+></A
+></A
+><B
+>qCast_QTimer</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimer"
+>QTimer</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTimerSc"
+><A NAME="t%3AQTimerSc"
+></A
+></A
+><B
+>QTimerSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQTimer"
+>QTimer</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimerSc"
+>CQTimerSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTimerSc"
+><A NAME="t%3ATQTimerSc"
+></A
+></A
+><B
+>TQTimerSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimer"
+>TQTimer</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimerSc"
+>CQTimerSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTimerSc"
+><A NAME="t%3ACQTimerSc"
+></A
+></A
+><B
+>CQTimerSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QTimer</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQTimerResult"
+><A NAME="v%3AwithQTimerResult"
+></A
+></A
+><B
+>withQTimerResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimer"
+>TQTimer</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimer"
+>QTimer</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTimerFromPtr"
+><A NAME="v%3AqTimerFromPtr"
+></A
+></A
+><B
+>qTimerFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimer"
+>TQTimer</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimer"
+>QTimer</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQTimerResult"
+><A NAME="v%3AwithQListQTimerResult"
+></A
+></A
+><B
+>withQListQTimerResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimer"
+>TQTimer</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimer"
+>QTimer</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTimerListFromPtrList"
+><A NAME="v%3AqTimerListFromPtrList"
+></A
+></A
+><B
+>qTimerListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimer"
+>TQTimer</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimer"
+>QTimer</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTimeLine"
+><A NAME="t%3AQTimeLine"
+></A
+></A
+><B
+>QTimeLine</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQObject"
+>QObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimeLine"
+>CQTimeLine</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTimeLine"
+><A NAME="t%3ATQTimeLine"
+></A
+></A
+><B
+>TQTimeLine</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQObject"
+>TQObject</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimeLine"
+>CQTimeLine</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTimeLine"
+><A NAME="t%3ACQTimeLine"
+></A
+></A
+><B
+>CQTimeLine</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qCast_QTimeLine"
+><A NAME="v%3AqCast_QTimeLine"
+></A
+></A
+><B
+>qCast_QTimeLine</B
+> ::  <A HREF="Qtc-Classes-Object.html#t%3AObject"
+>Object</A
+> a -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimeLine"
+>QTimeLine</A
+> ())</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:QTimeLineSc"
+><A NAME="t%3AQTimeLineSc"
+></A
+></A
+><B
+>QTimeLineSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3AQTimeLine"
+>QTimeLine</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimeLineSc"
+>CQTimeLineSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:TQTimeLineSc"
+><A NAME="t%3ATQTimeLineSc"
+></A
+></A
+><B
+>TQTimeLineSc</B
+> a = <A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimeLine"
+>TQTimeLine</A
+> (<A HREF="Qtc-ClassTypes-Core.html#t%3ACQTimeLineSc"
+>CQTimeLineSc</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>data</SPAN
+>  <A NAME="t:CQTimeLineSc"
+><A NAME="t%3ACQTimeLineSc"
+></A
+></A
+><B
+>CQTimeLineSc</B
+> a </TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+>qCastList_QTimeLine</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQTimeLineResult"
+><A NAME="v%3AwithQTimeLineResult"
+></A
+></A
+><B
+>withQTimeLineResult</B
+> ::  IO (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimeLine"
+>TQTimeLine</A
+> a)) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimeLine"
+>QTimeLine</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTimeLineFromPtr"
+><A NAME="v%3AqTimeLineFromPtr"
+></A
+></A
+><B
+>qTimeLineFromPtr</B
+> ::  Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimeLine"
+>TQTimeLine</A
+> a) -&gt; IO (<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimeLine"
+>QTimeLine</A
+> a)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:withQListQTimeLineResult"
+><A NAME="v%3AwithQListQTimeLineResult"
+></A
+></A
+><B
+>withQListQTimeLineResult</B
+> ::  (Ptr (Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimeLine"
+>TQTimeLine</A
+> a)) -&gt; IO CInt) -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimeLine"
+>QTimeLine</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:qTimeLineListFromPtrList"
+><A NAME="v%3AqTimeLineListFromPtrList"
+></A
+></A
+><B
+>qTimeLineListFromPtrList</B
+> ::  [Ptr (<A HREF="Qtc-ClassTypes-Core.html#t%3ATQTimeLine"
+>TQTimeLine</A
+> a)] -&gt; IO [<A HREF="Qtc-ClassTypes-Core.html#t%3AQTimeLine"
+>QTimeLine</A
+> a]</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.4.2</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

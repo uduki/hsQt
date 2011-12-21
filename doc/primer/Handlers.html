@@ -1,0 +1,56 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.3. Handlers</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell Primer"><link rel="up" href="Callbacks.html" title="Chapter 2. Callbacks"><link rel="prev" href="Signals%20and%20Slots.html" title="2.2. Signals and Slots"><link rel="next" href="Key%20Press%20Counter.html" title="2.4. Key Press Counter Example"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.3. Handlers</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="Signals%20and%20Slots.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Callbacks</th><td width="20%" align="right"> <a accesskey="n" href="Key%20Press%20Counter.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Handlers"></a>2.3. Handlers</h2></div></div></div><a class="indexterm" name="id2442918"></a><a class="indexterm" name="id2442930"></a><p>A simple example using Handlers is as follows:</p><pre class="programlisting">
+module Main where
+
+import Qtc.Classes.Qccs
+import Qtc.Classes.Qccs_h
+import Qtc.Classes.Gui
+import Qtc.ClassTypes.Gui
+import Qtc.Gui.Base
+import Qtc.Enums.Base
+import Qtc.Enums.Classes.Core
+import Qtc.Enums.Core.Qt
+import Qtc.Gui.QApplication
+import Qtc.Gui.QMessageBox
+import Qtc.Gui.QLabel
+import Qtc.Gui.QLabel_h
+import Qtc.Gui.QKeyEvent
+
+main :: IO Int
+main = do
+  qApplication ()
+  tl &lt;- qLabel "press key 'A'"
+  setAlignment tl (fAlignCenter::Alignment)
+  resize tl (200::Int, 60::Int)
+  mb &lt;- qMessageBox tl
+  setHandler tl "keyPressEvent(QKeyEvent*)" $ tlkp mb
+  qshow tl ()
+  qApplicationExec ()
+
+tlkp :: QMessageBox () -&gt; QLabel () -&gt; QKeyEvent () -&gt; IO ()
+tlkp mb this ke
+  = do
+    k &lt;- key ke ()
+    if (k == qEnum_toInt eKey_A)
+     then
+      do
+      setText mb $ "You have pressed the 'A' key!"
+      qshow mb ()
+     else
+      return ()
+    keyPressEvent_h this ke
+
+</pre><p>The <code class="literal">setHandler</code> function has the general format:
+      </p><p><code class="literal">setHandler</code> <em class="replaceable"><code>handler_object "handler_signature" handler_function</code></em></p><p>The <em class="replaceable"><code>handler_object</code></em> must be a previously
+      declared Qt object.</p><p>The <em class="replaceable"><code>"handler_signature"</code></em> string describes the
+       name and parameter types handler to be set.</p><p>The <em class="replaceable"><code>handler_function</code></em> is a partial
+      application of a Haskell function of type:</p><p><em class="replaceable"><code>global_Haskell_parameters -&gt; handler_object_type -&gt; handler_parameters</code></em></p><p>Note that the handler function in the above examples terminates with
+      the function call <code class="literal">keyPressEvent_h this ke</code>. This is a call
+      to the base class handler function which is often required in event handling,
+      to "pass on" the event to lower levels for normal processing.
+      This is available for all qtHaskell handler functions. The name of the
+      function to call is the same as in the <em class="replaceable"><code>handler_string
+      </code></em> followed by <code class="literal">_h</code>. The required parameters
+      are <em class="replaceable"><code>handler_object</code></em> followed by <em class="replaceable"><code>
+      handler_parameters</code></em>.</p><p>There is no need to subclass an object in order to set a handler on it.
+      Subclassing is <span class="emphasis"><em>only</em></span> required for objects that have
+      <span class="emphasis"><em>custom</em></span> signals or slots.</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="Signals%20and%20Slots.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="Callbacks.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="Key%20Press%20Counter.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.2. Signals and Slots </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.4. Key Press Counter Example</td></tr></table></div></body></html>

@@ -1,0 +1,144 @@
+<ui version="4.0" >
+ <class>Dialog</class>
+ <widget class="QMainWindow" name="Dialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>DI_01</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="dem_01.rcc" >:/images/vcico_01.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" />
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuView" >
+    <property name="title" >
+     <string>View</string>
+    </property>
+    <addaction name="action_Zoom_In" />
+    <addaction name="action_Zoom_Out" />
+    <addaction name="action_Normal_Size" />
+    <addaction name="separator" />
+    <addaction name="action_Fit_to_Window" />
+   </widget>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>File</string>
+    </property>
+    <addaction name="action_Save_Image" />
+   </widget>
+   <widget class="QMenu" name="menuFilter" >
+    <property name="title" >
+     <string>Filter</string>
+    </property>
+    <addaction name="action_V1" />
+    <addaction name="action_V2" />
+    <addaction name="action_V3" />
+    <addaction name="action_V4" />
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuFilter" />
+   <addaction name="menuView" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>4</number>
+   </attribute>
+   <addaction name="action_Save_Image" />
+   <addaction name="action_V1" />
+   <addaction name="action_V2" />
+   <addaction name="action_V3" />
+   <addaction name="action_V4" />
+  </widget>
+  <action name="action_Zoom_In" >
+   <property name="text" >
+    <string>Zoom In</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+=</string>
+   </property>
+  </action>
+  <action name="action_Zoom_Out" >
+   <property name="text" >
+    <string>Zoom Out</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="action_Normal_Size" >
+   <property name="text" >
+    <string>Normal Size</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_Fit_to_Window" >
+   <property name="text" >
+    <string>Fit to Window</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_Save_Image" >
+   <property name="icon" >
+    <iconset resource="dem_01.rcc" >:/images/save.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="action_V1" >
+   <property name="icon" >
+    <iconset resource="dem_01.rcc" >:/images/paste.png</iconset>
+   </property>
+   <property name="text" >
+    <string>V1</string>
+   </property>
+  </action>
+  <action name="action_V2" >
+   <property name="icon" >
+    <iconset resource="dem_01.rcc" >:/images/paste.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;V2</string>
+   </property>
+  </action>
+  <action name="action_V3" >
+   <property name="icon" >
+    <iconset resource="dem_01.rcc" >:/images/paste.png</iconset>
+   </property>
+   <property name="text" >
+    <string>V3</string>
+   </property>
+  </action>
+  <action name="action_V4" >
+   <property name="icon" >
+    <iconset resource="dem_01.rcc" >:/images/paste.png</iconset>
+   </property>
+   <property name="text" >
+    <string>V4</string>
+   </property>
+  </action>
+ </widget>
+</ui>

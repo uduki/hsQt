@@ -1,0 +1,33 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>3.3. Types</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"><link rel="start" href="index.html" title="qtHaskell Primer"><link rel="up" href="ModulesFunctionsTypes.html" title="Chapter 3. Modules, Functions, Types"><link rel="prev" href="Functions.html" title="3.2. Functions"><link rel="next" href="UI,%20Scripting,%20Resources.html" title="Chapter 4. UI, Scripting, Resources"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Types</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="Functions.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Modules, Functions, Types</th><td width="20%" align="right"> <a accesskey="n" href="UI,%20Scripting,%20Resources.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Types"></a>3.3. Types</h2></div></div></div><a class="indexterm" name="id2493311"></a><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="Types%20of%20Types"></a>3.3.1. Types of Types</h3></div></div></div><a class="indexterm" name="id2493327"></a><p>QtHaskell types corresponding to a Qt class 
+      <code class="literal">Q</code><em class="replaceable"><code>SomeQtClass</code></em> have the format
+      <code class="literal">Q</code><em class="replaceable"><code>SomeQtClass a</code></em>. They are
+      implemented as shadow types and hence if a parameter in a qtHaskell function
+      has the type
+      <code class="literal">Q</code><em class="replaceable"><code>SomeQtClass a</code></em> then any object
+      can be passed that whose qtHaskell type corresponds to the Qt type
+      <code class="literal">Q</code><em class="replaceable"><code>SomeQtClass</code></em> or any subclass
+      thereof. If subclass types are not required for a parameter of a qtHaskell
+      application function then the type
+      <code class="literal">Q</code><em class="replaceable"><code>SomeQtClass ()</code></em> should be used.
+      </p><p>All qtHaskell types whose corresponding Qt baseclass is
+      <code class="literal">QObject</code> also have a qtHaskell type
+      <code class="literal">Q</code><em class="replaceable"><code>SomeQtClass</code></em><code class="literal">Sc</code>.
+      This type should only be used when subclassing a qtHaskell type to add custom
+      slots or signals as in section 2.2. E.g.</p><pre class="programlisting">
+  type MyQDialog = QWidgetSc (CMyQDialog)
+</pre><p>Qt enumerated and flags types have the C++ format
+      <code class="literal">Q</code><em class="replaceable"><code>SomeQtClass</code></em><code class="literal">::</code><em class="replaceable"><code>SomeQtEnumeratedOrFlagsType</code></em>.
+      The corresponding qtHaskell type is usually just
+      <em class="replaceable"><code>SomeQtEnumeratedOrFlagsType</code></em>. In the case where the
+      same enumerated or flags types name is shared by more than one class, the
+      qtHaskell type is <em class="replaceable"><code>SomeQtClassSomeQtEnumeratedOrFlagsType</code></em>. E.g.
+      </p><pre class="programlisting">
+  mb &lt;- qMessageBox (eNoIcon::Icon, "", "", fNoButton::QMessageBoxStandardButtons, dialog)
+</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="qCast"></a>3.3.2. qCast</h3></div></div></div><a class="indexterm" name="id2493461"></a><p>QtHaskell objects can be converted from one type to another without
+       restriction. For each qtHaskell class type there is a corresponding
+       function
+      <code class="literal">qCast_</code><em class="replaceable"><code>SomeQtClass obj</code></em>.
+      This converts an object <em class="replaceable"><code>obj</code></em> of any class type
+      to type <em class="replaceable"><code>SomeQtClass</code></em> with the returned value
+      having the same internal pointer value as <em class="replaceable"><code>obj</code></em>.
+      This function should be used with caution.</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="Functions.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ModulesFunctionsTypes.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="UI,%20Scripting,%20Resources.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.2. Functions </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 4. UI, Scripting, Resources</td></tr></table></div></body></html>

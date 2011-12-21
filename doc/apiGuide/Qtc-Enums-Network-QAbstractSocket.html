@@ -1,0 +1,566 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Qtc.Enums.Network.QAbstractSocket</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Qtc-Enums-Network-QAbstractSocket.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+></TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Qtc.Enums.Network.QAbstractSocket</FONT
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Documentation</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:SocketType"
+><A NAME="t%3ASocketType"
+></A
+></A
+><B
+>SocketType</B
+> = <A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> (CSocketType Int)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eTcpSocket"
+><A NAME="v%3AeTcpSocket"
+></A
+></A
+><B
+>eTcpSocket</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketType"
+>SocketType</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eUdpSocket"
+><A NAME="v%3AeUdpSocket"
+></A
+></A
+><B
+>eUdpSocket</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketType"
+>SocketType</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eUnknownSocketType"
+><A NAME="v%3AeUnknownSocketType"
+></A
+></A
+><B
+>eUnknownSocketType</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketType"
+>SocketType</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:NetworkLayerProtocol"
+><A NAME="t%3ANetworkLayerProtocol"
+></A
+></A
+><B
+>NetworkLayerProtocol</B
+> = <A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> (CNetworkLayerProtocol Int)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eIPv4Protocol"
+><A NAME="v%3AeIPv4Protocol"
+></A
+></A
+><B
+>eIPv4Protocol</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ANetworkLayerProtocol"
+>NetworkLayerProtocol</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eIPv6Protocol"
+><A NAME="v%3AeIPv6Protocol"
+></A
+></A
+><B
+>eIPv6Protocol</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ANetworkLayerProtocol"
+>NetworkLayerProtocol</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eUnknownNetworkLayerProtocol"
+><A NAME="v%3AeUnknownNetworkLayerProtocol"
+></A
+></A
+><B
+>eUnknownNetworkLayerProtocol</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ANetworkLayerProtocol"
+>NetworkLayerProtocol</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:SocketError"
+><A NAME="t%3ASocketError"
+></A
+></A
+><B
+>SocketError</B
+> = <A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> (CSocketError Int)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eConnectionRefusedError"
+><A NAME="v%3AeConnectionRefusedError"
+></A
+></A
+><B
+>eConnectionRefusedError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eRemoteHostClosedError"
+><A NAME="v%3AeRemoteHostClosedError"
+></A
+></A
+><B
+>eRemoteHostClosedError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eHostNotFoundError"
+><A NAME="v%3AeHostNotFoundError"
+></A
+></A
+><B
+>eHostNotFoundError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eSocketAccessError"
+><A NAME="v%3AeSocketAccessError"
+></A
+></A
+><B
+>eSocketAccessError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eSocketResourceError"
+><A NAME="v%3AeSocketResourceError"
+></A
+></A
+><B
+>eSocketResourceError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eSocketTimeoutError"
+><A NAME="v%3AeSocketTimeoutError"
+></A
+></A
+><B
+>eSocketTimeoutError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eDatagramTooLargeError"
+><A NAME="v%3AeDatagramTooLargeError"
+></A
+></A
+><B
+>eDatagramTooLargeError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eNetworkError"
+><A NAME="v%3AeNetworkError"
+></A
+></A
+><B
+>eNetworkError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eAddressInUseError"
+><A NAME="v%3AeAddressInUseError"
+></A
+></A
+><B
+>eAddressInUseError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eSocketAddressNotAvailableError"
+><A NAME="v%3AeSocketAddressNotAvailableError"
+></A
+></A
+><B
+>eSocketAddressNotAvailableError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eUnsupportedSocketOperationError"
+><A NAME="v%3AeUnsupportedSocketOperationError"
+></A
+></A
+><B
+>eUnsupportedSocketOperationError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eUnfinishedSocketOperationError"
+><A NAME="v%3AeUnfinishedSocketOperationError"
+></A
+></A
+><B
+>eUnfinishedSocketOperationError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eUnknownSocketError"
+><A NAME="v%3AeUnknownSocketError"
+></A
+></A
+><B
+>eUnknownSocketError</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketError"
+>SocketError</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>type</SPAN
+> <A NAME="t:SocketState"
+><A NAME="t%3ASocketState"
+></A
+></A
+><B
+>SocketState</B
+> = <A HREF="Qtc-Enums-Base.html#t%3AQEnum"
+>QEnum</A
+> (CSocketState Int)</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eUnconnectedState"
+><A NAME="v%3AeUnconnectedState"
+></A
+></A
+><B
+>eUnconnectedState</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketState"
+>SocketState</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eHostLookupState"
+><A NAME="v%3AeHostLookupState"
+></A
+></A
+><B
+>eHostLookupState</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketState"
+>SocketState</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eConnectingState"
+><A NAME="v%3AeConnectingState"
+></A
+></A
+><B
+>eConnectingState</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketState"
+>SocketState</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eConnectedState"
+><A NAME="v%3AeConnectedState"
+></A
+></A
+><B
+>eConnectedState</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketState"
+>SocketState</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eBoundState"
+><A NAME="v%3AeBoundState"
+></A
+></A
+><B
+>eBoundState</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketState"
+>SocketState</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eListeningState"
+><A NAME="v%3AeListeningState"
+></A
+></A
+><B
+>eListeningState</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketState"
+>SocketState</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A NAME="v:eClosingState"
+><A NAME="v%3AeClosingState"
+></A
+></A
+><B
+>eClosingState</B
+> :: <A HREF="Qtc-Enums-Network-QAbstractSocket.html#t%3ASocketState"
+>SocketState</A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.4.2</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

@@ -1,0 +1,905 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Qtc.Gui.QUndoView</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+></HEAD
+><BODY
+><DIV CLASS="outer"
+><DIV CLASS="mini-topbar"
+>Qtc.Gui.QUndoView</DIV
+><DIV CLASS="mini-synopsis"
+><DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqUndoView" TARGET="main"
+>QqUndoView</A
+> x1</DIV
+> <DIV CLASS="decl"
+><A HREF="Qtc-Gui-QUndoView.html#v%3AcleanIcon" TARGET="main"
+>cleanIcon</A
+></DIV
+> <DIV CLASS="decl"
+><A HREF="Qtc-Gui-QUndoView.html#v%3AemptyLabel" TARGET="main"
+>emptyLabel</A
+></DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQgroup" TARGET="main"
+>Qgroup</A
+> x1 xr</DIV
+> <DIV CLASS="decl"
+><A HREF="Qtc-Gui-QUndoView.html#v%3AsetCleanIcon" TARGET="main"
+>setCleanIcon</A
+></DIV
+> <DIV CLASS="decl"
+><A HREF="Qtc-Gui-QUndoView.html#v%3AsetEmptyLabel" TARGET="main"
+>setEmptyLabel</A
+></DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetGroup" TARGET="main"
+>QsetGroup</A
+> x1</DIV
+> <DIV CLASS="decl"
+><A HREF="Qtc-Gui-QUndoView.html#v%3AsetStack" TARGET="main"
+>setStack</A
+></DIV
+> <DIV CLASS="decl"
+><A HREF="Qtc-Gui-QUndoView.html#v%3Astack" TARGET="main"
+>stack</A
+></DIV
+> <DIV CLASS="decl"
+><A HREF="Qtc-Gui-QUndoView.html#v%3AqUndoView_delete" TARGET="main"
+>qUndoView_delete</A
+></DIV
+> <DIV CLASS="decl"
+><A HREF="Qtc-Gui-QUndoView.html#v%3AqUndoView_deleteLater" TARGET="main"
+>qUndoView_deleteLater</A
+></DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQcontentsSize" TARGET="main"
+>QcontentsSize</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqcontentsSize" TARGET="main"
+>QqcontentsSize</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQcurrentChanged" TARGET="main"
+>QcurrentChanged</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdataChanged" TARGET="main"
+>QdataChanged</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdoItemsLayout" TARGET="main"
+>QdoItemsLayout</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdragLeaveEvent" TARGET="main"
+>QdragLeaveEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdragMoveEvent" TARGET="main"
+>QdragMoveEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdropEvent" TARGET="main"
+>QdropEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQevent" TARGET="main"
+>Qevent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQhorizontalOffset" TARGET="main"
+>QhorizontalOffset</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQindexAt" TARGET="main"
+>QindexAt</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqindexAt" TARGET="main"
+>QqindexAt</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQinternalDrag" TARGET="main"
+>QinternalDrag</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQinternalDrop" TARGET="main"
+>QinternalDrop</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQisIndexHidden" TARGET="main"
+>QisIndexHidden</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQmouseMoveEvent" TARGET="main"
+>QmouseMoveEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQmouseReleaseEvent" TARGET="main"
+>QmouseReleaseEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQmoveCursor" TARGET="main"
+>QmoveCursor</A
+> x0 x1 xr</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQpaintEvent" TARGET="main"
+>QpaintEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQrectForIndex" TARGET="main"
+>QrectForIndex</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqrectForIndex" TARGET="main"
+>QqrectForIndex</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQreset" TARGET="main"
+>Qreset</A
+> x0 x1 xr</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQresizeContents" TARGET="main"
+>QresizeContents</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQresizeEvent" TARGET="main"
+>QresizeEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQrowsAboutToBeRemoved" TARGET="main"
+>QrowsAboutToBeRemoved</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQrowsInserted" TARGET="main"
+>QrowsInserted</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQscrollContentsBy" TARGET="main"
+>QscrollContentsBy</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQscrollTo" TARGET="main"
+>QscrollTo</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQselectedIndexes" TARGET="main"
+>QselectedIndexes</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQselectionChanged" TARGET="main"
+>QselectionChanged</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetPositionForIndex" TARGET="main"
+>QsetPositionForIndex</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqsetPositionForIndex" TARGET="main"
+>QqsetPositionForIndex</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetRootIndex" TARGET="main"
+>QsetRootIndex</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetSelection" TARGET="main"
+>QsetSelection</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqsetSelection" TARGET="main"
+>QqsetSelection</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetSpacing" TARGET="main"
+>QsetSpacing</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQspacing" TARGET="main"
+>Qspacing</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQstartDrag" TARGET="main"
+>QstartDrag</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQtimerEvent" TARGET="main"
+>QtimerEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQupdateGeometries" TARGET="main"
+>QupdateGeometries</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQverticalOffset" TARGET="main"
+>QverticalOffset</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQviewOptions" TARGET="main"
+>QviewOptions</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQvisualRect" TARGET="main"
+>QvisualRect</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqvisualRect" TARGET="main"
+>QqvisualRect</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQvisualRegionForSelection" TARGET="main"
+>QvisualRegionForSelection</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQcloseEditor" TARGET="main"
+>QcloseEditor</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQcommitData" TARGET="main"
+>QcommitData</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdirtyRegionOffset" TARGET="main"
+>QdirtyRegionOffset</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqdirtyRegionOffset" TARGET="main"
+>QqdirtyRegionOffset</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdoAutoScroll" TARGET="main"
+>QdoAutoScroll</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdragEnterEvent" TARGET="main"
+>QdragEnterEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdropIndicatorPosition" TARGET="main"
+>QdropIndicatorPosition</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQedit" TARGET="main"
+>Qedit</A
+> x0 x1 xr</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQeditorDestroyed" TARGET="main"
+>QeditorDestroyed</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQexecuteDelayedItemsLayout" TARGET="main"
+>QexecuteDelayedItemsLayout</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQfocusInEvent" TARGET="main"
+>QfocusInEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQfocusNextPrevChild" TARGET="main"
+>QfocusNextPrevChild</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQfocusOutEvent" TARGET="main"
+>QfocusOutEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQhorizontalScrollbarAction" TARGET="main"
+>QhorizontalScrollbarAction</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQhorizontalScrollbarValueChanged" TARGET="main"
+>QhorizontalScrollbarValueChanged</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQhorizontalStepsPerItem" TARGET="main"
+>QhorizontalStepsPerItem</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQinputMethodEvent" TARGET="main"
+>QinputMethodEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQinputMethodQuery" TARGET="main"
+>QinputMethodQuery</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQkeyPressEvent" TARGET="main"
+>QkeyPressEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQkeyboardSearch" TARGET="main"
+>QkeyboardSearch</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQmouseDoubleClickEvent" TARGET="main"
+>QmouseDoubleClickEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQmousePressEvent" TARGET="main"
+>QmousePressEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQscheduleDelayedItemsLayout" TARGET="main"
+>QscheduleDelayedItemsLayout</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQscrollDirtyRegion" TARGET="main"
+>QscrollDirtyRegion</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQselectAll" TARGET="main"
+>QselectAll</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQselectionCommand" TARGET="main"
+>QselectionCommand</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetDirtyRegion" TARGET="main"
+>QsetDirtyRegion</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetHorizontalStepsPerItem" TARGET="main"
+>QsetHorizontalStepsPerItem</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetModel" TARGET="main"
+>QsetModel</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetSelectionModel" TARGET="main"
+>QsetSelectionModel</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetState" TARGET="main"
+>QsetState</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetVerticalStepsPerItem" TARGET="main"
+>QsetVerticalStepsPerItem</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsizeHintForColumn" TARGET="main"
+>QsizeHintForColumn</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsizeHintForRow" TARGET="main"
+>QsizeHintForRow</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQstartAutoScroll" TARGET="main"
+>QstartAutoScroll</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQstate" TARGET="main"
+>Qstate</A
+> x0 x1 xr</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQstopAutoScroll" TARGET="main"
+>QstopAutoScroll</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQupdateEditorData" TARGET="main"
+>QupdateEditorData</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQupdateEditorGeometries" TARGET="main"
+>QupdateEditorGeometries</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQverticalScrollbarAction" TARGET="main"
+>QverticalScrollbarAction</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQverticalScrollbarValueChanged" TARGET="main"
+>QverticalScrollbarValueChanged</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQverticalStepsPerItem" TARGET="main"
+>QverticalStepsPerItem</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQviewportEvent" TARGET="main"
+>QviewportEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQcontextMenuEvent" TARGET="main"
+>QcontextMenuEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQminimumSizeHint" TARGET="main"
+>QminimumSizeHint</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqminimumSizeHint" TARGET="main"
+>QqminimumSizeHint</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetViewportMargins" TARGET="main"
+>QsetViewportMargins</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetupViewport" TARGET="main"
+>QsetupViewport</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsizeHint" TARGET="main"
+>QsizeHint</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqsizeHint" TARGET="main"
+>QqsizeHint</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQwheelEvent" TARGET="main"
+>QwheelEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQchangeEvent" TARGET="main"
+>QchangeEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdrawFrame" TARGET="main"
+>QdrawFrame</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQactionEvent" TARGET="main"
+>QactionEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQaddAction" TARGET="main"
+>QaddAction</A
+> x0 x1 xr</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQcloseEvent" TARGET="main"
+>QcloseEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQcreate" TARGET="main"
+>Qcreate</A
+> x0 x1 xr</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdestroy" TARGET="main"
+>Qdestroy</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdevType" TARGET="main"
+>QdevType</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQenabledChange" TARGET="main"
+>QenabledChange</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQenterEvent" TARGET="main"
+>QenterEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQfocusNextChild" TARGET="main"
+>QfocusNextChild</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQfocusPreviousChild" TARGET="main"
+>QfocusPreviousChild</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQfontChange" TARGET="main"
+>QfontChange</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQheightForWidth" TARGET="main"
+>QheightForWidth</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQhideEvent" TARGET="main"
+>QhideEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQkeyReleaseEvent" TARGET="main"
+>QkeyReleaseEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQlanguageChange" TARGET="main"
+>QlanguageChange</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQleaveEvent" TARGET="main"
+>QleaveEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQmetric" TARGET="main"
+>Qmetric</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQmove" TARGET="main"
+>Qmove</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqmove" TARGET="main"
+>Qqmove</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQmoveEvent" TARGET="main"
+>QmoveEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQpaintEngine" TARGET="main"
+>QpaintEngine</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQpaletteChange" TARGET="main"
+>QpaletteChange</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQrepaint" TARGET="main"
+>Qrepaint</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQresetInputContext" TARGET="main"
+>QresetInputContext</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQresize" TARGET="main"
+>Qresize</A
+> x0 x1 xr</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqresize" TARGET="main"
+>Qqresize</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetGeometry" TARGET="main"
+>QsetGeometry</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQqsetGeometry" TARGET="main"
+>QqsetGeometry</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetMouseTracking" TARGET="main"
+>QsetMouseTracking</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsetVisible" TARGET="main"
+>QsetVisible</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQshowEvent" TARGET="main"
+>QshowEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQtabletEvent" TARGET="main"
+>QtabletEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQupdateMicroFocus" TARGET="main"
+>QupdateMicroFocus</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQwindowActivationChange" TARGET="main"
+>QwindowActivationChange</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQchildEvent" TARGET="main"
+>QchildEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQconnectNotify" TARGET="main"
+>QconnectNotify</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQcustomEvent" TARGET="main"
+>QcustomEvent</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQdisconnectNotify" TARGET="main"
+>QdisconnectNotify</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQeventFilter" TARGET="main"
+>QeventFilter</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQreceivers" TARGET="main"
+>Qreceivers</A
+> x0 x1</DIV
+> <DIV CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+>&nbsp;<A HREF="Qtc-Gui-QUndoView.html#t%3AQsender" TARGET="main"
+>Qsender</A
+> x0 x1</DIV
+></DIV
+></DIV
+></BODY
+></HTML
+>

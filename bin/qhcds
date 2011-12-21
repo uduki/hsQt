@@ -1,0 +1,21 @@
+#! /bin/bash
+#############################################################################
+##      
+##      File      : qhcds
+##      Copyright : (c) David Harley 2010
+##      Project   : qtHaskell
+##      Version   : 1.1.4
+##      Modified  : 2010-09-02 17:01:40
+##      
+##      Warning   : this file is machine generated - do not modify.
+##      
+#############################################################################
+
+p1=$1
+shift
+ghc --make -package qt -fglasgow-exts -O2 -dynamic -o $p1 $p1.hs $* -i.
+if [ -f $p1 ]
+then
+	strip $p1
+fi
+
