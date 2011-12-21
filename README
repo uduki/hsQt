@@ -1,3 +1,10 @@
+
+hsQt is to solve some qtHaskell's problem and to develop new features project.
+
+
+
+--- qtHaskell version 1.1.4 original README
+
 Version 1.1.4 of qtHaskell a set of Haskell bindings for the Qt library from Trolltech.
 
 Html Documentation for this project can be found in the 'doc' folder or online at the qtHaskell web site:
@@ -5,4 +12,8 @@ Html Documentation for this project can be found in the 'doc' folder or online a
 http://qthaskell.berlios.de
 
 The qtHaskell User Guide includes comprehensive installation instructions.
+
+
+----
+
 
