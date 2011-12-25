@@ -580,7 +580,7 @@ class QsaSlotReject w where
 
 instance (Qstt a (QDialogSc b)) => QsaSlotReject (a) where
   slotReject' = (Qslot "reject()", \_ -> ())
-  reject' = slotReject'
+  reject' = (Qslot "reject()", \_ -> ())
 
 class QsaSignalRejected_nt_f w x f where
   signalRejected', rejected' :: x -> SltConf w f

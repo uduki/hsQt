@@ -26,7 +26,7 @@ import System.IO.Unsafe( unsafePerformIO )
 import Foreign.StablePtr
 import Foreign.Marshal.Alloc
 import Foreign.Marshal.Array
-import qualified Monad as M
+import qualified Control.Monad as M
 
 data Wrap a = Wrap a
 

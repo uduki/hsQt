@@ -15,7 +15,7 @@ Version: 1.1.4
 Author: David Harley
 Homepage: http://qthaskell.berlios.de/
 License: AllRightsReserved
-Build-Depends: base, haskell98, OpenGL
+Build-Depends: base, OpenGL
 Build-type: Simple
 extensions: ForeignFunctionInterface
 Exposed-modules:
